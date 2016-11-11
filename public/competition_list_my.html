@@ -35,11 +35,6 @@
 
     </script>
 
-    <!-- Start of lykkex Zendesk Widget script -->
-    <script>/*<![CDATA[*/window.zEmbed||function(e,t){var n,o,d,i,s,a=[],r=document.createElement("iframe");window.zEmbed=function(){a.push(arguments)},window.zE=window.zE||window.zEmbed,r.src="javascript:false",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="display: none",d=document.getElementsByTagName("script"),d=d[d.length-1],d.parentNode.insertBefore(r,d),i=r.contentWindow,s=i.document;try{o=s}catch(c){n=document.domain,r.src='javascript:var d=document.open();d.domain="'+n+'";void(0);',o=s}o.open()._l=function(){var o=this.createElement("script");n&&(this.domain=n),o.id="js-iframe-async",o.src=e,this.t=+new Date,this.zendeskHost=t,this.zEQueue=a,this.body.appendChild(o)},o.write('<body onload="document._l();">'),o.close()}("https://assets.zendesk.com/embeddable_framework/main.js","lykkex.zendesk.com");
-    /*]]>*/</script>
-    <!-- End of lykkex Zendesk Widget script -->
-
 </head>
 <body class="new_page">
 
@@ -65,7 +60,7 @@
                   <li>
                     <a href="competition_list_all.html">All projects</a>
                   </li>
-                  <li>
+                  <li class="active">
                     <a href="competition_list_my.html">My projects</a>
                     <a type="button" class="btn btn-circle new-project-button btn-sm" href="/Project/Create">+</a>
                   </li>
@@ -97,18 +92,54 @@
 
   <section class="section section--lead section--padding">
     <div class="container container--extend">
-      <h1 class="text-center page__title">Lykke<span>Streams</span></h1>
-      <h3 class="page__subtitle mb0">Is Helping the Great Ideas to Meet the Bright Minds</h3>
+     <div class="page__header">
+       <h2 class="pull-left">My projects</h2>
+       <div class="tabs_stack pull-right">
+         <div class="tab_item tab_item--active"><a class="tab_item__link" href="">Created</a></div>
+         <div class="tab_item"><a class="tab_item__link" href="">followed</a></div>
+         <div class="tab_item"><a class="tab_item__link" href="">participating</a></div>
+       </div>
+     </div>
+
+      <a type="button" class="btn btn-circle new-project-button pull-right" href="/Project/Create">+</a>
+
+      <div class="row">
+        <div class="col-sm-4 col-md-3">
+          <div class="select form-group" data-control="select">
+            <label for="select1" class="select__label control-label">Category:</label>
+            <div class="select__value"><span class="_value">All</span></div>
+            <select id="select1" class="form-control select__elem">
+              <option>All</option>
+              <option>All2</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-sm-4 col-md-3">
+          <div class="select form-group" data-control="select">
+            <label for="select2" class="select__label control-label">Status:</label>
+            <div class="select__value"><span class="_value">All</span></div>
+            <select id="select2" class="form-control select__elem">
+              <option>All</option>
+              <option>All2</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-sm-4 col-md-3">
+          <div class="select form-group" data-control="select">
+            <label for="select3" class="select__label control-label">Sort:</label>
+            <div class="select__value"><span class="_value">All</span></div>
+            <select id="select3" class="form-control select__elem">
+              <option>All</option>
+              <option>All2</option>
+            </select>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
   <section class="section section--competition_list">
     <div class="container container--extend">
-
-      <div class="section_header">
-        <a href="" class="section_header__link pull-right">See All</a>
-        <h3 class="section_header__title">Hot Projects</h3>
-      </div>
 
       <div class="row">
         <div class="col-md-6">
@@ -325,96 +356,6 @@
         </div>
       </div>
 
-      <div class="section_header">
-        <a href="" class="section_header__link pull-right">See All</a>
-        <h3 class="section_header__title">Current Projects</h3>
-      </div>
-
-      <div class="row">
-        <div class="col-md-6">
-          <div class="card card--preview">
-            <div class="card__inner">
-              <div class="card__body">
-                <div class="card__breadcrumbs">
-                  <div class="user_badge__img"><a href=""><img src="http://lorempixel.com/50/50/" alt=""></a></div>
-                  <span class="breadcrumb_elem">Elena Borskaya</span>
-                  <i class="icon icon--chevron-thin-right"></i>
-                  <a href="/" class="breadcrumb_elem">Techology</a>
-                </div>
-                <div class="card__header">
-                  <div class="card__sum h3 pull-right">$2000</div>
-                  <div class="card__title h3"><a href="">High Frequency Trading Risk Management Tools Based on Scaling Law</a></div>
-                </div>
-                <div class="card__desc">
-                  <a href="" class="label label--blue">registration</a>
-                  <span class="label label--text label--blue"><i class="icon icon--deadline_fill"></i> 11.06.2016</span>
-                </div>
-                <p class="card__text">
-                  Scaling-law has been observed in an extraordinary wide range of natural phenomena, from physics, biology, earth and planetary sciences, economics and finance.
-                </p>
-                <div class="tags_list">
-                  <div class="tag_item"><a href="">Java</a></div>
-                  <div class="tag_item"><a href="">Features</a></div>
-                </div>
-              </div>
-              <div class="card__footer">
-                <div class="card__actions">
-                  <button type="button" class="action_link action_follow pull-right"><i class="icon icon--follow"></i> <span data-toggle-text="Unfollow">Follow</span></button>
-                  <a href="" class="action_link">Read more</a>
-                  &middot;
-                  <a href="" class="action_link">Share</a>
-                  &middot;
-                  <a href="" class="action_link">2 comments</a>
-                  &middot;
-                  <a href="" class="action_link">10 participants</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="card card--preview">
-            <div class="card__inner">
-              <div class="card__body">
-                <div class="card__breadcrumbs">
-                  <div class="user_badge__img"><a href=""><img src="http://lorempixel.com/50/50/" alt=""></a></div>
-                  <span class="breadcrumb_elem">Elena Borskaya</span>
-                  <i class="icon icon--chevron-thin-right"></i>
-                  <a href="/" class="breadcrumb_elem">Techology</a>
-                </div>
-                <div class="card__header">
-                  <div class="card__sum h3 pull-right">$2000</div>
-                  <div class="card__title h3"><a href="">Lykke USD, EUR... Coins</a></div>
-                </div>
-                <div class="card__desc">
-                  <a href="" class="label label--green">competition registration</a>
-                  <span class="label label--text label--green"><i class="icon icon--deadline_fill"></i> 11.06.2016</span>
-                </div>
-                <p class="card__text">
-                  Scaling-law has been observed in an extraordinary wide range of natural phenomena, from physics, biology, earth and planetary sciences, economics and finance, computer science, and demography to the social sciences. Scaling-law processes yield...
-                </p>
-                <div class="tags_list">
-                  <div class="tag_item"><a href="">Java</a></div>
-                  <div class="tag_item"><a href="">Features</a></div>
-                  <div class="tag_item"><a href="">Features</a></div>
-                </div>
-              </div>
-              <div class="card__footer">
-                <div class="card__actions">
-                  <button type="button" class="action_link action_follow pull-right"><i class="icon icon--follow"></i> <span data-toggle-text="Unfollow">Follow</span></button>
-                  <a href="" class="action_link">Read more</a>
-                  &middot;
-                  <a href="" class="action_link">Share</a>
-                  &middot;
-                  <a href="" class="action_link">2 comments</a>
-                  &middot;
-                  <a href="" class="action_link">10 participants</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   </section>
 </article>
@@ -423,7 +364,7 @@
   <div class="footer__bottom">
     <div class="container">
       <div class="row">
-        <div class="col-xs-6 col-sm-7 text-right pull-right">
+        <div class="col-xs-6 col-sm-6 text-right pull-right">
           <div class="clearfix">
             <ul class="social social--footer_alt">
               <li><a href="https://www.facebook.com/groups/542506412568917/" target="_blank" class="social__item"><i class="icon icon--fb_simple"></i></a></li>
@@ -436,7 +377,7 @@
             </ul>
           </div>
         </div>
-        <div class="col-xs-6 col-sm-5 text-left">
+        <div class="col-xs-6 col-sm-6 text-left">
           <div class="footer__copy">&copy; Lykke 2016. All rights reserved
             <span class="middot">&middot;</span>
             <a href="">Terms of Use</a>
@@ -451,6 +392,9 @@
 <script src="js/vendor/bootstrap.min.js"></script>
 <script src="js/vendor/fastclick.min.js"></script>
 <script src="js/functions.js"></script>
+<script>
+
+</script>
 
 </body>
 </html>
