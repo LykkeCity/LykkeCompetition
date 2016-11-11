@@ -1,2 +1,1 @@
 # LykkeCompetition
-Lykke Competition Markup
