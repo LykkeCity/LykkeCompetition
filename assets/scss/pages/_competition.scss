@@ -28,15 +28,10 @@
     }
   }
 
-  @media all and (max-width: 767px) {
-    &__value {
-      font-size: 32px;
-    }
+  @media (max-width: $screen-mobile) {
+    text-align: center;
 
-    &__title {
-      font-size: 12px;
-      line-height: normal;
-    }
+    @include rem(margin-bottom, 20px);
   }
 }
 
@@ -122,6 +117,23 @@
       .btn_edit {
         @include rem(margin-top, 4px);
         @include rem(min-width, 120px);
+      }
+    }
+
+    @media (max-width: $screen-tablet) {
+      .page__header {
+        position: relative;
+
+        .col-sm-4 {
+          position: absolute;
+          top: 0;
+          right: 0;
+          padding: 0;
+        }
+
+        .btn_edit {
+          min-width: 0;
+        }
       }
     }
   }
@@ -277,4 +289,83 @@
   .navbar-collapse .nav > li.active a.btn {
     color: #fff !important;
   }
+}
+
+@media (max-width: $screen-landscape) {
+  .project_links {
+    padding-left: 15px;
+    padding-right: 15px;
+
+    &__share + &__actions {
+      @include rem(margin-top, 20px)
+    }
+
+    &__share {
+      padding: 0;
+    }
+
+    .card__actions {
+      text-align: left !important;
+    }
+  }
+
+  .content__right {
+    padding-top: 30px;
+    border-top: 1px solid $border-alt;
+  }
+
+  .page .nav-tabs {
+    @include rem(margin-bottom, 20px !important);
+  }
+
+  .small_desc {
+    @include rem(margin-top, 30px);
+  }
+}
+
+@media (max-width: $screen-mobile) {
+  .progress {
+    @include rem(margin, 20px 0);
+
+    .row {
+      font-size: 0;
+
+      > .col-xs-6 {
+        float: none;
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+
+    &__info {
+      @include rem(font-size, 18px);
+    }
+  }
+
+  .card__actions .action_link {
+    margin-bottom: 6px;
+  }
+
+  .project_links {
+    padding-bottom: 10px;
+  }
+
+  .prize_row {
+     > div {
+      width: 50%;
+    }
+  }
+
+  .content__right .user_badge {
+    min-height: 0;
+  }
+
+  .btn_participate {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.card__actions .action_link img {
+  @include rem(width, 20px);
 }
