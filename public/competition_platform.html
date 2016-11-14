@@ -114,7 +114,7 @@
               <a href="" class="action_link"><i class="icon icon--fb_simple"></i> Share</a>
               <a href="" class="action_link"><i class="icon icon--linkedin-icn"></i> Share</a>
               <a href="" class="action_link"><i class="icon icon--envelope"></i> Send</a>
-              <a href="" class="action_link _copy_link"><i class="icon icon--link"></i> Copy link</a>
+              <button type="button" class="action_link _copy_link" aria-label="Copied!" data-clipboard-text="lykke.com"><i class="icon icon--link"></i> Copy link</button>
             </div>
           </div>
           <div class="col-sm-5 project_links__actions">
@@ -201,7 +201,13 @@
 
              </div>
               <div class="asset_link">
-                <div class="asset_link__icon"><a href=""><i class="icon icon--pdf_file"><span class="path1"></span><span class="path2"></span></i></a></div>
+                <div class="asset_link__icon">
+                  <div class="asset_icon asset_icon--red">PDF</div>
+                  <!--<div class="asset_icon asset_icon--blue">DOC</div>
+                  <div class="asset_icon asset_icon--yellow">JPG</div>
+                  <div class="asset_icon asset_icon--green">XLS</div>
+                  <div class="asset_icon asset_icon--primary">AI</div>-->
+                </div>
                 <div class="asset_link__info">
                   <div class="asset_link__title"><a href="">Brief and concept.pdf</a></div>
                   <div class="asset_link__desc">24.8MB</div>
@@ -652,6 +658,7 @@
 <script src="js/vendor/fastclick.min.js"></script>
 <script src="js/functions.js"></script>
 <script src="js/vendor/autosize.min.js"></script>
+<script src="js/vendor/clipboard.min.js"></script>
 
 <script>
   $('._show_hidden_form').on('click' ,function(ev) {
@@ -681,6 +688,15 @@
   $('._voting_btn').on('click', function() {
     $(this).toggleClass('active').siblings('._voting_btn').toggleClass('invisible').parents('.voting_group').toggleClass('voted');
   });
+
+  var clipboard = new Clipboard('._copy_link');
+
+  clipboard.on('success', function(e) {
+    e.trigger.innerHTML =  e.trigger.getAttribute('aria-label');
+    e.clearSelection();
+    clipboard.destroy();
+  });
+
 </script>
 
 </body>
