@@ -35,11 +35,6 @@
 
   </script>
 
-  <!-- Start of lykkex Zendesk Widget script -->
-  <script>/*<![CDATA[*/window.zEmbed||function(e,t){var n,o,d,i,s,a=[],r=document.createElement("iframe");window.zEmbed=function(){a.push(arguments)},window.zE=window.zE||window.zEmbed,r.src="javascript:false",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="display: none",d=document.getElementsByTagName("script"),d=d[d.length-1],d.parentNode.insertBefore(r,d),i=r.contentWindow,s=i.document;try{o=s}catch(c){n=document.domain,r.src='javascript:var d=document.open();d.domain="'+n+'";void(0);',o=s}o.open()._l=function(){var o=this.createElement("script");n&&(this.domain=n),o.id="js-iframe-async",o.src=e,this.t=+new Date,this.zendeskHost=t,this.zEQueue=a,this.body.appendChild(o)},o.write('<body onload="document._l();">'),o.close()}("https://assets.zendesk.com/embeddable_framework/main.js","lykkex.zendesk.com");
-  /*]]>*/</script>
-  <!-- End of lykkex Zendesk Widget script -->
-
 </head>
 <body class="new_page">
 
@@ -505,6 +500,24 @@
               <!--<button class="btn btn-block btn_participate"><i class="icon icon&#45;&#45;participate"></i>Participate</button>-->
               <button class="btn btn-block btn_participate"><i class="icon icon--vote_list"></i>Vote</button>
 
+              <div class="voting_group">
+                <button class="btn btn--circle btn--green _voting_btn" data-hover="Vote again"><i class="icon icon--vote_yes"></i><span>Yes</span></button>
+                <button class="btn btn--circle btn--red _voting_btn" data-hover="Vote again"><i class="icon icon--vote_no"></i><span>No</span></button>
+
+                <div class="voting_group__value">42 votes</div>
+
+                <div class="voting_group__status">
+                  <div class="voting_group__group">
+                    <div class="status_bar"><span class="status_bar__line status_bar__line--green" style="width: 56%"></span></div>
+                    <div class="voting_group__count"><span class="text-green">24<!--max 3 symbols, for example, 240 or 10k--></span> Yes</div>
+                  </div>
+                  <div class="voting_group__group">
+                    <div class="status_bar"><span class="status_bar__line status_bar__line--red" style="width: 38%"></span></div>
+                    <div class="voting_group__count"><span class="text-red">12k</span> No</div>
+                  </div>
+                </div>
+              </div>
+
               <p class="text-muted small_desc">To participate in the contest with the prize, you must be registered in the competition. Registration can be completed at any time.</p>
 
             </div>
@@ -628,6 +641,11 @@
     </div>
   </div>
 </footer>
+
+<a href="#" class="btn btn_feedback">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17"><defs><style>.cls-1{fill:#fff;}</style></defs><g id="Layer_2" data-name="Layer 2"><path class="cls-1" d="M2,17a1,1,0,0,1-.95-1.32l1-3A7.12,7.12,0,0,1,0,7.62C0,3.42,3.81,0,8.5,0S17,3.42,17,7.62s-3.81,7.62-8.5,7.62A9.41,9.41,0,0,1,6,14.91l-3.5,2A1,1,0,0,1,2,17ZM8.5,2C4.92,2,2,4.52,2,7.62a5.24,5.24,0,0,0,1.9,4,1,1,0,0,1,.29,1.08l-.4,1.17L5.38,13a1,1,0,0,1,.8-.08,7.35,7.35,0,0,0,2.31.37c3.58,0,6.5-2.52,6.5-5.62S12.08,2,8.5,2Z" id="Layer_1-2" data-name="Layer 1"></path></g></svg>
+  <span>Leave Feedback</span>
+</a>
 
 <script src="js/vendor/jquery.min.js"></script>
 <script src="js/vendor/bootstrap.min.js"></script>
