@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 ie7"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9 ie8"> <![endif]-->
+<!--[if IE 9]>         <html class="no-js ie9"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Lykke - anyone can trade</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="manifest.json">
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" href="css/vendor/bootstrap-custom.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!--[if lte IE 9]>
+  <script type="text/javascript" src="js/vendor/html5shiv.js"></script>
+  <![endif]-->
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-68151354-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+
+</head>
+<body class="new_page">
+
+<header class="header header--new">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-2 col-sm-3"><a href="/" class="logo header__logo">
+        <img src="img/lykke_new.svg" height="38" alt=""/>
+        <span class="header__title">Streams</span>
+      </a></div>
+      <div class="col-xs-10 col-sm-9 col-md-6 text-center">
+        <button type="button" class="navbar-toggle collapsed btn btn--stroke pull-right" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+          <div class="t-simulate">
+            <div class="t-row">
+              <div class="t-cell">
+
+                <ul class="nav nav--header">
+                  <li>
+                    <a href="competition_list_all.html">All projects</a>
+                  </li>
+                  <li>
+                    <a href="competition_list_my.html">My projects</a>
+                    <a type="button" class="btn btn-circle new-project-button btn-sm" href="/Project/Create">+</a>
+                  </li>
+                </ul>
+                <a href="https://wiki.lykkex.com/start?do=login" class="visible-xs-inline-block visible-sm-inline-block btn">Sign In</a>
+              </div>
+            </div>
+          </div>
+          <ul class="social social--header visible-xs visible-sm">
+            <li><a href="https://www.facebook.com/groups/542506412568917/" target="_blank" class="social__item"><i class="icon icon--fb_simple"></i></a></li>
+            <li><a href="https://twitter.com/LykkeCity" target="_blank" class="social__item"><i class="icon icon--tw"></i></a></li>
+            <li><a href="http://instagram.com/lykkecity" target="_blank" class="social__item"><i class="icon icon--instagram"></i></a></li>
+            <li><a href="https://www.youtube.com/channel/UCmMYipGdKMF0kzfaE-PXsNQ" target="_blank" class="social__item"><i class="icon icon--youtube"></i></a></li>
+            <li><a href="https://www.linkedin.com/company/lykke-ag" target="_blank" class="social__item"><i class="icon icon--linkedin-icn"></i></a></li>
+            <li><a href="https://www.reddit.com/r/lykke/" target="_blank" class="social__item"><i class="icon icon--reddit"></i></a></li>
+            <li><a href="https://t.co/TmjMYnQD7T" target="_blank" class="social__item"><i class="icon icon--telegram"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-3 hidden-xs hidden-sm">
+        <a href="https://wiki.lykkex.com/start?do=login" class="btn btn-link pull-right">Sign In</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<article class="content page page--competition_create">
+  <div class="page_border"></div>
+
+  <section class="section section--lead section--padding">
+    <div class="container container--extend">
+      <div class="page__header">
+        <h2>New Project</h2>
+        <div class="card__actions visible-xs visible-sm">
+          <span class="action_text text-muted">Last saved 2 minutes ago</span>
+        </div>
+
+        <div class="sticky_header_container">
+          <div class="sticky_header" data-spy="affix">
+            <div class="container container--extend">
+              <div class="row">
+                <div class="col-sm-3 hidden-xs hidden-sm">
+                  <div class="card__actions">
+                    <span class="action_text text-muted">Last saved 2 minutes ago</span>
+                  </div>
+                </div>
+                <div class="col-md-9 text-right">
+                  <button type="button" class="btn pull-right">Publish<span class="hidden-xs"> Project</span></button>
+                  <div class="card__actions pull-right">
+                    <a href="" class="action_link">Delete<span class="hidden-xs"> Project</span></a>
+                    <a href="" class="action_link">Save as Draft</a>
+                    <a href="" class="action_link">Preview<span class="hidden-xs"> Project</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--competition_form section--padding">
+    <div class="container">
+      <form class="form form--default form--competition_edit">
+
+        <fieldset class="form_fieldset">
+          <h3>Project Flow</h3>
+
+          <div class="flow flow--project">
+            <div class="flow__item">
+              <div class="flow__icon flow__icon--blue"><i class="icon icon--in_process"></i></div>
+              <div class="flow__content">
+                <div class="flow__title h4">Initiative</div>
+                <div class="flow__actions">
+                  <div class="form-group">
+                    <div class="input-group date datetimepicker">
+                      <input type="text" class="form-control datetimepicker" />
+                      <span class="input-group-addon">
+                          <span class="icon icon--cal"></span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="flow__text">
+                  When you have a greate idea but haven’t money and team for its realization create an initiative project. If your idea will be supported by Lykke members, Lykke will create a project and set a prize fund.
+                </div>
+                <span class="action_text">No votes yet</span>
+              </div>
+            </div>
+
+            <div class="flow__item">
+              <div class="flow__icon"></div>
+              <div class="flow__content">
+                <div class="flow__title h4">Registration</div>
+                <div class="flow__actions">
+                  <div class="form-group">
+                    <div class="input-group date datetimepicker">
+                      <input type="text" class="form-control datetimepicker" />
+                      <span class="input-group-addon">
+                          <span class="icon icon--cal"></span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="flow__text">
+                  Lykke members have to summit the project application form to take part in your project. Registration deadline is time when you announce your project and early birds can register. Other participants may register any time from the project start till is implementation deadline.
+                </div>
+                <span class="action_text">No participants yet</span>
+              </div>
+            </div>
+
+            <div class="flow__item">
+              <div class="flow__icon"></div>
+              <div class="flow__content">
+                <div class="flow__title h4">Submissions</div>
+                <div class="flow__actions">
+                  <div class="form-group">
+                    <div class="input-group date datetimepicker">
+                      <input type="text" class="form-control datetimepicker" />
+                      <span class="input-group-addon">
+                          <span class="icon icon--cal"></span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="flow__text">
+                  Participants have to send project results before the implementation deadline.
+                </div>
+                <span class="action_text">No participants yet</span>
+              </div>
+            </div>
+
+            <div class="flow__item">
+              <div class="flow__icon"></div>
+              <div class="flow__content">
+                <div class="flow__title h4">Voting
+                  <div class="switcher">
+                    <input id="ch1" type="checkbox" class="switcher__elem" checked>
+                    <label for="ch1" class="switcher__control"></label>
+                  </div>
+                </div>
+                <div class="flow__actions">
+                  <div class="form-group">
+                    <div class="input-group date datetimepicker">
+                      <input type="text" class="form-control datetimepicker" />
+                      <span class="input-group-addon">
+                          <span class="icon icon--cal"></span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="flow__text">
+                  Project Creator should select the best quality project solutions by his own or organize voting process.
+                </div>
+                <span class="action_text">No results yet</span>
+              </div>
+            </div>
+
+          </div>
+        </fieldset>
+
+        <fieldset class="form_fieldset">
+          <h3>Project Task</h3>
+
+          <div class="form-group">
+            <label for="f1" class="control-label">Project name</label>
+            <input type="text" id="f1" class="form-control" value="High Frequency Trading Risk Management Tools Based on Scaling Law">
+          </div>
+
+          <div class="row">
+            <div class="col-sm-4">
+              <label for="select1" class="control-label">Category:</label>
+              <div class="select form-group" data-control="select">
+                <div class="select__value"><span class="_value">All</span></div>
+                <select id="select1" class="form-control select__elem">
+                  <option>All</option>
+                  <option>All2</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-sm-8">
+              <div class="form-group">
+                <label for="f4" class="control-label">Tags (comma separated)</label>
+                <input type="text" id="f4" class="form-control" value="Java, Futures, Lending, Margin trading, Swaps">
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="f21" class="control-label">Abstract</label>
+            <textarea name="" id="f21" class="form-control"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="f2" class="control-label">Describe the project</label>
+            <textarea name="" id="f2" style="height: 400px;" class="form-control"></textarea>
+          </div>
+        </fieldset>
+
+        <fieldset class="form_fieldset">
+          <div class="clearfix">
+            <div class="fileupload pull-right">
+              <input type="file" id="file" class="fileupload__field">
+              <button type="button" class="btn btn-sm fileupload__btn">Add File</button>
+            </div>
+            <h3>Attachments</h3>
+          </div>
+
+          <div class="asset_link_list">
+            <div class="asset_link asset_link--alt">
+              <div class="asset_link__icon">
+                <div class="asset_icon asset_icon--red">PDF</div>
+              </div>
+              <div class="asset_link__action">
+                <button class="btn btn--icon _delete_asset"><i class="icon icon--trash"></i></button>
+              </div>
+              <div class="asset_link__info">
+                <div class="asset_link__title"><a href="">Brief and concept.pdf</a></div>
+                <div class="asset_link__desc">24.8MB</div>
+              </div>
+            </div>
+            <div class="asset_link asset_link--alt">
+              <div class="asset_link__icon">
+                <div class="asset_icon asset_icon--primary">AI</div>
+              </div>
+              <div class="asset_link__action">
+                <button class="btn btn--icon _delete_asset"><i class="icon icon--trash"></i></button>
+              </div>
+              <div class="asset_link__info">
+                <div class="asset_link__title"><a href="">Brief and concept.ai</a></div>
+                <div class="asset_link__desc">24.8MB</div>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="form_fieldset">
+          <div class="clearfix">
+            <button type="button" class="btn pull-right btn-sm fileupload__btn">Add Resource</button>
+            <h3>Programming Resources</h3>
+          </div>
+
+          <div class="whatever_list">
+            <div class="whatever_list__item">
+              <div class="whatever_list__content">
+                <div class="row">
+                  <div class="col-sm-4">
+                    <div class="form-control">
+                      <div class="resource_name">
+                        <i class="icon icon--github"></i>
+                        <span>GitHub</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-11 col-sm-7">
+                    <div class="form-group">
+                      <input type="text" id="f43" class="form-control" value="https://github.com/LykkeCity/CompetitionPlatform">
+                    </div>
+                  </div>
+                  <div class="col-xs-1">
+                    <div class="whatever_list__action">
+                      <button class="btn btn--icon _delete_asset"><i class="icon icon--trash"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="form_fieldset form_fieldset--fund">
+          <h3>Prize Fund</h3>
+          <p class="text-muted">Any of the citizens of Lykke City will be able to finance the project. You can enter the estimated budget of the project. You can give the project the entire fund to one winner, and can spread among several.</p>
+
+          <div class="form-group">
+            <label for="f9" class="control-label">1<sup>st</sup> prize</label>
+            <div class="row">
+              <div class="col-sm-4">
+                <input type="text" id="f9" class="form-control" value="2000$">
+              </div>
+              <div class="col-sm-8">
+                <span class="text-muted">Wallet Address:</span>
+                <a href="" class="wallet_address">19ZKM6JFvCiBQbqqHPzRDLGHpN6wkQnXDs</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="f10" class="control-label">2<sup>nd</sup> prize</label>
+            <div class="row">
+              <div class="col-sm-4">
+                <input type="text" id="f10" class="form-control" value="1000$">
+              </div>
+              <div class="col-sm-8">
+                <span class="text-muted">Wallet Address:</span>
+                <a href="" class="wallet_address">19ZKM6JFvCiBQbqqHPzRDLGHpN6wkQnXDs</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="f11" class="control-label">3<sup>rd</sup> prize</label>
+            <div class="row">
+              <div class="col-sm-4">
+                <input type="text" id="f11" class="form-control" value="1000$" disabled>
+              </div>
+              <div class="col-sm-8">
+                <span class="text-muted">Wallet Address:</span>
+                <a href="" class="wallet_address">19ZKM6JFvCiBQbqqHPzRDLGHpN6wkQnXDs</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="f12" class="control-label">4<sup>th</sup> prize</label>
+            <div class="row">
+              <div class="col-sm-4">
+                <input type="text" id="f12" class="form-control" value="1000$" disabled>
+              </div>
+              <div class="col-sm-8">
+                <span class="text-muted">Wallet Address:</span>
+                <a href="" class="wallet_address">19ZKM6JFvCiBQbqqHPzRDLGHpN6wkQnXDs</a>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+
+        <!--<div class="form__submit">
+          <div class="row">
+            <div class="col-sm-6">
+              <p class="text-muted">Confirm fields: <a href="">Category</a></p>
+            </div>
+            <div class="col-sm-6 text-right">
+              <button type="button" class="btn">Publish Project</button>
+            </div>
+          </div>
+        </div>-->
+
+      </form>
+
+    </div>
+  </section>
+</article>
+
+<footer class="footer page__footer">
+  <div class="footer__bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-6 col-sm-6 text-right pull-right">
+          <div class="clearfix">
+            <ul class="social social--footer_alt">
+              <li><a href="https://lykke.com/" target="_blank"><i class="icon icon--lykke"></i></a></li>
+              <li><a href="https://www.facebook.com/groups/542506412568917/" target="_blank" class="social__item"><i class="icon icon--fb_simple"></i></a></li>
+              <li><a href="https://twitter.com/LykkeCity" target="_blank" class="social__item"><i class="icon icon--tw"></i></a></li>
+              <li><a href="http://instagram.com/lykkecity" target="_blank" class="social__item"><i class="icon icon--instagram"></i></a></li>
+              <li><a href="https://www.youtube.com/channel/UCmMYipGdKMF0kzfaE-PXsNQ" target="_blank" class="social__item"><i class="icon icon--youtube"></i></a></li>
+              <li><a href="https://www.linkedin.com/company/lykke-ag" target="_blank" class="social__item"><i class="icon icon--linkedin-icn"></i></a></li>
+              <li><a href="https://www.reddit.com/r/lykke/" target="_blank" class="social__item"><i class="icon icon--reddit"></i></a></li>
+              <li><a href="https://t.co/TmjMYnQD7T" target="_blank" class="social__item"><i class="icon icon--telegram"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-6 text-left">
+          <div class="footer__copy">&copy; Lykke 2016. All rights reserved
+            <span class="middot">&middot;</span>
+            <a href="">Terms of Use</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/vendor/jquery.min.js"></script>
+<script src="js/vendor/bootstrap.min.js"></script>
+<script src="js/vendor/fastclick.min.js"></script>
+<script src="js/functions.js"></script>
+
+<script src="js/vendor/moment.min.js"></script>
+<script src="js/vendor/bootstrap-datetimepicker.min.js"></script>
+
+<script>
+  // Только для страниц создания/редактирования
+  $('.header').addClass('header--static');
+
+  $('.datetimepicker').datetimepicker({
+//    debug: true,
+    format: 'DD.MM.YYYY',
+    icons: {
+      time: "icon--clock",
+      date: "icon--cal",
+      up: "icon--chevron-thin-up",
+      down: "icon--chevron-thin-down",
+      previous: "icon--chevron-thin-left",
+      next: "icon--chevron-thin-right"
+    }
+  });
+
+  $(function() {
+    var $fileuploadBtn = $('.fileupload__btn'),
+        $field = $fileuploadBtn.siblings('.fileupload__field'),
+        $notice = $fileuploadBtn.siblings('.fileupload__notice');
+
+    $fileuploadBtn.on('click', function() {
+      $field.click()
+
+      setTimeout(function() {
+        if ( $field.val() ) {
+          $notice.text($field.val().split('\\').pop())
+        }
+      }, 1);
+
+      $field.change(function() {
+        var files = [], fileArr, filename;
+        filename = $(this).val().split('\\').pop();
+        $notice.text( filename ).attr('title', filename)
+      });
+    })
+  });
+
+</script>
+
+</body>
+</html>
