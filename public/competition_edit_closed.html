@@ -108,7 +108,7 @@
                   </div>
                 </div>
                 <div class="col-md-9 text-right">
-                  <button type="button" class="btn pull-right">Update Project</button>
+                  <button type="button" class="btn pull-right" disabled>Update Project</button>
                   <div class="card__actions pull-right">
                     <a href="" class="action_link">Preview Project</a>
                   </div>
@@ -125,14 +125,14 @@
     <div class="container">
       <form class="form form--default form--competition_edit">
 
-        <div class="alert alert--yellow" role="alert">
+        <div class="alert alert--red" role="alert">
           <table>
             <tr>
               <td class="alert__icon">
-                <i class="icon icon--fail pull-left"><span class="path1"></span><span class="path2"></span><span class="path3"></span></i>
+                <i class="icon icon--cancel_round"></i>
               </td>
               <td>
-                <div class="alert__text">You cannot edit some fields, as the competition is under submissions.</div>
+                <div class="alert__text">Your project is closed because of disparity the Terms of Use. Please contact the Lykke Streams administrator</div>
               </td>
               <td class="alert__contact text-right">
                 <a href="#" class="link_contact">
@@ -184,7 +184,7 @@
             <div class="flow__item">
               <div class="flow__icon flow__icon--blue"><i class="icon icon--check_thin"></i></div>
               <div class="flow__content">
-                <div class="flow__title h4">Registration <!--<span class="text--blue">in process</span>--></div>
+                <div class="flow__title h4">Registration</div>
                 <div class="flow__actions">
                   <div class="form-group">
                     <div class="input-group date datetimepicker">
@@ -238,12 +238,10 @@
               <div class="flow__icon"><i class="icon icon--cancel"></i></div>
               <div class="flow__content">
                 <div class="flow__title h4">Voting
-                  <!--<span class="text--yellow">in process</span>-->
                   <div class="switcher">
                     <input id="ch1" type="checkbox" class="switcher__elem">
                     <label for="ch1" class="switcher__control"></label>
                   </div>
-
                 </div>
                 <div class="flow__actions">
                   <div class="form-group">
@@ -477,6 +475,40 @@
   </div>
 </footer>
 
+<!-- Modal -->
+<div class="modal modal--message fade" id="modal_question" tabindex="-1" role="dialog">
+
+  <div class="modal_valign">
+    <div class="modal_valign__row">
+      <div class="modal_valign__cell">
+
+        <div class="modal__dialog" role="document">
+          <div class="modal__content">
+            <button type="button" class="close visible-xs" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+            <div class="modal__header">
+              <div class="status_icon status_icon--blue"><img src="img/competition/question_icn.svg" alt=""></div>
+            </div>
+
+            <div class="modal__body">
+              <h3>Everything correct?</h3>
+              <div class="text">
+                <p>Please notice: you can’t change the project task, prize fund size, and reduce project deadlines after publication.</p>
+              </div>
+            </div>
+            <div class="modal__footer">
+              <button type="button" class="btn btn-block" data-dismiss="modal">Okay, Publish Project!</button>
+              <button type="button" class="btn btn--flat btn-block" data-dismiss="modal">No, Save as Draft</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
 <script src="js/vendor/jquery.min.js"></script>
 <script src="js/vendor/bootstrap.min.js"></script>
 <script src="js/vendor/fastclick.min.js"></script>
@@ -522,6 +554,10 @@
         $notice.text( filename ).attr('title', filename)
       });
     })
+  });
+
+  $(window).load(function(){
+    $('#modal_question').modal('show');
   });
 
 </script>

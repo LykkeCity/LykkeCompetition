@@ -108,9 +108,11 @@
                   </div>
                 </div>
                 <div class="col-md-9 text-right">
-                  <button type="button" class="btn pull-right">Update Project</button>
+                  <button type="button" class="btn pull-right">Update<span class="hidden-xs"> Project</span></button>
                   <div class="card__actions pull-right">
-                    <a href="" class="action_link">Preview Project</a>
+                    <a href="" class="action_link">Delete<span class="hidden-xs"> Project</span></a>
+                    <a href="" class="action_link">Write to Creator<span class="hidden-xs"> of Project</span></a>
+                    <a href="" class="action_link">Preview<span class="hidden-xs"> Project</span></a>
                   </div>
                 </div>
               </div>
@@ -125,32 +127,30 @@
     <div class="container">
       <form class="form form--default form--competition_edit">
 
-        <div class="alert alert--yellow" role="alert">
-          <table>
-            <tr>
-              <td class="alert__icon">
-                <i class="icon icon--fail pull-left"><span class="path1"></span><span class="path2"></span><span class="path3"></span></i>
-              </td>
-              <td>
-                <div class="alert__text">You cannot edit some fields, as the competition is under submissions.</div>
-              </td>
-              <td class="alert__contact text-right">
-                <a href="#" class="link_contact">
-                  <i class="icon icon--envelope"></i> Contact
-                </a>
-              </td>
-            </tr>
-          </table>
-        </div>
-
         <fieldset class="form_fieldset">
           <h3>Project Flow</h3>
 
+          <div class="form-group">
+            <label for="select1" class="control-label">Current status:</label>
+            <div class="select form-group" data-control="select">
+              <div class="select__value"><span class="_value">Submission</span></div>
+              <select id="select13" class="form-control select__elem">
+                <option>Submission</option>
+                <option>All2</option>
+              </select>
+            </div>
+          </div>
+
           <div class="flow flow--project">
             <div class="flow__item">
-              <div class="flow__icon flow__icon--blue"><i class="icon icon--check_thin"></i></div>
+              <div class="flow__icon"><i class="icon icon--cancel"></i></div>
               <div class="flow__content">
-                <div class="flow__title h4">Initiative</div>
+                <div class="flow__title h4">Initiative
+                  <div class="switcher">
+                    <input id="ch13" type="checkbox" class="switcher__elem">
+                    <label for="ch13" class="switcher__control"></label>
+                  </div>
+                </div>
                 <div class="flow__actions">
                   <div class="form-group">
                     <div class="input-group date datetimepicker">
@@ -184,7 +184,7 @@
             <div class="flow__item">
               <div class="flow__icon flow__icon--blue"><i class="icon icon--check_thin"></i></div>
               <div class="flow__content">
-                <div class="flow__title h4">Registration <!--<span class="text--blue">in process</span>--></div>
+                <div class="flow__title h4">Registration</div>
                 <div class="flow__actions">
                   <div class="form-group">
                     <div class="input-group date datetimepicker">
@@ -238,12 +238,10 @@
               <div class="flow__icon"><i class="icon icon--cancel"></i></div>
               <div class="flow__content">
                 <div class="flow__title h4">Voting
-                  <!--<span class="text--yellow">in process</span>-->
                   <div class="switcher">
                     <input id="ch1" type="checkbox" class="switcher__elem">
                     <label for="ch1" class="switcher__control"></label>
                   </div>
-
                 </div>
                 <div class="flow__actions">
                   <div class="form-group">
@@ -270,15 +268,15 @@
 
           <div class="form-group">
             <label for="f1" class="control-label">Project name</label>
-            <input type="text" id="f1" class="form-control" value="High Frequency Trading Risk Management Tools Based on Scaling Law" disabled>
+            <input type="text" id="f1" class="form-control" value="High Frequency Trading Risk Management Tools Based on Scaling Law">
           </div>
 
           <div class="row">
             <div class="col-sm-4">
               <label for="select1" class="control-label">Category:</label>
-              <div class="select form-group disabled" data-control="select">
+              <div class="select form-group" data-control="select">
                 <div class="select__value"><span class="_value">All</span></div>
-                <select id="select1" class="form-control select__elem" disabled>
+                <select id="select1" class="form-control select__elem">
                   <option>All</option>
                   <option>All2</option>
                 </select>
@@ -287,19 +285,19 @@
             <div class="col-sm-8">
               <div class="form-group">
                 <label for="f4" class="control-label">Tags (comma separated)</label>
-                <input type="text" id="f4" class="form-control" disabled value="Java, Futures, Lending, Margin trading, Swaps">
+                <input type="text" id="f4" class="form-control" value="Java, Futures, Lending, Margin trading, Swaps">
               </div>
             </div>
           </div>
 
           <div class="form-group">
             <label for="f21" class="control-label">Abstract</label>
-            <textarea name="" id="f21" class="form-control" disabled></textarea>
+            <textarea name="" id="f21" class="form-control"></textarea>
           </div>
 
           <div class="form-group">
             <label for="f2" class="control-label">Describe the project</label>
-            <textarea name="" id="f2" style="height: 400px;" class="form-control" disabled></textarea>
+            <textarea name="" id="f2" style="height: 400px;" class="form-control"></textarea>
           </div>
         </fieldset>
 
@@ -360,7 +358,7 @@
                   </div>
                   <div class="col-xs-11 col-sm-7">
                     <div class="form-group">
-                      <input type="text" id="f43" class="form-control" value="https://github.com/LykkeCity/CompetitionPlatform" disabled>
+                      <input type="text" id="f43" class="form-control" value="https://github.com/LykkeCity/CompetitionPlatform">
                     </div>
                   </div>
                   <div class="col-xs-1">
@@ -382,7 +380,7 @@
             <label for="f9" class="control-label">1<sup>st</sup> prize</label>
             <div class="row">
               <div class="col-sm-4">
-                <input type="text" id="f9" class="form-control" value="2000$" disabled>
+                <input type="text" id="f9" class="form-control" value="2000$">
               </div>
               <div class="col-sm-8">
                 <span class="text-muted">Wallet Address:</span>
@@ -395,7 +393,7 @@
             <label for="f10" class="control-label">2<sup>nd</sup> prize</label>
             <div class="row">
               <div class="col-sm-4">
-                <input type="text" id="f10" class="form-control" value="1000$" disabled>
+                <input type="text" id="f10" class="form-control" value="1000$">
               </div>
               <div class="col-sm-8">
                 <span class="text-muted">Wallet Address:</span>

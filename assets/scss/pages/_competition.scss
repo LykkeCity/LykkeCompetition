@@ -453,6 +453,8 @@
 
 .status_icon {
   text-align: center;
+  line-height: 60px;
+  @include rem(line-height, 62px);
 
   &--error {
     img {
@@ -523,6 +525,11 @@
       @include rem(margin-top, 7px)
     }
   }
+}
+
+.action_group {
+  display: inline-block;
+  vertical-align: middle;
 }
 
 @media all and (max-width: $screen-mobile) {
