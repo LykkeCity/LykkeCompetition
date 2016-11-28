@@ -258,13 +258,22 @@
               </div>
             </div>
             <div role="tabpanel" class="tab-pane" id="comments">
+              <div class="alert alert--message" role="alert">
+                <table>
+                  <tr>
+                    <td>
+                      <div class="alert__text">Please <a href="">login</a> to enter your comment</div>
+                    </td>
+                  </tr>
+                </table>
+              </div>
               <form action="" class="form form--message">
                 <div class="message_card message_card--form">
                   <div class="user_badge user_badge--small">
-                    <div class="user_badge__img"><a href=""><img src="http://lorempixel.com/30/30/" alt=""></a></div>
+                    <div class="user_badge__img"><img src="http://lorempixel.com/30/30/" alt=""></div>
                     <div class="user_badge__message">
                       <div class="message_card__inner">
-                        <div class="user_badge__title"><a href="">Kaylee Harper</a></div>
+                        <div class="user_badge__title">Kaylee Harper</div>
                         <textarea id="msg" placeholder="Enter your comment here..." class="form-control form-control--textarea message_card__area"></textarea>
                       </div>
                     </div>
@@ -274,7 +283,11 @@
                   <div class="row">
                     <div class="col-sm-6">
                       <div class="checkbox">
-                        <label for="ch1" class="checkbox__label"><input type="checkbox" id="ch1" class="checkbox__control"> Notify me of new comments via email</label>
+                        <div class="switcher">
+                          <input id="ch13" type="checkbox" class="switcher__elem">
+                          <label for="ch13" class="switcher__control"></label>
+                        </div>
+                        <label for="ch13" class="control-label">Notify me of new comments via email</label>
                       </div>
                     </div>
                     <div class="col-sm-6 text-right">
@@ -295,13 +308,20 @@
                           <p>
                             However, they are not as well-tested as the C++ version, which can pose a risk. For example MtGox repeatedly run into difficulties with their own custom-built PHP version of the Bitcoin protocol.
                           </p>
-                          <button type="button" class="btn btn--default">Reply</button>
+                          <!-- выводить для админа  -->
+                          <div class="card__actions">
+                            <a href="" class="action_link">Reply</a>
+                            &middot;
+                            <a href="" class="action_link">Delete</a>
+                            &middot;
+                            <a href="" class="action_link">Spam</a>
+                          </div>
 
-                          <textarea name="" id="" cols="30" rows="10" class="form-control message_card__reply form-control--textarea"></textarea>
+                         <!-- <textarea name="" id="" cols="30" rows="10" class="form-control message_card__reply form-control&#45;&#45;textarea"></textarea>
 
                           <div class="text-right">
                             <button type="button" class="btn">Send</button>
-                          </div>
+                          </div>-->
 
                         </div>
                       </div>
@@ -323,9 +343,36 @@
                     </div>
                   </div>
                 </div>
+
+                <div class="message_card">
+                  <div class="user_badge user_badge--small">
+                    <div class="user_badge__img"><a href=""><img src="http://lorempixel.com/30/30/" alt=""></a></div>
+                    <div class="user_badge__message">
+                      <div class="message_card__inner">
+                        <div class="user_badge__title"><a href="">Kaylee Harper</a> <span class="message_card__date">&middot; 9:46 PM April 9, 2016</span></div>
+                        <div class="message_card__message">
+                          <p>
+                            However, they are not as well-tested as the C++ version, which can pose a risk. For example MtGox repeatedly run into difficulties with their own custom-built PHP version of the Bitcoin protocol.
+                          </p>
+                          <!-- выводить для админа -->
+                          <div class="card__actions">
+                            <a href="" class="action_link">Reply</a>
+                            &middot;
+                            <a href="" class="action_link">Delete</a>
+                            &middot;
+                            <a href="" class="action_link">Spam</a>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
 
-              <button type="button" class="btn btn--default btn-block btn-md">Show all comments</button>
+              <div class="show_more">
+                <button type="button" class="btn btn-md">Show more</button>
+              </div>
 
             </div>
             <div role="tabpanel" class="tab-pane" id="results">
@@ -345,7 +392,7 @@
                     <th class="board_result text-center">Result</th>
                     <th class="board_score text-center">Score</th>
                     <th class="board_vote text-center">Vote</th>
-                    <th class="board_action"></th>
+                    <th class="board_action">Prize</th>
                   </tr>
                   <tr>
                     <td class="board_name">
@@ -358,7 +405,9 @@
                     <td class="board_result text-center"><a href="">Vew</a></td>
                     <td class="board_score text-center">50/100</td>
                     <td class="board_vote text-center">7</td>
-                    <td class="board_action"><button type="button" class="circle_voting_btn _vote_plus">+1</button></td>
+                    <td class="board_action">
+                      <button type="button" class="btn btn-plus dropdown__control">+</button>
+                    </td>
                   </tr>
                   <tr>
                     <td class="board_name">
@@ -371,7 +420,7 @@
                     <td class="board_result text-center"><a href="">Vew</a></td>
                     <td class="board_score text-center">50/100</td>
                     <td class="board_vote text-center">7</td>
-                    <td class="board_action"><button type="button" class="circle_voting_btn _vote_plus">+1</button></td>
+                    <td class="board_action"><button type="button" class="circle_voting_btn _vote_plus">1</button></td>
                   </tr>
                   <tr>
                     <td class="board_name">
@@ -384,7 +433,7 @@
                     <td class="board_result text-center"><a href="">Vew</a></td>
                     <td class="board_score text-center">50/100</td>
                     <td class="board_vote text-center">7</td>
-                    <td class="board_action"><button type="button" class="circle_voting_btn _vote_plus">+1</button></td>
+                    <td class="board_action"><button type="button" class="circle_voting_btn _vote_plus">2</button></td>
                   </tr>
                 </table>
               </div>
@@ -771,10 +820,10 @@
 
   $('#msg')
     .bind('blur', function(){
-      if (!$(this).val()) {
-        $(this).parents('.form--message').removeClass("focused");
-        $(this).parents('.message_card__inner').removeAttr('style')
-      }
+        if (!$(this).val()) {
+            $('#msg').parents('.form--message').removeClass("focused");
+            $('#msg').parents('.message_card__inner').removeAttr('style');
+        }
     })
     .bind('focus', function(){ $(this).parents('.form--message').addClass('focused'); })
     .keyup(function(){
@@ -800,10 +849,6 @@
     clipboard.destroy();
   });
 
-
-  $(window).load(function(){
-    $('#modal_auth_message').modal('show');
-  });
 
 </script>
 
