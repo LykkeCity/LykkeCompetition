@@ -816,7 +816,7 @@
         @include rem(margin, 0 15px 0 0 !important);
       }
     }
-    &--board:not(.table--board_results) {
+    &--board:not(.table--board_results):not(.table--participants) {
       tr {
         display: block;
 
@@ -881,5 +881,11 @@
         }
       }
     }
+  }
+}
+
+.content__left .tab-content {
+  @media all and (min-width: $screen-landscape + 1) {
+    @include rem(min-height, 700px)
   }
 }
