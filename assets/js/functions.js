@@ -120,3 +120,10 @@ if (url.match('#')) {
 $('.nav-tabs a').on('shown.bs.tab', function (e) {
   window.location.hash = prefix + e.target.hash.split('#')[1] ;
 })
+
+$(function() {
+  $('[data-toggle="popover"]').popover({
+    container: 'body',
+    html: true
+  })
+})

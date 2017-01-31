@@ -108,8 +108,9 @@
 
       <div class="project_links">
         <div class="row">
-          <div class="col-xs-8 project_links__share">
+          <div class="col-xs-5 col-sm-6 col-md-7 project_links__share">
             <div class="card__actions">
+              <span class="action_text visible-xs-inline-block visible-sm-inline-block">Share:</span>
               <a href="" class="action_link"><i class="icon icon--tw"></i> <span class="hidden-xs hidden-sm">Tweet</span></a>
               <a href="" class="action_link"><i class="icon icon--fb_simple"></i> <span class="hidden-xs hidden-sm">Share</span></a>
               <a href="" class="action_link"><i class="icon icon--linkedin-icn"></i> <span class="hidden-xs hidden-sm">Share</span></a>
@@ -117,9 +118,16 @@
               <button type="button" class="action_link _copy_link" aria-label="Copied!" data-clipboard-text="lykke.com"><i class="icon icon--link"></i> <span class="hidden-xs hidden-sm">Copy link</span></button>
             </div>
           </div>
-          <div class="col-xs-4 project_links__actions">
+          <div class="col-xs-7 col-sm-6 col-md-5 project_links__actions">
             <div class="card__actions text-right">
-              <button type="button" class="action_link action_follow"><i class="icon icon--follow"></i> <span class="hidden-xs hidden-sm" data-toggle-text="Unfollow">Follow</span></button>
+              <a href="" class="action_link">
+                <img src="img/competition/wallet_icn.svg" width="20" alt="">
+                Project’s Wallet
+              </a>
+              <a href="" class="action_link">
+                <i class="icon icon--finance"></i> Finance
+              </a>
+              <button type="button" class="action_link action_follow"><i class="icon icon--follow"></i> <span data-toggle-text="Unfollow">Follow</span></button>
             </div>
           </div>
         </div>
@@ -172,7 +180,7 @@
                 </div>
                 <div class="col-xs-6 text-right">
                   <ul class="progress__info">
-                    <li><i class="icon icon--deadline_fill"></i> 30.04.2016 <span class="hidden-xs hidden-sm">(ends in 10 days)</span></li>
+                    <li><i class="icon icon--deadline_fill"></i> 30.04.2016 (ends in 10 days)</li>
                   </ul>
                 </div>
               </div>
@@ -260,15 +268,13 @@
         <!-- MAIN CONTENT -->
         <div class="col-xs-12 col-sm-8 content__left">
 
-          <div class="nav_scroll">
-            <ul class="nav nav-tabs" role="tablist">
-              <li role="presentation" class="active"><a href="#info" aria-controls="info" role="tab" data-toggle="tab">Info</a></li>
-              <li role="presentation"><a href="#participants" aria-controls="participants" role="tab" data-toggle="tab">Participants <sup>7</sup></a></li>
-              <li role="presentation"><a href="#comments" aria-controls="comments" role="tab" data-toggle="tab">Comments <sup>32</sup></a></li>
-              <li role="presentation"><a href="#results" aria-controls="results" role="tab" data-toggle="tab">Results</a></li>
-              <li role="presentation"><a href="#winner" aria-controls="winner" role="tab" data-toggle="tab">Winners <sup>4</sup></a></li>
-            </ul>
-          </div>
+          <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#info" aria-controls="info" role="tab" data-toggle="tab">Info</a></li>
+            <li role="presentation"><a href="#participants" aria-controls="participants" role="tab" data-toggle="tab">Participants <sup>7</sup></a></li>
+            <li role="presentation"><a href="#comments" aria-controls="comments" role="tab" data-toggle="tab">Comments <sup>32</sup></a></li>
+            <li role="presentation"><a href="#results" aria-controls="results" role="tab" data-toggle="tab">Results</a></li>
+            <li role="presentation"><a href="#winner" aria-controls="winner" role="tab" data-toggle="tab">Winners <sup>4</sup></a></li>
+          </ul>
 
           <div class="tab-content">
             <div role="tabpanel" class="tab-pane active" id="info">
@@ -464,7 +470,7 @@
             </div>
             <div role="tabpanel" class="tab-pane" id="results">
               <div class="banner banner--results">
-                <img src="img/competition/winner-voting-icn.svg" class="pull-left" width="80" alt="banner-coin">
+                <img src="img/competition/banner-coin.svg" class="pull-right" width="88" alt="banner-coin">
                 <div class="banner__content">
                   <h4>Help us determine the winner!</h4>
                   <p>Check the completed task, participants of the contest and choose the best result. You can cast votes for the various participants.</p>
@@ -473,19 +479,11 @@
 
               <div class="table-container">
                 <table class="table table--board">
-                  <tr class="hidden-xs hidden-sm">
+                  <tr>
                     <th class="board_name">Username</th>
-                    <th class="board_date">Reg. and Subm. Date</th>
+                    <th class="board_date">reg. and Subm. Date</th>
                     <th class="board_result text-center">Result</th>
-                    <th class="board_score text-center">Score
-                      <div class="btn btn--icon"
-                           data-toggle="popover"
-                           data-trigger="hover"
-                           data-placement="bottom"
-                           data-content="The prize winners are determined using the formula: participant’s grade =  (number of experts’ votes) x 0.3 + (author’s vote) x 0.1 + (number of sponsor’s votes) x 0.4 + (number of Lykke community votes) x 0.2<br><br>The author of the competition has a right 1) to disqualify a participant, if his/her work does not meet the project’s requirements and 2) not to award prizes (several or all of them), if the submitted works do not meet the project’s goal.">
-                        <i class="icon icon--help_outline"></i>
-                      </div>
-                    </th>
+                    <th class="board_score text-center">Score</th>
                     <th class="board_vote text-center">Vote</th>
                     <th class="board_action">Prize</th>
                   </tr>
@@ -496,41 +494,23 @@
                         <div class="user_badge__info">Kaylee Harper</div>
                       </div>
                     </td>
-                    <td class="board_date">
-                      <div class="row board_mobile">
-                        <div class="board_mobile__title visible-xs visible-sm col-xs-6">Reg. and Subm. Date</div>
-                        <div class="board_mobile__content col-xs-6 col-md-12">Apr 25 – May 5, 2016</div>
-                      </div>
-                    </td>
-                    <td class="board_result text-center">
-                      <div class="row board_mobile">
-                        <div class="board_mobile__title visible-xs visible-sm col-xs-6">Result</div>
-                        <div class="board_mobile__content col-xs-6 col-md-12"><a href="">Vew</a></div>
-                      </div>
-                    </td>
-                    <td class="board_score text-center">
-                      <div class="row board_mobile">
-                        <div class="board_mobile__title visible-xs visible-sm col-xs-6">
-                          Score
-                          <div class="btn btn--icon"
-                               data-toggle="popover"
-                               data-trigger="hover"
-                               data-placement="bottom"
-                               data-content="The prize winners are determined using the formula: participant’s grade =  (number of experts’ votes) x 0.3 + (author’s vote) x 0.1 + (number of sponsor’s votes) x 0.4 + (number of Lykke community votes) x 0.2<br><br>The author of the competition has a right 1) to disqualify a participant, if his/her work does not meet the project’s requirements and 2) not to award prizes (several or all of them), if the submitted works do not meet the project’s goal.">
-                            <i class="icon icon--help_outline"></i>
-                          </div>
-                        </div>
-                        <div class="board_mobile__content col-xs-6 col-md-12">50/100</div>
-                      </div>
-                    </td>
-                    <td class="board_vote text-center">
-                      <div class="row board_mobile">
-                        <div class="board_mobile__title visible-xs visible-sm col-xs-6">Vote</div>
-                        <div class="board_mobile__content col-xs-6 col-md-12">7</div>
-                      </div>
-                    </td>
+                    <td class="board_date">Apr 25 – May 5, 2016</td>
+                    <td class="board_result text-center"><a href="">Vew</a></td>
+                    <td class="board_score text-center">50/100</td>
+                    <td class="board_vote text-center">7</td>
                     <td class="board_action">
-                      <button type="button" class="circle_voting_btn _vote_plus">+1 <span class="visible-small">Vote</span></button>
+                      <div class="dropdown">
+                        <button type="button" aria-haspopup="true" aria-expanded="false" class="btn btn-plus dropdown-toggle" data-toggle="dropdown">+</button>
+                        <div class="dropdown-menu dropdown-menu--tiny">
+                          <ul class="dropdown-list">
+                            <li><a href="">1st prize</a></li>
+                            <li><a href="">2nd prize</a></li>
+                            <li><a href="">3rd prize</a></li>
+                            <li><a href="">4th prize</a></li>
+                            <li><a href="">No prize</a></li>
+                          </ul>
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -540,41 +520,23 @@
                         <div class="user_badge__info">Kaylee Harper</div>
                       </div>
                     </td>
-                    <td class="board_date">
-                      <div class="row board_mobile">
-                        <div class="board_mobile__title visible-xs visible-sm col-xs-6">Reg. and Subm. Date</div>
-                        <div class="board_mobile__content col-xs-6 col-md-12">Apr 25 – May 5, 2016</div>
-                      </div>
-                    </td>
-                    <td class="board_result text-center">
-                      <div class="row board_mobile">
-                        <div class="board_mobile__title visible-xs visible-sm col-xs-6">Result</div>
-                        <div class="board_mobile__content col-xs-6 col-md-12"><a href="">Vew</a></div>
-                      </div>
-                    </td>
-                    <td class="board_score text-center">
-                      <div class="row board_mobile">
-                        <div class="board_mobile__title visible-xs visible-sm col-xs-6">
-                          Score
-                          <div class="btn btn--icon"
-                               data-toggle="popover"
-                               data-trigger="hover"
-                               data-placement="bottom"
-                               data-content="The prize winners are determined using the formula: participant’s grade =  (number of experts’ votes) x 0.3 + (author’s vote) x 0.1 + (number of sponsor’s votes) x 0.4 + (number of Lykke community votes) x 0.2<br><br>The author of the competition has a right 1) to disqualify a participant, if his/her work does not meet the project’s requirements and 2) not to award prizes (several or all of them), if the submitted works do not meet the project’s goal.">
-                            <i class="icon icon--help_outline"></i>
-                          </div>
-                        </div>
-                        <div class="board_mobile__content col-xs-6 col-md-12">50/100</div>
-                      </div>
-                    </td>
-                    <td class="board_vote text-center">
-                      <div class="row board_mobile">
-                        <div class="board_mobile__title visible-xs visible-sm col-xs-6">Vote</div>
-                        <div class="board_mobile__content col-xs-6 col-md-12">7</div>
-                      </div>
-                    </td>
+                    <td class="board_date">Apr 25 – May 5, 2016</td>
+                    <td class="board_result text-center"><a href="">Vew</a></td>
+                    <td class="board_score text-center">50/100</td>
+                    <td class="board_vote text-center">7</td>
                     <td class="board_action">
-                      <button type="button" class="circle_voting_btn _vote_plus">+1 <span class="visible-small">Vote</span></button>
+                      <div class="dropdown">
+                        <button type="button" aria-haspopup="true" aria-expanded="false" class="circle_voting_btn _vote_plus dropdown-toggle" data-toggle="dropdown">1</button>
+                        <div class="dropdown-menu dropdown-menu--tiny">
+                          <ul class="dropdown-list">
+                            <li><a href="">1st prize</a></li>
+                            <li><a href="">2nd prize</a></li>
+                            <li><a href="">3rd prize</a></li>
+                            <li><a href="">4th prize</a></li>
+                            <li><a href="">No prize</a></li>
+                          </ul>
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -584,41 +546,23 @@
                         <div class="user_badge__info">Kaylee Harper</div>
                       </div>
                     </td>
-                    <td class="board_date">
-                      <div class="row board_mobile">
-                        <div class="board_mobile__title visible-xs visible-sm col-xs-6">Reg. and Subm. Date</div>
-                        <div class="board_mobile__content col-xs-6 col-md-12">Apr 25 – May 5, 2016</div>
-                      </div>
-                    </td>
-                    <td class="board_result text-center">
-                      <div class="row board_mobile">
-                        <div class="board_mobile__title visible-xs visible-sm col-xs-6">Result</div>
-                        <div class="board_mobile__content col-xs-6 col-md-12"><a href="">Vew</a></div>
-                      </div>
-                    </td>
-                    <td class="board_score text-center">
-                      <div class="row board_mobile">
-                        <div class="board_mobile__title visible-xs visible-sm col-xs-6">
-                          Score
-                          <div class="btn btn--icon"
-                               data-toggle="popover"
-                               data-trigger="hover"
-                               data-placement="bottom"
-                               data-content="The prize winners are determined using the formula: participant’s grade =  (number of experts’ votes) x 0.3 + (author’s vote) x 0.1 + (number of sponsor’s votes) x 0.4 + (number of Lykke community votes) x 0.2<br><br>The author of the competition has a right 1) to disqualify a participant, if his/her work does not meet the project’s requirements and 2) not to award prizes (several or all of them), if the submitted works do not meet the project’s goal.">
-                            <i class="icon icon--help_outline"></i>
-                          </div>
-                        </div>
-                        <div class="board_mobile__content col-xs-6 col-md-12">50/100</div>
-                      </div>
-                    </td>
-                    <td class="board_vote text-center">
-                      <div class="row board_mobile">
-                        <div class="board_mobile__title visible-xs visible-sm col-xs-6">Vote</div>
-                        <div class="board_mobile__content col-xs-6 col-md-12">7</div>
-                      </div>
-                    </td>
+                    <td class="board_date">Apr 25 – May 5, 2016</td>
+                    <td class="board_result text-center"><a href="">Vew</a></td>
+                    <td class="board_score text-center">50/100</td>
+                    <td class="board_vote text-center">7</td>
                     <td class="board_action">
-                      <button type="button" class="circle_voting_btn _vote_plus">+1 <span class="visible-small">Vote</span></button>
+                      <div class="dropdown">
+                        <button type="button" aria-haspopup="true" aria-expanded="false" class="circle_voting_btn _vote_plus dropdown-toggle" data-toggle="dropdown">2</button>
+                        <div class="dropdown-menu dropdown-menu--tiny">
+                          <ul class="dropdown-list">
+                            <li><a href="">1st prize</a></li>
+                            <li><a href="">2nd prize</a></li>
+                            <li><a href="">3rd prize</a></li>
+                            <li><a href="">4th prize</a></li>
+                            <li><a href="">No prize</a></li>
+                          </ul>
+                        </div>
+                      </div>
                     </td>
                   </tr>
                 </table>
@@ -942,12 +886,12 @@
   });
 
   $('#msg')
-/*    .bind('blur', function(){
+    .bind('blur', function(){
         if (!$(this).val()) {
             $('#msg').parents('.form--message').removeClass("focused");
             $('#msg').parents('.message_card__inner').removeAttr('style');
         }
-    })*/
+    })
     .bind('focus', function(){ $(this).parents('.form--message').addClass('focused'); })
     .keyup(function(){
       if ($(this).val()) { $(this).parents('.form--message').addClass('with_value'); }
@@ -974,22 +918,6 @@
 
 
 </script>
-
-
-<!--
-<div class="dropdown">
-  <button type="button" aria-haspopup="true" aria-expanded="false" class="btn btn-plus dropdown-toggle" data-toggle="dropdown">+</button>
-  <div class="dropdown-menu dropdown-menu--tiny">
-    <ul class="dropdown-list">
-      <li><a href="">1st prize</a></li>
-      <li><a href="">2nd prize</a></li>
-      <li><a href="">3rd prize</a></li>
-      <li><a href="">4th prize</a></li>
-      <li><a href="">No prize</a></li>
-    </ul>
-  </div>
-</div>
--->
 
 </body>
 </html>

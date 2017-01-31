@@ -385,7 +385,7 @@
     .user_badge {
       @include rem(margin-top, 11px);
       @include rem(margin-bottom, 25px);
-      @include rem(min-height, 90px);
+      @include rem(min-height, 82px);
     }
   }
 }
@@ -404,13 +404,35 @@
   line-height: normal;
   font-weight: $fw-semi;
 
-  @include rem(width, 30px);
-  @include rem(height, 30px);
+  @include rem(width, 32px);
+  @include rem(height, 32px);
   @include transition(all .2s ease);
 
   &.active, &:hover {
     background: $primary;
     color: #fff;
+  }
+
+  .visible-small {
+    display: none!important;
+  }
+
+  @media all and (max-width: $screen-tablet) {
+    white-space: nowrap;
+    width: 80px;
+    height: 28px;
+    padding-top: 3px;
+    font-size: 13px;
+
+    .visible-small {
+      display: inline !important;
+    }
+
+    &.active {
+      .visible-small {
+        display: none !important;
+      }
+    }
   }
 }
 
@@ -449,35 +471,8 @@
 
 @media (max-width: $screen-mobile) {
   .project_links {
-    border-bottom: 0;
-
-    &__share, &__actions {
-      width: 100%;
-    }
-
-    &__actions {
-      .card__actions {
-        padding-top: 20px;
-
-        .action_link {
-          img, .icon {
-            display: block;
-            margin: 0 auto;
-            text-align: center;
-            margin-bottom: 5px;
-            line-height: 20px;
-            height: 20px;
-          }
-        }
-      }
-    }
-
-    .card__actions {
-      text-align: left !important;
-      border-bottom: 1px solid #EAEDEF;
-      padding-bottom: 20px;
-    }
   }
+
   .progress {
     @include rem(margin, 20px 0);
 
@@ -492,6 +487,8 @@
     }
 
     &__info {
+      padding-top: 0;
+
       @include rem(font-size, 18px);
     }
   }
@@ -715,6 +712,15 @@
         }
       }
 
+      th {
+        .btn--icon {
+          padding: 0;
+          margin-left: 4px;
+          margin-top: -2px;
+          margin-bottom: -2px;
+        }
+      }
+
       td, th {
         line-height: normal;
 
@@ -831,42 +837,136 @@
         @include rem(margin, 0 15px 0 0 !important);
       }
     }
+  }
+
+  @media all and (max-width: $screen-tablet) {
     &--board:not(.table--board_results):not(.table--participants) {
-      tr {
+      tr, td {
         display: block;
+      }
+      
+      tr {
+        position: relative;
+        border: 0;
+        margin-bottom: 15px;
 
-        @include clearfix;
-
-        th {
-          @include rem(line-height, 16px !important);
-        }
-
-        td, th {
-          display: block;
-          float: left;
-
-          @include rem(height, 50px);
+        td {
+          padding: 6px 0 6px 49px;
+          border: 0;
         }
       }
 
-      .board_name,
-      .board_date{
-        width: 50% !important;
+      .board_mobile {
+        text-align: left;
+        line-height: 22px;
+        letter-spacing: normal;
+        color: #3f4d60;
+
+        &__title {
+          font-size: 16px;
+          line-height: 22px;
+          color: #333333;
+          font-weight: $fw-semi;
+        }
+
+        .btn--icon {
+          margin: -8px 0;
+        }
       }
 
-      .board_date {
-        @include rem(line-height, 30px);
+      .user_badge--small {
+        .user_badge__info,
+        .user_badge__message {
+          padding-top: 0;
+        }
+
+        .user_badge__img {
+          width: 36px;
+          height: 36px;
+          margin-right: 13px;
+          position: relative;
+          overflow: visible;
+
+          &:after {
+            content: '';
+            position: absolute;
+            top: 100%;
+            margin-top: 4px;
+            height: 20px;
+            background: #fff;
+            width: 49px;
+            left: 0;
+          }
+        }
       }
 
-      .board_result,
-      .board_score,
-      .board_vote,
       .board_action {
-        width: 25%;
-        border-bottom-width: 4px;
-        text-align: center !important;
+        border: 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 10px 0;
+      }
 
-        @include rem(line-height, 30px);
+      .board_name {
+        font-weight: 600;
+        font-style: normal;
+        line-height: 2.31;
+        letter-spacing: normal;
+        color: #333333;
+        padding-left: 0;
+        padding-right: 90px;
+        width: 100%;
+        border-bottom: solid 1px #ebedef;
+        margin-bottom: 8px;
+      }
+    }
+  }
+
+  @media all and (max-width: $screen-landscape) {
+    &--board:not(.table--board_results):not(.table--participants) {
+
+      .board_mobile {
+        font-size: 13px;
+        line-height: 18px;
+
+        &__title {
+          font-size: 10px;
+          line-height: 18px;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+        }
+
+        .board_name {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+
+  @media all and (max-width: $screen-mobile-tiny) {
+    &--board:not(.table--board_results):not(.table--participants) {
+      .user_badge--small {
+        .user_badge__info,
+        .user_badge__message {
+          padding-top: 2px;
+        }
+      }
+    }
+  }
+
+  @media all and (max-width: 330px) {
+    &--board:not(.table--board_results):not(.table--participants) {
+      .user_badge--small {
+        .user_badge__img {
+          display: none;
+        }
+      }
+
+      tr {
+        td {
+          padding-left: 0;
+        }
       }
     }
   }
@@ -874,18 +974,41 @@
 
 .banner {
   &--results {
-    background: #f5f6f7;
+    background: #fff;
     border-radius: 3px;
+    padding: 0;
 
-    @include rem(padding, 20px 22px);
-    @include rem(margin-bottom, 40px);
+    //@include rem(padding, 20px 22px);
+    @include rem(margin-bottom, 60px);
 
     p:last-of-type, h4 {
       margin-bottom: 0;
     }
 
     img {
-      @include rem(margin-left, 20px);
+      @include rem(margin-right, 26px);
+
+      &.pull-right {
+        @include rem(margin-right, 0);
+        @include rem(margin-left, 20px);
+      }
+    }
+
+    h4 {
+      text-transform: none;
+      letter-spacing: 0;
+
+      @include rem(font-size, 21px);
+    }
+
+    p {
+      line-height: 1.67;
+
+      @include rem(font-size, 18px);
+    }
+    
+    .banner__content {
+      overflow: hidden;
     }
 
     .table-responsive {
@@ -1010,5 +1133,69 @@
       content: "\e945";
       color: $yellow;
     }
+  }
+}
+
+.popover {
+  white-space: normal;
+  max-width: 370px;
+  text-align: left;
+}
+
+.popover-content {
+  @include rem(padding, 20px);
+}
+
+.nav_scroll {
+  overflow: hidden;
+  border-bottom: 1px solid #e1e1e1;
+
+  @include rem(height, 50px);
+  @include rem(margin-bottom, 44px);
+
+  .nav-tabs {
+    margin-bottom: 0 !important;
+    font-size: 0;
+    overflow: hidden;
+    overflow-x: auto;
+    padding-bottom: 20px;
+    border-bottom: 0;
+    width: auto;
+    display: block;
+    white-space: nowrap;
+
+
+    > li {
+      float: none;
+      display: inline-block;
+      vertical-align: top;
+    }
+  }
+
+  @media (max-width: $screen-landscape) {
+    margin-left: -30px;
+    margin-right: -30px;
+
+    .nav-tabs {
+      padding-left: 14px !important;
+      padding-right: 30px !important;
+    }
+  }
+
+  @media (max-width: $screen-mobile) {
+    margin-left: -15px;
+    margin-right: -15px;
+
+    .nav-tabs {
+      padding-left: 10px !important;
+      padding-right: 15px !important;
+    }
+  }
+}
+
+.board_action {
+  .dropdown-menu:not(.bootstrap-datetimepicker-widget) {
+    @include rem(margin-left, -60px);
+    @include rem(width, 120px);
   }
 }
