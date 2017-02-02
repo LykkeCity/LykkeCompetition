@@ -76,7 +76,7 @@
 
   &__value {
     color: $secondary;
-    font-weight: $fw-light;
+    font-weight: $fw-thin;
 
     @include rem(font-size, 40px);
   }
@@ -103,6 +103,15 @@
     text-align: center;
 
     @include rem(margin-bottom, 20px);
+
+    &__value {
+      font-size: 36px;
+      line-height: 50px;
+    }
+
+    &__title {
+      margin-top: 2px;
+    }
   }
 }
 
@@ -385,7 +394,7 @@
     .user_badge {
       @include rem(margin-top, 11px);
       @include rem(margin-bottom, 25px);
-      @include rem(min-height, 82px);
+      @include rem(min-height, 86px);
     }
   }
 }
@@ -403,7 +412,9 @@
   text-align: center;
   line-height: normal;
   font-weight: $fw-semi;
+  position: relative;
 
+  @include rem(font-size, 16px);
   @include rem(width, 32px);
   @include rem(height, 32px);
   @include transition(all .2s ease);
@@ -411,6 +422,31 @@
   &.active, &:hover {
     background: $primary;
     color: #fff;
+  }
+
+  &.active {
+    &:active {
+      @include transform(scale(.9));
+    }
+
+    &:after {
+      @include animation(scale .5s);
+    }
+  }
+
+  &:after {
+    content: '';
+    pointer-events: none;
+    background: rgba($primary, .4);
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    border-radius: 100px;
+    z-index: -1;
+    opacity: 0;
+
+    @include rem(width, 32px);
+    @include rem(height, 32px);
   }
 
   .visible-small {
@@ -421,16 +457,25 @@
     white-space: nowrap;
     width: 80px;
     height: 28px;
-    padding-top: 3px;
+    padding-top: 4px;
     font-size: 13px;
 
     .visible-small {
-      display: inline !important;
+      position: relative;
+      display: inline-block !important;
+      vertical-align: middle;
+      width: 27px;
+      overflow: hidden;
+
+      @include transition(width .1s ease, margin .1s ease);
     }
 
     &.active {
+      width: 28px;
+
       .visible-small {
-        display: none !important;
+        width: 0;
+        margin: 0;
       }
     }
   }
@@ -465,6 +510,8 @@
   }
 
   .small_desc {
+    font-size: 13px;
+
     @include rem(margin-top, 30px);
   }
 }
@@ -486,6 +533,10 @@
       }
     }
 
+    &__content {
+      padding: 5px 10px 4px;
+    }
+
     &__info {
       padding-top: 0;
 
@@ -494,7 +545,27 @@
   }
 
   .project_links {
-    @include rem(padding, 0 0 10px);
+    padding-bottom: 18px;
+
+    .card__actions {
+      .action_link,
+      .action_text {
+        margin-right: 6px !important;
+
+        .icon {
+          font-size: 20px;
+        }
+      }
+
+      .action_link.action_follow {
+        margin-right: 0 !important;
+
+        .icon {
+          font-size: 16px;
+          line-height: 20px;
+        }
+      }
+    }
   }
 
   .prize {
@@ -518,6 +589,18 @@
   .content__right .user_badge {
     min-height: 0;
     margin-top: 0;
+    margin-bottom: 9px;
+
+    &__img {
+      width: 40px;
+      height: 40px;
+      margin-right: 8px;
+    }
+  }
+
+  .btn_participate {
+    padding-top: 10px;
+    padding-bottom: 9px;
   }
 
   .project_links .card__actions {
@@ -676,7 +759,7 @@
   }
 
   .content__right {
-    padding-top: 10px;
+    padding-top: 4px;
 
     .row > div {
       width: 100%;
@@ -1197,5 +1280,27 @@
   .dropdown-menu:not(.bootstrap-datetimepicker-widget) {
     @include rem(margin-left, -60px);
     @include rem(width, 120px);
+  }
+}
+
+@media all and (max-width: $screen-mobile-old) {
+  .page .section--lead {
+    padding-top: 30px;
+  }
+
+  h2, .h2 {
+    font-size: 26px;
+    line-height: 36px;
+  }
+}
+
+@include keyframes(scale) {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+
+    @include transform(scale(2.7));
   }
 }
