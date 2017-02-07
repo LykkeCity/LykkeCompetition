@@ -394,7 +394,7 @@
     .user_badge {
       @include rem(margin-top, 11px);
       @include rem(margin-bottom, 25px);
-      @include rem(min-height, 86px);
+      @include rem(min-height, 90px);
     }
   }
 }
@@ -708,17 +708,54 @@
   }
 }
 
-.form_fieldset--fund {
-  span.text-muted {
-    display: block;
+.form_fieldset {
+  &__heading {
+    @include clearfix;
 
-    @include rem(margin, 3px 0)
+    .switcher {
+      position: relative;
+      top: -2px;
+      margin-left: 8px;
+    }
+
+    .fileupload {
+      margin-top: -5px;
+      margin-bottom: 5px;
+    }
+
+    h3 {
+      display: inline-block;
+      vertical-align: middle;
+    }
   }
 
-  @media all and (max-width: $screen-mobile-old) {
-    .form-group {
-      @include rem(margin-bottom, 40px)
+  &--fund {
+    span.text-muted {
+      display: block;
+
+      @include rem(margin, 3px 0)
     }
+
+    @media all and (max-width: $screen-mobile-old) {
+      .form-group {
+        @include rem(margin-bottom, 40px)
+      }
+    }
+  }
+
+  h3.small {
+    @include rem(margin-bottom, 5px);
+    @include rem(font-size, 21px);
+    @include rem(line-height, 30px);
+  }
+
+  .control-label {
+    color: rgba($secondary, .6);
+    letter-spacing: 0;
+
+    @include rem(font-size, 16px);
+    @include rem(line-height, 24px);
+    @include rem(margin-bottom, 18px)
   }
 }
 
@@ -1303,4 +1340,223 @@
 
     @include transform(scale(2.7));
   }
+}
+
+.form {
+  &--share_result {
+    border-bottom: 1px solid $border-alt;
+
+    @include rem(margin-bottom, 50px);
+
+    .form_fieldset {
+      @include rem(margin-bottom, 37px);
+    }
+
+    .form-control {
+      text-align: left;
+      background: #fff;
+      border: 1px solid #D3D6DB;
+
+      @include rem(border-radius, 4px);
+      @include rem(padding-left, 20px);
+      @include rem(padding-right, 20px);
+
+      &[disabled] {
+        background: #F4F4F4;
+      }
+    }
+
+    .message_actions {
+      .btn:not(.btn--flat) {
+        @include rem(min-width, 177px);
+      }
+    }
+
+    .asset_link_list {
+      margin: 0;
+
+      .asset_link:first-child {
+        border-top: 1px solid $border-alt;
+      }
+    }
+
+    .form-control {
+      border-color: #cfd2d7;
+    }
+  }
+
+  @media all and (max-width: $screen-mobile-tiny) {
+    &--share_result {
+      .message_actions {
+        margin-top: 10px;
+
+        .text-right {
+          text-align: left !important;
+          font-size: 0;
+        }
+
+        .btn {
+          margin-top: 10px;
+          width: 50%;
+          min-width: 0 !important;
+        }
+      }
+    }
+  }
+}
+
+.checkbox {
+  &--custom {
+    overflow: hidden;
+
+    input[type="checkbox"] {
+      position: absolute;
+      left: -100px;
+      top: -100px;
+      opacity: 0;
+      visibility: hidden;
+
+      &:checked {
+        + .control-label {
+          &:after {
+            background: $primary;
+            border-color: $primary;
+          }
+        }
+      }
+    }
+
+    .control-label {
+      position: relative;
+      margin-bottom: 0;
+
+      @include rem(padding-left, 32px);
+
+      &:after {
+        font-family: icon;
+        content: "\e90b";
+        background: #fff;
+        border: 1px solid #cfd2d7;
+        position: absolute;
+        left: 0;
+        top: 2px;
+        border-radius: $border-radius;
+        color: #fff;
+        text-align: center;
+
+        @include rem(font-size, 14px);
+        @include rem(line-height, 18px);
+        @include rem(width, 20px);
+        @include rem(height, 20px);
+        @include transition(all $transition-default);
+      }
+    }
+  }
+}
+
+.mb40 {
+  margin-bottom: 40px !important;
+}
+
+.icon--rename_icn:before {
+  font-size: 85%;
+}
+
+.asset_link {
+  &__action {
+    .btn + .btn {
+      @include rem(margin-left, 15px)
+    }
+  }
+
+  &__title {
+    @include rem(margin-right, 8px)
+  }
+
+  &__title + &__desc {
+    @include rem(margin-left, 0)
+  }
+}
+
+.modal {
+  &--rename_asset {
+    .modal__dialog {
+      @include rem(width, 570px);
+
+      max-width: 100%;
+    }
+
+    .modal__body {
+      @include rem(padding-bottom, 10px);
+    }
+
+    h3 {
+      @include rem(margin-bottom, 5px);
+    }
+
+    .text p {
+      @include rem(margin-bottom, 15px);
+    }
+
+    .modal__footer {
+      text-align: right;
+
+      .btn {
+        vertical-align: middle;
+
+        @include rem(min-width, 120px);
+
+        &--flat {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+._show_hidden_form {
+  @include rem(margin-bottom, 50px);
+}
+
+.hint {
+  color: rgba($secondary, .6);
+  letter-spacing: 0;
+
+  @include rem(font-size, 16px);
+  @include rem(line-height, 24px);
+}
+
+.share_result_intro {
+  @include rem(margin-bottom, 50px);
+
+  &__button {
+    float: left;
+
+    @include rem(margin-right, 30px);
+  }
+
+  &__hint {
+    overflow: hidden;
+  }
+
+  @media all and (max-width: $screen-mobile-tiny) {
+    &__button {
+      float: none;
+      margin-right: 0;
+
+      .btn {
+        width: 100%;
+      }
+
+      @include rem(margin-bottom, 20px);
+    }
+  }
+}
+
+.modal_valign {
+  table-layout: fixed;
+}
+
+.modal .close {
+  z-index: 110;
 }

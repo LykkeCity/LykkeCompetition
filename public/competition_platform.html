@@ -303,16 +303,110 @@
               </div>
             </div>
             <div role="tabpanel" class="tab-pane" id="participants">
-              <form action="" class="form form--share_result">
-                <button type="button" class="btn btn-md _show_hidden_form"><i class="icon icon--share_result"></i> Add Your Result</button>
 
-                <div class="hidden_form">
-                  <div class="row">
-                    <div class="col-sm-9"><input class="form-control" type="text" placeholder="Insert link to file sharing (Dropbox, googleDrive, GitHub)"></div>
-                    <div class="col-sm-3"><button type="button" class="btn btn-md"><i class="icon icon--share_result"></i> Send Result</button></div>
+              <button type="button" class="btn btn-md _show_hidden_form" data-toggle="switcher" data-target="#result_form"><i class="icon icon--share_result"></i> Add Your Result</button>
+
+              <form action="" class="form form--share_result" id="result_form" style="display: none;">
+                <h3>Add your result</h3>
+                <p class="mb40">Your logo should be provided in two images (color and monochrome versions) in PNG format using a template.</p>
+
+                <fieldset class="form_fieldset">
+                  <div class="form_fieldset__heading">
+                    <h3 class="small">Link</h3>
+                    <div class="switcher">
+                      <input id="ch1" type="checkbox" class="switcher__elem" checked data-toggle="switcher" data-target="#link">
+                      <label for="ch1" class="switcher__control"></label>
+                    </div>
                   </div>
-                </div>
+
+                  <div class="form_fieldset__body" id="link">
+                    <label class="control-label">Link to external resource such as Dropbox, GoogleDrive, your own server</label>
+
+                    <div class="form-group">
+                      <input class="form-control" type="text" placeholder="Insert link to file sharing (Dropbox, googleDrive, GitHub)">
+                    </div>
+                  </div>
+                </fieldset>
+
+                <fieldset class="form_fieldset">
+                  <div class="form_fieldset__heading">
+                    <div class="fileupload pull-right">
+                      <input type="file" id="file" class="fileupload__field">
+                      <button type="button" class="btn btn-sm fileupload__btn">Add Files</button>
+                    </div>
+                    <h3 class="small">Attachments</h3>
+                  </div>
+
+                  <div class="form_fieldset__body">
+                    <label class="control-label">Files must be less than 10 MB ⋅ Allowed files type: pdf, zip, jpg, png, gif, doc, xls</label>
+                    <div class="asset_link_list">
+                      <div class="asset_link asset_link--alt">
+                        <div class="asset_link__icon">
+                          <div class="asset_icon asset_icon--red">PDF</div>
+                        </div>
+                        <div class="asset_link__action">
+                          <button class="btn btn--icon _rename_asset" data-toggle="modal" data-target="#modal_rename_project"><i class="icon icon--rename_icn"></i></button>
+                          <button class="btn btn--icon _delete_asset"><i class="icon icon--trash"></i></button>
+                        </div>
+                        <div class="asset_link__info">
+                          <div class="asset_link__title"><a href="">Brief and concept.pdf</a></div>
+                          <div class="asset_link__desc">24.8MB</div>
+                        </div>
+                      </div>
+                      <div class="asset_link asset_link--alt">
+                        <div class="asset_link__icon">
+                          <div class="asset_icon asset_icon--primary">AI</div>
+                        </div>
+                        <div class="asset_link__action">
+                          <button class="btn btn--icon _rename_asset" data-toggle="modal" data-target="#modal_rename_project"><i class="icon icon--rename_icn"></i></button>
+                          <button class="btn btn--icon _delete_asset"><i class="icon icon--trash"></i></button>
+                        </div>
+                        <div class="asset_link__info">
+                          <div class="asset_link__title"><a href="">Brief and concept.ai</a></div>
+                          <div class="asset_link__desc">24.8MB</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+
+                <fieldset class="form_fieldset">
+                  <div class="form_fieldset__heading">
+                    <h3 class="small">Description</h3>
+                  </div>
+
+                  <div class="form_fieldset__body">
+                    <label class="control-label">Describe in a few sentences the essence of your work</label>
+
+                    <textarea name="" class="form-control"></textarea>
+
+                    <div class="message_actions">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="checkbox checkbox--custom">
+                            <input id="ch132" type="checkbox">
+                            <label for="ch132" class="control-label">I agree with <a href="">Lykke Terms of Use</a></label>
+                          </div>
+                        </div>
+                        <div class="col-md-6 text-right">
+                          <button type="button" class="btn btn--flat _hide_this_form">Cancel</button>
+                          <button type="button" class="btn" data-toggle="modal" data-target="#modal_result_success">Send Result</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
               </form>
+
+              <!--Показывать этот блок, когда результат отправлен-->
+              <!--<div class="share_result_intro">
+                <div class="share_result_intro__button">
+                  <button type="button" class="btn btn-md">Edit Your Result</button>
+                </div>
+                <div class="share_result_intro__hint">
+                  <div class="hint">You can change the result up to the moment when the project will go to “Voting” status</div>
+                </div>
+              </div>-->
 
               <div class="table-responsive">
                 <table class="table table--board table--participants">
@@ -344,6 +438,7 @@
                 </table>
               </div>
             </div>
+
             <div role="tabpanel" class="tab-pane" id="comments">
               <div class="alert alert--message" role="alert">
                 <table>
@@ -857,6 +952,77 @@
 </div>
 
 <!-- Modal -->
+<div class="modal modal--rename_asset fade" id="modal_rename_project" tabindex="-1" role="dialog">
+
+  <div class="modal_valign">
+    <div class="modal_valign__row">
+      <div class="modal_valign__cell">
+
+        <div class="modal__dialog" role="document">
+          <div class="modal__content">
+            <button type="button" class="close visible-xs" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+            <div class="modal__body">
+              <h3>Rename</h3>
+              <div class="text">
+                <p>Please enter a new name for the item:</p>
+
+                <form action="">
+                  <div class="form-group">
+                    <input type="text" class="form-control">
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="modal__footer">
+              <button type="button" class="btn btn--flat" data-dismiss="modal">Cancel</button>
+              <button type="button" class="btn" data-dismiss="modal">Save</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Modal -->
+<div class="modal modal--message fade" id="modal_result_success" tabindex="-1" role="dialog">
+
+  <div class="modal_valign">
+    <div class="modal_valign__row">
+      <div class="modal_valign__cell">
+
+        <div class="modal__dialog" role="document">
+          <div class="modal__content">
+            <button type="button" class="close visible-xs" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+            <div class="modal__header">
+              <div class="status_icon status_icon--success"></div>
+            </div>
+
+            <div class="modal__body">
+              <h3>The result was sent!</h3>
+              <div class="text">
+                <p>Thank you for participating!</p>
+                <p>We’ll inform you about project сhanges by email.</p>
+              </div>
+            </div>
+            <div class="modal__footer">
+              <button type="button" class="btn btn-block" data-dismiss="modal">Okay, great!</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+<!-- Modal -->
 <div class="modal modal--message fade" id="modal_auth_message" tabindex="-1" role="dialog">
 
   <div class="modal_valign">
@@ -939,6 +1105,11 @@
   $('._show_hidden_form').on('click' ,function(ev) {
     ev.preventDefault();
     $(this).hide().siblings('.hidden_form').show()
+  });
+
+  $('._hide_this_form').on('click' ,function(ev) {
+    ev.preventDefault();
+    $(this).parents('.form').hide().siblings('._show_hidden_form').show()
   });
 
   $('#msg')
