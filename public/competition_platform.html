@@ -42,7 +42,7 @@
   <div class="container">
     <div class="row">
       <div class="col-xs-2 col-sm-3"><a href="/" class="logo header__logo">
-        <img src="img/lykke_new.svg" height="38" alt=""/>
+        <img src="img/lykke_new.svg" height="38" alt="lykke_logo"/>
         <span class="header__title">Streams</span>
       </a></div>
       <div class="col-xs-10 col-sm-9 col-md-6 text-center">
@@ -88,7 +88,6 @@
 </header>
 
 <article class="content page page--competition_platform">
-  <div class="page_border"></div>
 
   <section class="section section--lead section--padding">
     <div class="container container--extend">
@@ -557,169 +556,366 @@
               </div>
 
             </div>
+
             <div role="tabpanel" class="tab-pane" id="results">
-              <div class="banner banner--results">
+              <div class="winners_list">
+                <div class="row">
+                  <div class="col-xs-6 col-sm-3">
+                    <div class="winners_item winners_item--first">
+                      <div class="winners_item__user">
+                        <div class="winners_item__img"><img src="img/competition/user_default.svg" alt="user image" /></div>
+                        <span class="winners_item__label">1</span>
+                      </div>
+                      <div class="winners_item__title">1st place</div>
+                      <div class="winners_item__desc">Min 4.6 <i class="rating_item"></i> is required</div>
+                    </div>
+                  </div>
+                  <div class="col-xs-6 col-sm-3">
+                    <div class="winners_item">
+                      <div class="winners_item__user">
+                        <div class="winners_item__img"><img src="img/competition/user_default.svg" alt="user image" /></div>
+                        <span class="winners_item__label">2</span>
+                      </div>
+                      <div class="winners_item__title">2nd place</div>
+                      <div class="winners_item__desc">Min 4.6 <i class="rating_item"></i> is required</div>
+                    </div>
+                  </div>
+                  <div class="col-xs-6 col-sm-3">
+                    <div class="winners_item">
+                      <div class="winners_item__user">
+                        <div class="winners_item__img"><img src="img/competition/user_default.svg" alt="user image" /></div>
+                        <span class="winners_item__label">3</span>
+                      </div>
+                      <div class="winners_item__title">3rd place</div>
+                      <div class="winners_item__desc">Min 4.6 <i class="rating_item"></i> is required</div>
+                    </div>
+                  </div>
+                  <div class="col-xs-6 col-sm-3">
+                    <div class="winners_item">
+                      <div class="winners_item__user">
+                        <div class="winners_item__img"><img src="img/competition/user_default.svg" alt="user image" /></div>
+                        <span class="winners_item__label">4</span>
+                      </div>
+                      <div class="winners_item__title">4th place</div>
+                      <div class="winners_item__desc">Min 4.6 <i class="rating_item"></i> is required</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--<div class="banner banner&#45;&#45;results">
                 <img src="img/competition/winner-voting-icn.svg" class="pull-left" width="80" alt="banner-coin">
                 <div class="banner__content">
                   <h4>Help us determine the winner!</h4>
                   <p>Check the completed task, participants of the contest and choose the best result. You can cast votes for the various participants.</p>
                 </div>
-              </div>
+              </div>-->
 
-              <div class="table-container">
-                <table class="table table--board">
-                  <tr class="hidden-xs hidden-sm">
-                    <th class="board_name">Username</th>
-                    <th class="board_date">Reg. and Subm. Date</th>
-                    <th class="board_result text-center">Result</th>
-                    <th class="board_score text-center">Score
-                      <div class="btn btn--icon"
-                           data-toggle="popover"
-                           data-trigger="hover"
-                           data-placement="bottom"
-                           data-content="The prize winners are determined using the formula: participant’s grade =  (number of experts’ votes) x 0.3 + (author’s vote) x 0.1 + (number of sponsor’s votes) x 0.4 + (number of Lykke community votes) x 0.2<br><br>The author of the competition has a right 1) to disqualify a participant, if his/her work does not meet the project’s requirements and 2) not to award prizes (several or all of them), if the submitted works do not meet the project’s goal.">
-                        <i class="icon icon--help_outline"></i>
-                      </div>
-                    </th>
-                    <th class="board_vote text-center">Vote</th>
-                    <th class="board_action">Prize</th>
-                  </tr>
-                  <tr>
-                    <td class="board_name">
-                      <div class="user_badge user_badge--small">
-                        <div class="user_badge__img"><img src="http://lorempixel.com/30/30/" alt=""></div>
-                        <div class="user_badge__info">Kaylee Harper</div>
-                      </div>
-                    </td>
-                    <td class="board_date">
-                      <div class="row board_mobile">
-                        <div class="board_mobile__title visible-xs visible-sm col-xs-6">Reg. and Subm. Date</div>
-                        <div class="board_mobile__content col-xs-6 col-md-12">Apr 25 – May 5, 2016</div>
-                      </div>
-                    </td>
-                    <td class="board_result text-center">
-                      <div class="row board_mobile">
-                        <div class="board_mobile__title visible-xs visible-sm col-xs-6">Result</div>
-                        <div class="board_mobile__content col-xs-6 col-md-12"><a href="">Vew</a></div>
-                      </div>
-                    </td>
-                    <td class="board_score text-center">
-                      <div class="row board_mobile">
-                        <div class="board_mobile__title visible-xs visible-sm col-xs-6">
-                          Score
-                          <div class="btn btn--icon"
-                               data-toggle="popover"
-                               data-trigger="hover"
-                               data-placement="bottom"
-                               data-content="The prize winners are determined using the formula: participant’s grade =  (number of experts’ votes) x 0.3 + (author’s vote) x 0.1 + (number of sponsor’s votes) x 0.4 + (number of Lykke community votes) x 0.2<br><br>The author of the competition has a right 1) to disqualify a participant, if his/her work does not meet the project’s requirements and 2) not to award prizes (several or all of them), if the submitted works do not meet the project’s goal.">
-                            <i class="icon icon--help_outline"></i>
+              <table class="table rating_table">
+                <tr class="rating_table__main">
+                  <td rowspan="2">
+                    <div class="rating_table__img"><img src="http://lorempixel.com/60/60/" alt=""></div>
+                  </td>
+                  <td colspan="6">
+                    <div class="rating_table__title">Kaylee Harper</div>
+                  </td>
+                </tr>
+                <tr class="rating_table__info">
+                  <td class="rating_table__desc">
+                    <div class="rating_table__text">Registration:</div>
+                    <div class="rating_table__text">Submission:</div>
+                  </td>
+                  <td class="rating_table__value">
+                    <div class="rating_table__text">April 25, 2016</div>
+                    <div class="rating_table__text">May 5, 2016</div>
+                  </td>
+                  <td class="rating_table__desc">
+                    <div class="rating_table__text">Score:</div>
+                    <div class="rating_table__text">Votes:</div>
+                  </td>
+                  <td class="rating_table__value">
+                    <div class="rating_table__text">50/100</div>
+                    <div class="rating_table__text">24</div>
+                  </td>
+                  <td>
+                    <div class="rating_table__buttons">
+                      <button class="rating_table__button btn_view">
+                          <span class="_inner">
+                            <i class="icon icon--view_icn"></i>
+                          </span>
+                        <span>View</span>
+                      </button>
+                      <button class="rating_table__button btn_vote">
+                          <span class="_inner">
+                            <i class="icon icon--star_stroke"></i>
+                            <span class="_value">0</span>
+                          </span>
+                        <span>Vote</span>
+                      </button>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="rating_table__total">
+                      <a tabindex="0"
+                         role="button"
+                         data-toggle="popover"
+                         data-placement="bottom">
+                        <i class="rating_item"></i> 3.8
+                      </a>
+
+                      <div class="popover-content">
+                        <div class="rating_total">
+                          <div class="rating_total__value">
+                            <div class="rating_total__box">
+                              <span class="_accent">4.2</span>
+                              out of 5
+                            </div>
+                            <div class="rating">
+                              <i class="rating_item"></i>
+                              <i class="rating_item"></i>
+                              <i class="rating_item"></i>
+                              <i class="rating_item"></i>
+                              <i class="rating_item rating_item--half"></i>
+                            </div>
+                          </div>
+                          <div class="rating_total__content">
+                            <h4>Rating and number of votes</h4>
+                            <table class="rating_total__table">
+                              <tr>
+                                <td>Community</td>
+                                <td>
+                                  <div class="rating_progress">
+                                    <div class="rating_progress__bar" style="width: 20%"></div>
+                                  </div>
+                                </td>
+                                <td>4.2 <span class="hint">(18)</span></td>
+                              </tr>
+                              <tr>
+                                <td>Experts</td>
+                                <td>
+                                  <div class="rating_progress">
+                                    <div class="rating_progress__bar" style="width: 80%"></div>
+                                  </div>
+                                </td>
+                                <td>4.2 <span class="hint">(18)</span></td>
+                              </tr>
+                              <tr>
+                                <td>Author</td>
+                                <td>
+                                  <div class="rating_progress">
+                                    <div class="rating_progress__bar" style="width: 56%"></div>
+                                  </div>
+                                </td>
+                                <td>4.2 <span class="hint">(18)</span></td>
+                              </tr>
+                            </table>
                           </div>
                         </div>
-                        <div class="board_mobile__content col-xs-6 col-md-12">50/100</div>
                       </div>
-                    </td>
-                    <td class="board_vote text-center">
-                      <div class="row board_mobile">
-                        <div class="board_mobile__title visible-xs visible-sm col-xs-6">Vote</div>
-                        <div class="board_mobile__content col-xs-6 col-md-12">7</div>
-                      </div>
-                    </td>
-                    <td class="board_action">
-                      <button type="button" class="circle_voting_btn _vote_plus">+1 <span class="visible-small">Vote</span></button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="board_name">
-                      <div class="user_badge user_badge--small">
-                        <div class="user_badge__img"><img src="http://lorempixel.com/30/30/" alt=""></div>
-                        <div class="user_badge__info">Kaylee Harper</div>
-                      </div>
-                    </td>
-                    <td class="board_date">
-                      <div class="row board_mobile">
-                        <div class="board_mobile__title visible-xs visible-sm col-xs-6">Reg. and Subm. Date</div>
-                        <div class="board_mobile__content col-xs-6 col-md-12">Apr 25 – May 5, 2016</div>
-                      </div>
-                    </td>
-                    <td class="board_result text-center">
-                      <div class="row board_mobile">
-                        <div class="board_mobile__title visible-xs visible-sm col-xs-6">Result</div>
-                        <div class="board_mobile__content col-xs-6 col-md-12"><a href="">Vew</a></div>
-                      </div>
-                    </td>
-                    <td class="board_score text-center">
-                      <div class="row board_mobile">
-                        <div class="board_mobile__title visible-xs visible-sm col-xs-6">
-                          Score
-                          <div class="btn btn--icon"
-                               data-toggle="popover"
-                               data-trigger="hover"
-                               data-placement="bottom"
-                               data-content="The prize winners are determined using the formula: participant’s grade =  (number of experts’ votes) x 0.3 + (author’s vote) x 0.1 + (number of sponsor’s votes) x 0.4 + (number of Lykke community votes) x 0.2<br><br>The author of the competition has a right 1) to disqualify a participant, if his/her work does not meet the project’s requirements and 2) not to award prizes (several or all of them), if the submitted works do not meet the project’s goal.">
-                            <i class="icon icon--help_outline"></i>
+                    </div>
+                  </td>
+                </tr>
+                <!---->
+                <tr class="rating_table__main">
+                  <td rowspan="2">
+                    <div class="rating_table__img"><a href=""><img src="http://lorempixel.com/60/60/" alt=""></a></div>
+                  </td>
+                  <td colspan="6">
+                    <div class="rating_table__title"><a href="">Kaylee Harper</a></div>
+                  </td>
+                </tr>
+                <tr class="rating_table__info">
+                  <td class="rating_table__desc">
+                    <div class="rating_table__text">Registration:</div>
+                    <div class="rating_table__text">Submission:</div>
+                  </td>
+                  <td class="rating_table__value">
+                    <div class="rating_table__text">April 25, 2016</div>
+                    <div class="rating_table__text">May 5, 2016</div>
+                  </td>
+                  <td class="rating_table__desc">
+                    <div class="rating_table__text">Score:</div>
+                    <div class="rating_table__text">Votes:</div>
+                  </td>
+                  <td class="rating_table__value">
+                    <div class="rating_table__text">50/100</div>
+                    <div class="rating_table__text">24</div>
+                  </td>
+                  <td>
+                    <div class="rating_table__buttons">
+                      <button class="rating_table__button btn_view">
+                          <span class="_inner">
+                            <i class="icon icon--view_icn"></i>
+                          </span>
+                        <span>View</span>
+                      </button>
+                      <button class="rating_table__button btn_vote btn_vote--active">
+                          <span class="_inner">
+                            <i class="icon icon--star_stroke"></i>
+                            <span class="_value">3</span>
+                          </span>
+                        <span>Vote</span>
+                      </button>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="rating_table__total">
+                      <a tabindex="0"
+                         role="button"
+                         data-toggle="popover"
+                         data-placement="bottom">
+                        <i class="rating_item rating_item--active"></i> 3.8
+                      </a>
+
+                      <div class="popover-content">
+                        <div class="rating_total rating_total--active">
+                          <div class="rating_total__value">
+                            <div class="rating_total__box">
+                              <span class="_accent">4.2</span>
+                              out of 5
+                            </div>
+                            <div class="rating">
+                              <i class="rating_item"></i>
+                              <i class="rating_item"></i>
+                              <i class="rating_item"></i>
+                              <i class="rating_item"></i>
+                              <i class="rating_item rating_item--half"></i>
+                            </div>
+                          </div>
+                          <div class="rating_total__content">
+                            <h4>Rating and number of votes</h4>
+                            <table class="rating_total__table">
+                              <tr>
+                                <td>Community</td>
+                                <td>
+                                  <div class="rating_progress">
+                                    <div class="rating_progress__bar" style="width: 20%"></div>
+                                  </div>
+                                </td>
+                                <td>4.2 <span class="hint">(18)</span></td>
+                              </tr>
+                              <tr>
+                                <td>Experts</td>
+                                <td>
+                                  <div class="rating_progress">
+                                    <div class="rating_progress__bar" style="width: 80%"></div>
+                                  </div>
+                                </td>
+                                <td>4.2 <span class="hint">(18)</span></td>
+                              </tr>
+                              <tr>
+                                <td>Author</td>
+                                <td>
+                                  <div class="rating_progress">
+                                    <div class="rating_progress__bar" style="width: 56%"></div>
+                                  </div>
+                                </td>
+                                <td>4.2 <span class="hint">(18)</span></td>
+                              </tr>
+                            </table>
                           </div>
                         </div>
-                        <div class="board_mobile__content col-xs-6 col-md-12">50/100</div>
                       </div>
-                    </td>
-                    <td class="board_vote text-center">
-                      <div class="row board_mobile">
-                        <div class="board_mobile__title visible-xs visible-sm col-xs-6">Vote</div>
-                        <div class="board_mobile__content col-xs-6 col-md-12">7</div>
-                      </div>
-                    </td>
-                    <td class="board_action">
-                      <button type="button" class="circle_voting_btn _vote_plus">+1 <span class="visible-small">Vote</span></button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="board_name">
-                      <div class="user_badge user_badge--small">
-                        <div class="user_badge__img"><img src="http://lorempixel.com/30/30/" alt=""></div>
-                        <div class="user_badge__info">Kaylee Harper</div>
-                      </div>
-                    </td>
-                    <td class="board_date">
-                      <div class="row board_mobile">
-                        <div class="board_mobile__title visible-xs visible-sm col-xs-6">Reg. and Subm. Date</div>
-                        <div class="board_mobile__content col-xs-6 col-md-12">Apr 25 – May 5, 2016</div>
-                      </div>
-                    </td>
-                    <td class="board_result text-center">
-                      <div class="row board_mobile">
-                        <div class="board_mobile__title visible-xs visible-sm col-xs-6">Result</div>
-                        <div class="board_mobile__content col-xs-6 col-md-12"><a href="">Vew</a></div>
-                      </div>
-                    </td>
-                    <td class="board_score text-center">
-                      <div class="row board_mobile">
-                        <div class="board_mobile__title visible-xs visible-sm col-xs-6">
-                          Score
-                          <div class="btn btn--icon"
-                               data-toggle="popover"
-                               data-trigger="hover"
-                               data-placement="bottom"
-                               data-content="The prize winners are determined using the formula: participant’s grade =  (number of experts’ votes) x 0.3 + (author’s vote) x 0.1 + (number of sponsor’s votes) x 0.4 + (number of Lykke community votes) x 0.2<br><br>The author of the competition has a right 1) to disqualify a participant, if his/her work does not meet the project’s requirements and 2) not to award prizes (several or all of them), if the submitted works do not meet the project’s goal.">
-                            <i class="icon icon--help_outline"></i>
-                          </div>
-                        </div>
-                        <div class="board_mobile__content col-xs-6 col-md-12">50/100</div>
-                      </div>
-                    </td>
-                    <td class="board_vote text-center">
-                      <div class="row board_mobile">
-                        <div class="board_mobile__title visible-xs visible-sm col-xs-6">Vote</div>
-                        <div class="board_mobile__content col-xs-6 col-md-12">7</div>
-                      </div>
-                    </td>
-                    <td class="board_action">
-                      <button type="button" class="circle_voting_btn _vote_plus">+1 <span class="visible-small">Vote</span></button>
-                    </td>
-                  </tr>
-                </table>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+
+              <div class="results_hints">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <h4>Rules</h4>
+                    <p>The author of the competition has a right:</p>
+
+                    <ol>
+                      <li>to disqualify a participant, if his/her work does not meet the project’s requirements</li>
+                      <li>not to award prizes (several or all of them), if the submitted works do not meet the project’s goal.</li>
+                    </ol>
+
+                    <p>Until the author or the expert do not vote, your score will not be painted and the work will not be able to take any place.</p>
+                  </div>
+                  <div class="col-sm-6">
+                    <h4>Rating formula</h4>
+                    <p>The prize winners are determined using the formula: participant’s grade =  (number of experts’ votes) × 0.3 + (author’s vote) × 0.1 + (number of sponsor’s votes) × 0.4 + (number of Lykke community votes) × 0.2</p>
+                  </div>
+                </div>
               </div>
             </div>
+
             <div role="tabpanel" class="tab-pane" id="winner">
+
+              <div class="winners_list">
+                <div class="row">
+                  <div class="col-xs-6 col-sm-3">
+                    <div class="winners_item winners_item--first">
+                      <div class="winners_item__user">
+                        <div class="winners_item__img"><a href=""><img src="http://lorempixel.com/60/60/" alt="Mark Harris" /></a></div>
+                        <span class="winners_item__label">1</span>
+                      </div>
+                      <div class="winners_item__title"><a href="">Mark Harris</a></div>
+                      <div class="winners_item__desc">4.6
+                        <i class="rating_item"></i>
+                        <i class="rating_item"></i>
+                        <i class="rating_item"></i>
+                        <i class="rating_item"></i>
+                        <i class="rating_item"></i>
+                      </div>
+                      <div class="prize__value">$2000</div>
+                    </div>
+                  </div>
+                  <div class="col-xs-6 col-sm-3">
+                    <div class="winners_item">
+                      <div class="winners_item__user">
+                        <div class="winners_item__img"><a href=""><img src="http://lorempixel.com/60/60/" alt="Leroy Cox" /></a></div>
+                        <span class="winners_item__label">2</span>
+                      </div>
+                      <div class="winners_item__title"><a href="">Leroy Cox</a></div>
+                      <div class="winners_item__desc">4.2
+                        <i class="rating_item"></i>
+                        <i class="rating_item"></i>
+                        <i class="rating_item"></i>
+                        <i class="rating_item"></i>
+                        <i class="rating_item"></i>
+                      </div>
+                      <div class="prize__value">$1000</div>
+                    </div>
+                  </div>
+                  <div class="col-xs-6 col-sm-3">
+                    <div class="winners_item">
+                      <div class="winners_item__user">
+                        <div class="winners_item__img"><a href=""><img src="http://lorempixel.com/60/60/" alt="Paul Graham" /></a></div>
+                        <span class="winners_item__label">3</span>
+                      </div>
+                      <div class="winners_item__title"><a href="">Paul Graham</a></div>
+                      <div class="winners_item__desc">3.9
+                        <i class="rating_item"></i>
+                        <i class="rating_item"></i>
+                        <i class="rating_item"></i>
+                        <i class="rating_item"></i>
+                        <i class="rating_item"></i>
+                      </div>
+                      <div class="prize__value">$1000</div>
+                    </div>
+                  </div>
+                  <div class="col-xs-6 col-sm-3">
+                    <div class="winners_item">
+                      <div class="winners_item__user">
+                        <div class="winners_item__img"><a href=""><img src="http://lorempixel.com/60/60/" alt="Kaylee Harper" /></a></div>
+                        <span class="winners_item__label">4</span>
+                      </div>
+                      <div class="winners_item__title"><a href="">Kaylee Harper</a></div>
+                      <div class="winners_item__desc">4.8
+                        <i class="rating_item"></i>
+                        <i class="rating_item"></i>
+                        <i class="rating_item"></i>
+                        <i class="rating_item"></i>
+                        <i class="rating_item"></i>
+                      </div>
+                      <div class="prize__value">$1000</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
               <div class="banner banner--results">
                 <div class="banner__content">
@@ -750,14 +946,14 @@
                 </div>
               </div>
 
-              <div class="table-responsive">
-                <table class="table table--board table--board_results">
+              <!--<div class="table-responsive">
+                <table class="table table&#45;&#45;board table&#45;&#45;board_results">
                   <tr>
                     <td class="board_place">
-                      <div class="winner_place winner_place--first"><span>1</span></div>
+                      <div class="winner_place winner_place&#45;&#45;first"><span>1</span></div>
                     </td>
                     <td class="board_name">
-                      <div class="user_badge user_badge--small">
+                      <div class="user_badge user_badge&#45;&#45;small">
                         <div class="user_badge__img"><a href=""><img src="http://lorempixel.com/80/80/" alt=""></a></div>
                         <div class="user_badge__info">
                           <div class="user_badge__title"><a href="">Kaylee Harper</a></div>
@@ -777,7 +973,7 @@
                       <div class="winner_place"><span>2</span></div>
                     </td>
                     <td class="board_name">
-                      <div class="user_badge user_badge--small">
+                      <div class="user_badge user_badge&#45;&#45;small">
                         <div class="user_badge__img"><a href=""><img src="http://lorempixel.com/80/80/" alt=""></a></div>
                         <div class="user_badge__info">
                           <div class="user_badge__title"><a href="">Kaylee Harper</a></div>
@@ -797,7 +993,7 @@
                       <div class="winner_place"><span>2</span></div>
                     </td>
                     <td class="board_name">
-                      <div class="user_badge user_badge--small">
+                      <div class="user_badge user_badge&#45;&#45;small">
                         <div class="user_badge__img"><a href=""><img src="http://lorempixel.com/80/80/" alt=""></a></div>
                         <div class="user_badge__info">
                           <div class="user_badge__title"><a href="">Kaylee Harper</a></div>
@@ -817,7 +1013,7 @@
                       <div class="winner_place"><span>2</span></div>
                     </td>
                     <td class="board_name">
-                      <div class="user_badge user_badge--small">
+                      <div class="user_badge user_badge&#45;&#45;small">
                         <div class="user_badge__img"><a href=""><img src="http://lorempixel.com/80/80/" alt=""></a></div>
                         <div class="user_badge__info">
                           <div class="user_badge__title"><a href="">Kaylee Harper</a></div>
@@ -833,7 +1029,7 @@
                     </td>
                   </tr>
                 </table>
-              </div>
+              </div>-->
             </div>
           </div>
         </div>
@@ -1145,8 +1341,24 @@
 
   $('.circle_voting_btn').on('click', function() {
     $(this).toggleClass('active');
-  })
+  });
 
+  const MAXSTARS = 5;
+
+  $('.btn_vote').on('click', function() {
+    var $item = $(this), $value = parseInt($item.find('._value').text());
+
+    $item.addClass('btn_vote--active');
+
+    if ($value == MAXSTARS) {
+      $value = 0;
+      $item.removeClass('btn_vote--active')
+        .find('._value').text($value);
+    } else {
+      $value++;
+      $item.find('._value').text($value);
+    }
+  })
 
 </script>
 
