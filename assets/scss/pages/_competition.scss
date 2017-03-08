@@ -1,5 +1,5 @@
-.header {
-  border-bottom: 1px solid #eaedef;
+.header__logo img {
+  @include rem(height, 36px);
 }
 
 .tab-pane {
@@ -1786,4 +1786,31 @@
 
 [data-toggle='popover'] {
   @extend %noselect;
+}
+
+.content {
+  padding-top: 0;
+}
+
+.nav-tabs > li > a:not(.btn) {
+  background: transparent !important;
+}
+
+.nav-tabs sup {
+  font-weight: normal;
+  top: 0;
+  position: static;
+
+  @include rem(margin-left, 3px);
+  @include rem(font-size, 16px)
+}
+
+.nav_scroll {
+  .card__actions {
+    @include rem(padding, 10px 0)
+  }
+}
+
+.nav_scroll .nav-tabs {
+  margin-right: 0 !important;
 }

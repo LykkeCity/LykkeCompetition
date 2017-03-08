@@ -11,9 +11,11 @@ var wH = $(window).height(),
 FastClick.attach(document.body);
 
 $(window).resize(function() {
-  $('.content').css({
-    paddingTop: $('.header').outerHeight()
-  });
+  setTimeout(function() {
+    $('.header_container').css({
+      height: $('.header').outerHeight()
+    });
+  }, 10);
 
   $('body').css({
     paddingBottom: $('footer').outerHeight()

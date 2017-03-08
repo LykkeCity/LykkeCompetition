@@ -38,96 +38,124 @@
 </head>
 <body class="new_page">
 
-<header class="header">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-2 col-sm-3"><a href="/" class="logo header__logo">
-        <img src="img/lykke_new.svg" height="38" alt="lykke_logo"/>
-        <span class="header__title">Streams</span>
-      </a></div>
-      <div class="col-xs-10 col-sm-9 col-md-6 text-center">
-        <button type="button" class="navbar-toggle collapsed btn btn--stroke pull-right" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
+<div class="header_container">
+  <header class="header">
+    <div class="container">
+<!--      <div class="header__menu_button">
+        <button class="btn btn_menu btn&#45;&#45;icon" type="button">
+          <span></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbar-collapse">
-          <div class="t-simulate">
-            <div class="t-row">
-              <div class="t-cell">
-
-                <ul class="nav nav--header">
-                  <li>
-                    <a href="competition_list_all.html">All projects</a>
-                  </li>
-                  <li>
-                    <a href="competition_list_my.html">My projects</a>
-                    <a type="button" class="btn btn-circle new-project-button btn-sm" href="/Project/Create">+</a>
-                  </li>
-                </ul>
-                <a href="https://wiki.lykkex.com/start?do=login" class="visible-xs-inline-block visible-sm-inline-block btn">Sign In</a>
-              </div>
-            </div>
-          </div>
-          <ul class="social social--header visible-xs visible-sm">
-            <li><a href="https://www.facebook.com/groups/542506412568917/" target="_blank" class="social__item"><i class="icon icon--fb_simple"></i></a></li>
-            <li><a href="https://twitter.com/LykkeCity" target="_blank" class="social__item"><i class="icon icon--tw"></i></a></li>
-            <li><a href="http://instagram.com/lykkecity" target="_blank" class="social__item"><i class="icon icon--instagram"></i></a></li>
-            <li><a href="https://www.youtube.com/channel/UCmMYipGdKMF0kzfaE-PXsNQ" target="_blank" class="social__item"><i class="icon icon--youtube"></i></a></li>
-            <li><a href="https://www.linkedin.com/company/lykke-ag" target="_blank" class="social__item"><i class="icon icon--linkedin-icn"></i></a></li>
-            <li><a href="https://www.reddit.com/r/lykke/" target="_blank" class="social__item"><i class="icon icon--reddit"></i></a></li>
-            <li><a href="https://t.co/TmjMYnQD7T" target="_blank" class="social__item"><i class="icon icon--telegram"></i></a></li>
-          </ul>
-        </div>
+      </div>-->
+      <div class="header__logo header_logo">
+        <a href="/">
+          <img class="header_logo__img" src="img/streams_logo.png" height="36" alt="lykke_logo">
+          <div class="header_logo__title">Streams</div>
+        </a>
       </div>
-      <div class="col-sm-3 hidden-xs hidden-sm">
-        <a href="https://wiki.lykkex.com/start?do=login" class="btn btn-link pull-right">Sign In</a>
+      <div class="header__actions header_actions pull-right">
+        <div class="header_actions__login header_login pull-right">
+          <a href="">
+
+            <!--<div class="header_login__title">Sign in</div>-->
+
+            <div class="header_user">
+              <div class="header_user__img">
+                <img src="img/user_default.svg" width="40" alt="user_image">
+              </div>
+
+              <div class="header_login__title">Leroy</div>
+            </div>
+          </a>
+        </div>
+        <!--<div class="header_actions__search">
+          <button class="btn btn&#45;&#45;icon" type="button">
+            <i class="icon icon&#45;&#45;search"></i>
+          </button>
+        </div>
+        <div class="header_actions__notifications">
+          <button class="btn btn&#45;&#45;icon" type="button">
+            <i class="icon icon&#45;&#45;notificaton"></i>
+          </button>
+        </div>-->
       </div>
     </div>
+  </header>
+</div>
+
+<nav class="header_nav">
+  <div class="header_nav__inner">
+    <div class="container">
+      <a type="button" class="btn btn_create_project pull-right"><i class="icon icon--add"></i></a>
+
+      <ul class="header_nav__list nav_list">
+        <li class="nav_list__item nav_list__item--active"><a href="">All projects</a></li>
+        <li class="nav_list__item"><a href="">My projects</a></li>
+      </ul>
+    </div>
   </div>
-</header>
+</nav>
 
-<article class="content page page--competition_platform">
-
+<article class="content page page--profile">
 
   <section class="section section--lead section--padding">
     <div class="container container--extend">
       <div class="page__header">
-        <div class="row">
-          <div class="col-sm-8">
-            <h2>High Frequency Trading Risk Management Tools Based on Scaling Law</h2>
-            <h3 class="page__subtitle mb0">Technology
-              <span class="label label--yellow">hot project</span>
-            </h3>
-          </div>
-          <div class="col-sm-4 text-right">
-            <a href="#" class="btn btn_edit btn-sm">Edit</a>
-          </div>
-        </div>
-      </div>
+        <div class="user_profile">
+          <div class="row">
+            <div class="col-sm-8 user_profile__main">
+              <div class="user_badge">
+                <div class="user_badge__img">
+                  <img src="http://lorempixel.com/320/320" alt="user_image" width="160">
+                </div>
+                <div class="user_badge__content">
+                  <h1 class="h2">Leroy Cox</h1>
+                  <button type="button" class="visible-xs action_link action_follow"><i class="icon icon--follow"></i> <span data-toggle-text="Unfollow">Follow</span></button>
+                  <div class="hint">
+                    Joined Apr 2016
+                    <span class="middot">&middot;</span>
+                    New York City, USA
+                    <span class="middot">&middot;</span>
+                    <a href="">www.leroycox.com</a>
+                  </div>
+                  <p>Scaling-law has been observed in an extraordinary wide range of natural phenomena, from physics.</p>
 
-      <div class="project_links">
-        <div class="row">
-          <div class="col-xs-5 col-sm-6 col-md-7 project_links__share">
-            <div class="card__actions">
-              <span class="action_text visible-xs-inline-block visible-sm-inline-block">Share:</span>
-              <a href="" class="action_link"><i class="icon icon--tw"></i> <span class="hidden-xs hidden-sm">Tweet</span></a>
-              <a href="" class="action_link"><i class="icon icon--fb_simple"></i> <span class="hidden-xs hidden-sm">Share</span></a>
-              <a href="" class="action_link"><i class="icon icon--linkedin-icn"></i> <span class="hidden-xs hidden-sm">Share</span></a>
-              <a href="" class="action_link"><i class="icon icon--envelope"></i> <span class="hidden-xs hidden-sm">Send</span></a>
-              <button type="button" class="action_link _copy_link" aria-label="Copied!" data-clipboard-text="lykke.com"><i class="icon icon--link"></i> <span class="hidden-xs hidden-sm">Copy link</span></button>
+                  <div class="user_badge__contacts">
+                    <a href="#modal_send_message" class="btn btn-sm" data-toggle="modal"><i class="icon icon--mail"></i> Contact</a>
+
+                    <div class="social">
+                      <a href="" class="social__item"><i class="icon icon--tw"></i></a>
+                      <a href="" class="social__item"><i class="icon icon--fb_simple"></i></a>
+                      <a href="" class="social__item"><i class="icon icon--instagram"></i></a>
+                      <a href="" class="social__item"><i class="icon icon--linkedin-icn"></i></a>
+                      <a href="" class="social__item"><i class="icon icon--github"></i></a>
+                      <a href="" class="social__item"><i class="icon icon--vk"></i></a>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="col-xs-7 col-sm-6 col-md-5 project_links__actions">
-            <div class="card__actions text-right">
-              <a href="" class="action_link">
-                <img src="img/competition/wallet_icn.svg" width="20" alt="">
-                Project’s Wallet
-              </a>
-              <a href="" class="action_link">
-                <i class="icon icon--finance"></i> Finance
-              </a>
-              <button type="button" class="action_link action_follow"><i class="icon icon--follow"></i> <span data-toggle-text="Unfollow">Follow</span></button>
+            <div class="col-sm-4 user_profile__desc">
+              <div class="row">
+                <div class="col-xs-6">
+                  <h5>Won</h5>
+                  <div class="prize__value">$7500</div>
+                </div>
+                <div class="col-xs-6">
+                  <h5>Score</h5>
+                  <div class="prize__value">50/100</div>
+                </div>
+                <div class="col-xs-12">
+                  <h5>Achievements</h5>
+                  <div class="achievements">
+                    <div class="achievement_icon achievement_icon--blue"></div>
+                    <div class="achievement_icon achievement_icon--green"></div>
+                    <div class="achievement_icon achievement_icon--yellow"></div>
+                    <div class="achievement_icon achievement_icon--gray"></div>
+                    <div class="achievement_icon achievement_icon--red"></div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -136,602 +164,184 @@
       <div class="row">
 
         <!-- MAIN CONTENT -->
-        <div class="col-xs-12 col-sm-8 content__left">
+        <div class="col-xs-12 content__left">
 
-          <div class="row prize_row">
-            <div class="col-xs-3">
-              <div class="prize">
-                <div class="prize__value">$2000</div>
-                <div class="prize__title">1<sup>st</sup>Prize</div>
-              </div>
+          <div class="nav_scroll">
+            <div class="card__actions text-right pull-right hidden-xs">
+              <button type="button" class="action_link action_follow"><i class="icon icon--follow"></i> <span data-toggle-text="Unfollow">Follow</span></button>
             </div>
-            <div class="col-xs-3 hidden-xxs">
-              <div class="prize">
-                <div class="prize__value">$1000</div>
-                <div class="prize__title">2<sup>nd</sup>Prize</div>
-              </div>
-            </div>
-            <div class="col-xs-3 hidden-xxs">
-              <div class="prize">
-                <div class="prize__value">$1000</div>
-                <div class="prize__title">3<sup>rd</sup>Prize</div>
-              </div>
-            </div>
-            <div class="col-xs-3 hidden-xxs">
-              <div class="prize">
-                <div class="prize__value">$1000</div>
-                <div class="prize__title">4<sup>th</sup>Prize</div>
-              </div>
-            </div>
-            <div class="col-xs-3 visible-xxs">
-              <div class="prize">
-                <div class="prize__value">$1000</div>
-                <div class="prize__title">2<sup>nd</sup>, 3<sup>rd</sup>, 4<sup>th</sup>Prize</div>
-              </div>
-            </div>
+            <ul class="nav nav-tabs" role="tablist">
+              <li role="presentation" class="active"><a href="#participated" aria-controls="participated" role="tab" data-toggle="tab">Participated <sup>7</sup></a></li>
+              <li role="presentation"><a href="#won" aria-controls="won" role="tab" data-toggle="tab">Won <sup>1</sup></a></li>
+              <li role="presentation"><a href="#created" aria-controls="created" role="tab" data-toggle="tab">Created <sup>32</sup></a></li>
+              <li role="presentation"><a href="#following" aria-controls="following" role="tab" data-toggle="tab">Following <sup>14</sup></a></li>
+              <li role="presentation"><a href="#comments" aria-controls="comments" role="tab" data-toggle="tab">Comments <sup>4</sup></a></li>
+            </ul>
           </div>
-
-          <div class="progress progress--green"> <!--green, red, yellow, blue-->
-            <div class="progress__bar" style="width: 100%"></div>
-            <div class="progress__content">
-              <div class="row">
-                <div class="col-xs-6">
-                  <div class="progress__title">Submissions</div>
-                </div>
-                <div class="col-xs-6 text-right">
-                  <ul class="progress__info">
-                    <li><i class="icon icon--deadline_fill"></i> 30.04.2016 (ends in 10 days)</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <!-- / MAIN CONTENT -->
-
-        <div class="col-xs-12 col-sm-4 content__right pull-right">
-          <div class="row">
-            <div class="col-xs-6 col-sm-12">
-              <div class="user_badge">
-                <div class="user_badge__img"><img src="http://lorempixel.com/70/70/" alt=""></div>
-                <div class="user_badge__info">
-                  <div class="user_badge__title">Anton Golub</div>
-                  <div class="user_badge__desc">Creator</div>
-                </div>
-              </div>
-
-              <!--<button class="btn btn-block btn_participate"><i class="icon icon&#45;&#45;participate"></i>Participate</button>-->
-              <a href="#modal_success" data-toggle="modal" class="btn btn-block btn_participate"><i class="icon icon--vote_list"></i>Vote</a>
-
-              <!--<a href="#participants" aria-controls="participants" role="tab" data-toggle="tab" class="btn btn-md btn-block btn_participate _go_to_tab"><i class="icon icon&#45;&#45;share_result"></i> Add Your Result</a>-->
-
-              <div class="voting_group">
-                <button class="btn btn--circle btn--green _voting_btn" data-hover="Vote again"><i class="icon icon--vote_yes"></i><span>Yes</span></button>
-                <button class="btn btn--circle btn--red _voting_btn" data-hover="Vote again"><i class="icon icon--vote_no"></i><span>No</span></button>
-
-                <div class="voting_group__value">42 votes</div>
-
-                <div class="voting_group__status">
-                  <div class="voting_group__group">
-                    <div class="status_bar"><span class="status_bar__line status_bar__line--green" style="width: 56%"></span></div>
-                    <div class="voting_group__count"><span class="text-green">24<!--max 3 symbols, for example, 240 or 10k--></span> Yes</div>
-                  </div>
-                  <div class="voting_group__group">
-                    <div class="status_bar"><span class="status_bar__line status_bar__line--red" style="width: 38%"></span></div>
-                    <div class="voting_group__count"><span class="text-red">12k</span> No</div>
-                  </div>
-                </div>
-              </div>
-
-              <p class="text-muted small_desc">To participate in the contest with the prize, you must be registered in the competition. Registration can be completed at any time.</p>
-
-            </div>
-            <div class="col-xs-6 col-sm-12">
-
-              <ul class="list list--info">
-                <li class="list__item">
-                  <a href="">
-                    <div class="list__icon">
-                      <span class="check check--blue"></span>
-                    </div>
-                    <div class="list__content">
-                      <div class="title">Registration</div>
-                      <p>Apr 25–28, 2016 &middot; 4 days</p>
-                    </div>
-                  </a>
-                </li>
-                <li class="list__item _current">
-                  <div class="list__icon">
-                    <span class="check check--green"></span>
-                  </div>
-                  <div class="list__content">
-                    <div class="title text--green">Submissions</div>
-                    <p>Apr 28–30, 2016 &middot; 4 days</p>
-                  </div>
-                </li>
-                <li class="list__item">
-                  <div class="list__icon">
-                    <span class="check check--inprogress"></span>
-                  </div>
-                  <div class="list__content">
-                    <div class="title">Voting</div>
-                    <p>Apr 30 – May 15, 2016 &middot; 16 days</p>
-                  </div>
-                </li>
-              </ul>
-
-            </div>
-          </div>
-        </div>
-
-        <!-- MAIN CONTENT -->
-        <div class="col-xs-12 col-sm-8 content__left">
-
-          <ul class="nav nav-tabs" role="tablist">
-            <li role="presentation" class="active"><a href="#info" aria-controls="info" role="tab" data-toggle="tab">Info</a></li>
-            <li role="presentation"><a href="#participants" aria-controls="participants" role="tab" data-toggle="tab">Participants <sup>7</sup></a></li>
-            <li role="presentation"><a href="#comments" aria-controls="comments" role="tab" data-toggle="tab">Comments <sup>32</sup></a></li>
-            <li role="presentation"><a href="#results" aria-controls="results" role="tab" data-toggle="tab">Results</a></li>
-            <li role="presentation"><a href="#winner" aria-controls="winner" role="tab" data-toggle="tab">Winners <sup>4</sup></a></li>
-          </ul>
 
           <div class="tab-content">
-            <div role="tabpanel" class="tab-pane active" id="info">
-             <div class="text">
-               <label class="control-label">Summary</label>
-               <ul>
-                 <li><div class="li">Scaling-law has been observed in an extraordinary</div></li>
-                 <li><div class="li">Scaling-law has been observed in an extraordinary</div></li>
-                 <li><div class="li">Scaling-law has been observed in an extraordinary</div></li>
-                 <li><div class="li">Scaling-law has been observed in an extraordinary</div></li>
-                 <li>Scaling-law has been observed in an extraordinary</li>
-               </ul>
-               <label class="control-label">Description</label>
-               <p>Scaling-law has been observed in an extraordinary wide range of natural phenomena, from physics, biology, earth and planetary sciences, economics and finance, computer science, and demography to the social sciences. Scaling-law processes yield scaling properties for a broad range of values, sometimes for many orders of magnitude. Using the event-driven paradigm of directional changes and overshoots to analyse Foreign Exchange (FX) markets, Glattfelder, Dupuis, and Olsen (2011) discovered 12 independent scaling laws in high frequency FX data. In finance, where frames of reference and fixed points are hard to come by and often illusory, these new scaling laws provide a reliable framework for developing risk management tools and represent the foundation of a completely new generation of tools for studying high frequency market volatility. The objective of this project is to study the dynamic behaviour of markets and improve the quality of the inferences and predictions we make about the behaviour of prices. Using high frequency FX dataset, we aim to extract patterns from short-term market activity to infer, measure, and predict volatility over longer time horizons.</p>
-               <p>This project is part of the EU commission funded BigDataFinance project (2015–2019) that provides doctoral training and research in sophisticated data-driven risk management and research at the crossroads of Finance and Big Data. The project will be lead by Professor Stefano Battiston of University of Zurich and the research fellow will be actively mentored by Richard Olsen.</p>
-               <p>The project will provide robust risk management tools for the high frequency trading (HFT) community and advance  a theoretical and empirical explanation for the occurrence of scaling law for both canonical models (Brownian Motion, Levy processes etc.) and high frequency FX data. The risk management tool will be extended to a multi-asset case and tested and validated with empirical data (FX rates).</p>
-
-             </div>
-              <div class="asset_link">
-                <div class="asset_link__icon">
-                  <div class="asset_icon asset_icon--red">PDF</div>
-                  <!--<div class="asset_icon asset_icon--blue">DOC</div>
-                  <div class="asset_icon asset_icon--yellow">JPG</div>
-                  <div class="asset_icon asset_icon--green">XLS</div>
-                  <div class="asset_icon asset_icon--primary">AI</div>-->
-                </div>
-                <div class="asset_link__info">
-                  <div class="asset_link__title"><a href="">Brief and concept.pdf</a></div>
-                  <div class="asset_link__desc">24.8MB</div>
-                  <div class="asset_link__link"><a href="">Download</a></div>
-                </div>
-              </div>
-            </div>
-            <div role="tabpanel" class="tab-pane" id="participants">
-              <form action="" class="form form--share_result">
-                <button type="button" class="btn btn-md _show_hidden_form"><i class="icon icon--share_result"></i> Add Your Result</button>
-
-                <div class="hidden_form">
-                  <div class="row">
-                    <div class="col-sm-9"><input class="form-control" type="text" placeholder="Insert link to file sharing (Dropbox, googleDrive, GitHub)"></div>
-                    <div class="col-sm-3"><button type="button" class="btn btn-md"><i class="icon icon--share_result"></i> Send Result</button></div>
+            <div role="tabpanel" class="tab-pane active" id="participated">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="card card--preview">
+                    <div class="card__inner">
+                      <div class="card__body">
+                        <div class="card__breadcrumbs">
+                          <div class="user_badge__img"><a href=""><img src="http://lorempixel.com/50/50/" alt=""></a></div>
+                          <span class="breadcrumb_elem">Elena Borskaya</span>
+                          <i class="icon icon--chevron-thin-right"></i>
+                          <a href="/" class="breadcrumb_elem">Techology</a>
+                        </div>
+                        <div class="card__header">
+                          <div class="card__sum h3 pull-right">$2000</div>
+                          <div class="card__title h3"><a href="">High Frequency Trading Risk Management Tools Based on Scaling Law</a></div>
+                        </div>
+                        <div class="card__desc">
+                          <a href="" class="label label--blue"><i class="icon icon--deadline_fill"></i> registration 11.06.2016</a>
+                          <span class="label label--text label--gray">Submissions 17.12.2016</span>
+                        </div>
+                        <p class="card__text">
+                          Scaling-law has been observed in an extraordinary wide range of natural phenomena, from physics, biology, earth and planetary sciences, economics and finance.
+                        </p>
+                        <div class="tags_list">
+                          <div class="tag_item"><a href="">Java</a></div>
+                          <div class="tag_item"><a href="">Features</a></div>
+                        </div>
+                      </div>
+                      <div class="card__footer">
+                        <div class="card__actions">
+                          <button type="button" class="action_link action_follow pull-right"><i class="icon icon--follow"></i> <span data-toggle-text="Unfollow">Follow</span></button>
+                          <a href="" class="action_link">Read more</a>
+                          &middot;
+                          <a href="" class="action_link">Share</a>
+                          &middot;
+                          <a href="" class="action_link">2 comments</a>
+                          &middot;
+                          <a href="" class="action_link">10 participants</a>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </form>
 
-              <div class="table-responsive">
-                <table class="table table--board table--participants">
-                  <tr>
-                    <th class="_max_width">Username</th>
-                    <th class="text-right">Registration date</th>
-                    <th class="text-center">Result</th>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="user_badge user_badge--small">
-                        <div class="user_badge__img"><img src="http://lorempixel.com/30/30/" alt=""></div>
-                        <div class="user_badge__info">Kaylee Harper</div>
+                <div class="col-md-6">
+                  <div class="card card--preview">
+                    <div class="card__inner">
+                      <div class="card__body">
+                        <div class="card__breadcrumbs">
+                          <div class="user_badge__img"><a href=""><img src="http://lorempixel.com/50/50/" alt=""></a></div>
+                          <span class="breadcrumb_elem">Elena Borskaya</span>
+                          <i class="icon icon--chevron-thin-right"></i>
+                          <a href="/" class="breadcrumb_elem">Techology</a>
+                        </div>
+                        <div class="card__header">
+                          <div class="card__sum h3 pull-right">$2000</div>
+                          <div class="card__title h3"><a href="">Lykke USD, EUR... Coins</a></div>
+                        </div>
+                        <div class="card__desc">
+                          <a href="" class="label label--green"><i class="icon icon--deadline_fill"></i> Submissions 11.06.2016</a>
+                          <span class="label label--text label--gray">ends in 10 days</span>
+                        </div>
+                        <p class="card__text">
+                          Scaling-law has been observed in an extraordinary wide range of natural phenomena, from physics, biology, earth and planetary sciences, economics and finance, computer science, and demography to the social sciences. Scaling-law processes yield...
+                        </p>
+                        <div class="tags_list">
+                          <div class="tag_item"><a href="">Java</a></div>
+                          <div class="tag_item"><a href="">Features</a></div>
+                          <div class="tag_item"><a href="">Features</a></div>
+                        </div>
                       </div>
-                    </td>
-                    <td class="text-right">Apr 25, 2016 06:37</td>
-                    <td class="text-center"><span class="check check--primary"></span></td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="user_badge user_badge--small">
-                        <div class="user_badge__img"><img src="http://lorempixel.com/30/30/" alt=""></div>
-                        <div class="user_badge__info">Kaylee Harper</div>
+                      <div class="card__footer">
+                        <div class="card__actions">
+                          <button type="button" class="action_link action_follow pull-right"><i class="icon icon--follow"></i> <span data-toggle-text="Unfollow">Follow</span></button>
+                          <a href="" class="action_link">Read more</a>
+                          &middot;
+                          <a href="" class="action_link">Share</a>
+                          &middot;
+                          <a href="" class="action_link">2 comments</a>
+                          &middot;
+                          <a href="" class="action_link">10 participants</a>
+                        </div>
                       </div>
-                    </td>
-                    <td class="text-right">Apr 25, 2016 06:37</td>
-                    <td class="text-center"><a href="">Edit</a></td>
-                  </tr>
-                </table>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
+            <div role="tabpanel" class="tab-pane" id="won"></div>
+            <div role="tabpanel" class="tab-pane" id="created"></div>
+            <div role="tabpanel" class="tab-pane" id="following"></div>
             <div role="tabpanel" class="tab-pane" id="comments">
-              <div class="alert alert--message" role="alert">
-                <table>
-                  <tr>
-                    <td>
-                      <div class="alert__text">Please <a href="">login</a> to enter your comment</div>
-                    </td>
-                  </tr>
-                </table>
-              </div>
-              <form action="" class="form form--message">
-                <div class="message_card message_card--form">
-                  <div class="user_badge user_badge--small">
-                    <div class="user_badge__img"><img src="http://lorempixel.com/30/30/" alt=""></div>
-                    <div class="user_badge__message">
-                      <div class="message_card__inner">
-                        <div class="user_badge__title">Kaylee Harper</div>
-                        <textarea id="msg" placeholder="Enter your comment here..." class="form-control form-control--textarea message_card__area"></textarea>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="message_actions">
-                  <div class="row">
-                    <div class="col-sm-6">
-                      <div class="checkbox">
-                        <div class="switcher">
-                          <input id="ch13" type="checkbox" class="switcher__elem">
-                          <label for="ch13" class="switcher__control"></label>
-                        </div>
-                        <label for="ch13" class="control-label">Notify me of new comments via email</label>
-                      </div>
-                    </div>
-                    <div class="col-sm-6 text-right">
-                      <button type="button" class="btn">Post comment</button>
-                    </div>
-                  </div>
-                </div>
-              </form>
+              <div class="row">
+                <div class="col-sm-8 automargin">
+                  <div class="messages_list">
+                    <div class="message_card">
+                      <div class="user_badge user_badge--small">
+                        <div class="user_badge__img"><a href=""><img src="http://lorempixel.com/30/30/" alt=""></a></div>
+                        <div class="user_badge__message">
+                          <div class="message_card__inner">
+                            <div class="user_badge__title"><a href="">Kaylee Harper</a> <span class="message_card__date">&middot; 9:46 PM April 9, 2016</span></div>
+                            <div class="message_card__message">
+                              <p>
+                                However, they are not as well-tested as the C++ version, which can pose a risk. For example MtGox repeatedly run into difficulties with their own custom-built PHP version of the Bitcoin protocol.
+                              </p>
+                              <div class="card__actions">
+                                <span class="action_text">Posted in</span>
+                                <a href="" class="action_link">High Frequency Trading Risk Management Tools Based on Scaling Law</a>
+                              </div>
 
-              <div class="messages_list">
-                <div class="message_card">
-                  <div class="user_badge user_badge--small">
-                    <div class="user_badge__img"><a href=""><img src="http://lorempixel.com/30/30/" alt=""></a></div>
-                    <div class="user_badge__message">
-                      <div class="message_card__inner">
-                        <div class="user_badge__title"><a href="">Kaylee Harper</a> <span class="message_card__date">&middot; 9:46 PM April 9, 2016</span></div>
-                        <div class="message_card__message">
-                          <p>
-                            However, they are not as well-tested as the C++ version, which can pose a risk. For example MtGox repeatedly run into difficulties with their own custom-built PHP version of the Bitcoin protocol.
-                          </p>
-                          <!-- выводить для админа  -->
-                          <div class="card__actions">
-                            <a href="" class="action_link">Reply</a>
-                            &middot;
-                            <a href="" class="action_link">Delete</a>
-                            &middot;
-                            <a href="" class="action_link">Spam</a>
+                            </div>
                           </div>
-
-                          <!--<textarea name="" id="" cols="30" rows="10" class="form-control message_card__reply form-control&#45;&#45;textarea"></textarea>
-                          <div class="text-right">
-                            <button type="button" class="btn">Send</button>
-                          </div>-->
-
                         </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-                <div class="message_card message_card--accent">
-                  <div class="user_badge user_badge--small">
-                    <div class="user_badge__img"><a href=""><img src="http://lorempixel.com/30/30/" alt=""></a> </div>
-                    <div class="user_badge__message">
-                      <div class="message_card__inner">
-                        <div class="user_badge__title"><a href="">Kaylee Harper</a> <span class="label label--primary">creator</span> <span class="message_card__date">&middot; 9:46 PM April 9, 2016</span></div>
-                        <div class="message_card__message">
-                          <p>
-                            However, they are not as well-tested as the C++ version, which can pose a risk. For example MtGox repeatedly run into difficulties with their own custom-built PHP version of the Bitcoin protocol.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                    <div class="message_card">
+                      <div class="user_badge user_badge--small">
+                        <div class="user_badge__img"><a href=""><img src="http://lorempixel.com/30/30/" alt=""></a></div>
+                        <div class="user_badge__message">
+                          <div class="message_card__inner">
+                            <div class="user_badge__title"><a href="">Kaylee Harper</a> <span class="message_card__date">&middot; 9:46 PM April 9, 2016</span></div>
+                            <div class="message_card__message">
+                              <p>
+                                However, they are not as well-tested as the C++ version, which can pose a risk. For example MtGox repeatedly run into difficulties with their own custom-built PHP version of the Bitcoin protocol.
+                              </p>
+                              <div class="card__actions">
+                                <span class="action_text">Posted in</span>
+                                <a href="" class="action_link">High Frequency Trading Risk Management Tools Based on Scaling Law</a>
+                              </div>
 
-                <div class="message_card">
-                  <div class="user_badge user_badge--small">
-                    <div class="user_badge__img"><a href=""><img src="http://lorempixel.com/30/30/" alt=""></a></div>
-                    <div class="user_badge__message">
-                      <div class="message_card__inner">
-                        <div class="user_badge__title"><a href="">Kaylee Harper</a> <span class="message_card__date">&middot; 9:46 PM April 9, 2016</span></div>
-                        <div class="message_card__message">
-                          <p>
-                            However, they are not as well-tested as the C++ version, which can pose a risk. For example MtGox repeatedly run into difficulties with their own custom-built PHP version of the Bitcoin protocol.
-                          </p>
-                          <!-- выводить для админа -->
-                          <div class="card__actions">
-                            <a href="" class="action_link">Reply</a>
-                            &middot;
-                            <a href="" class="action_link">Delete</a>
-                            &middot;
-                            <a href="" class="action_link">Spam</a>
+                            </div>
                           </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="message_card">
+                      <div class="user_badge user_badge--small">
+                        <div class="user_badge__img"><a href=""><img src="http://lorempixel.com/30/30/" alt=""></a></div>
+                        <div class="user_badge__message">
+                          <div class="message_card__inner">
+                            <div class="user_badge__title"><a href="">Kaylee Harper</a> <span class="message_card__date">&middot; 9:46 PM April 9, 2016</span></div>
+                            <div class="message_card__message">
+                              <p>
+                                However, they are not as well-tested as the C++ version, which can pose a risk. For example MtGox repeatedly run into difficulties with their own custom-built PHP version of the Bitcoin protocol.
+                              </p>
+                              <div class="card__actions">
+                                <span class="action_text">Posted in</span>
+                                <a href="" class="action_link">High Frequency Trading Risk Management Tools Based on Scaling Law</a>
+                              </div>
 
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-
-              <div class="show_more">
-                <button type="button" class="btn btn-md">Show more</button>
-              </div>
-
-            </div>
-            <div role="tabpanel" class="tab-pane" id="results">
-              <div class="banner banner--results">
-                <img src="img/competition/banner-coin.svg" class="pull-right" width="88" alt="banner-coin">
-                <div class="banner__content">
-                  <h4>Help us determine the winner!</h4>
-                  <p>Check the completed task, participants of the contest and choose the best result. You can cast votes for the various participants.</p>
-                </div>
-              </div>
-
-              <div class="table-container">
-                <table class="table table--board">
-                  <tr>
-                    <th class="board_name">Username</th>
-                    <th class="board_date">reg. and Subm. Date</th>
-                    <th class="board_result text-center">Result</th>
-                    <th class="board_score text-center">Score</th>
-                    <th class="board_vote text-center">Vote</th>
-                    <th class="board_action">Prize</th>
-                  </tr>
-                  <tr>
-                    <td class="board_name">
-                      <div class="user_badge user_badge--small">
-                        <div class="user_badge__img"><img src="http://lorempixel.com/30/30/" alt=""></div>
-                        <div class="user_badge__info">Kaylee Harper</div>
-                      </div>
-                    </td>
-                    <td class="board_date">Apr 25 – May 5, 2016</td>
-                    <td class="board_result text-center"><a href="">Vew</a></td>
-                    <td class="board_score text-center">50/100</td>
-                    <td class="board_vote text-center">7</td>
-                    <td class="board_action">
-                      <div class="dropdown">
-                        <button type="button" aria-haspopup="true" aria-expanded="false" class="btn btn-plus dropdown-toggle" data-toggle="dropdown">+</button>
-                        <div class="dropdown-menu dropdown-menu--tiny">
-                          <ul class="dropdown-list">
-                            <li><a href="">1st prize</a></li>
-                            <li><a href="">2nd prize</a></li>
-                            <li><a href="">3rd prize</a></li>
-                            <li><a href="">4th prize</a></li>
-                            <li><a href="">No prize</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="board_name">
-                      <div class="user_badge user_badge--small">
-                        <div class="user_badge__img"><img src="http://lorempixel.com/30/30/" alt=""></div>
-                        <div class="user_badge__info">Kaylee Harper</div>
-                      </div>
-                    </td>
-                    <td class="board_date">Apr 25 – May 5, 2016</td>
-                    <td class="board_result text-center"><a href="">Vew</a></td>
-                    <td class="board_score text-center">50/100</td>
-                    <td class="board_vote text-center">7</td>
-                    <td class="board_action">
-                      <div class="dropdown">
-                        <button type="button" aria-haspopup="true" aria-expanded="false" class="circle_voting_btn _vote_plus dropdown-toggle" data-toggle="dropdown">1</button>
-                        <div class="dropdown-menu dropdown-menu--tiny">
-                          <ul class="dropdown-list">
-                            <li><a href="">1st prize</a></li>
-                            <li><a href="">2nd prize</a></li>
-                            <li><a href="">3rd prize</a></li>
-                            <li><a href="">4th prize</a></li>
-                            <li><a href="">No prize</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="board_name">
-                      <div class="user_badge user_badge--small">
-                        <div class="user_badge__img"><img src="http://lorempixel.com/30/30/" alt=""></div>
-                        <div class="user_badge__info">Kaylee Harper</div>
-                      </div>
-                    </td>
-                    <td class="board_date">Apr 25 – May 5, 2016</td>
-                    <td class="board_result text-center"><a href="">Vew</a></td>
-                    <td class="board_score text-center">50/100</td>
-                    <td class="board_vote text-center">7</td>
-                    <td class="board_action">
-                      <div class="dropdown">
-                        <button type="button" aria-haspopup="true" aria-expanded="false" class="circle_voting_btn _vote_plus dropdown-toggle" data-toggle="dropdown">2</button>
-                        <div class="dropdown-menu dropdown-menu--tiny">
-                          <ul class="dropdown-list">
-                            <li><a href="">1st prize</a></li>
-                            <li><a href="">2nd prize</a></li>
-                            <li><a href="">3rd prize</a></li>
-                            <li><a href="">4th prize</a></li>
-                            <li><a href="">No prize</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                </table>
-              </div>
-            </div>
-            <div role="tabpanel" class="tab-pane" id="winner">
-
-              <div class="banner banner--results">
-                <div class="banner__content">
-                  <table class="table">
-                    <tr>
-                      <td>
-                        <div class="prize__value">$4000</div>
-                        <span>Prize fund</span>
-                      </td>
-                      <td>
-                        <div class="prize__value">7</div>
-                        <span>Participants</span>
-                      </td>
-                      <td>
-                        <div class="prize__value">25</div>
-                        <span>Days of the contest</span>
-                      </td>
-                      <td>
-                        <div class="prize__value">6</div>
-                        <span>Results</span>
-                      </td>
-                      <td>
-                        <div class="prize__value">4</div>
-                        <span>Winners</span>
-                      </td>
-                    </tr>
-                  </table>
-                </div>
-              </div>
-
-              <div class="table-responsive">
-                <table class="table table--board table--board_results">
-                  <tr>
-                    <td class="board_place">
-                      <div class="winner_place winner_place--first"><span>1</span></div>
-                    </td>
-                    <td class="board_name">
-                      <div class="user_badge user_badge--small">
-                        <div class="user_badge__img"><a href=""><img src="http://lorempixel.com/80/80/" alt=""></a></div>
-                        <div class="user_badge__info">
-                          <div class="user_badge__title"><a href="">Kaylee Harper</a></div>
-                          <span class="user_badge__desc">Score: 100/100 &middot; 15 votes</span>
-                        </div>
-                      </div>
-                    </td>
-                    <td class="board_link">
-                      <a href="">View<span class="hidden-xs"> result</span></a>
-                    </td>
-                    <td class="board_sum">
-                      <div class="prize__value">$ 2000</div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="board_place">
-                      <div class="winner_place"><span>2</span></div>
-                    </td>
-                    <td class="board_name">
-                      <div class="user_badge user_badge--small">
-                        <div class="user_badge__img"><a href=""><img src="http://lorempixel.com/80/80/" alt=""></a></div>
-                        <div class="user_badge__info">
-                          <div class="user_badge__title"><a href="">Kaylee Harper</a></div>
-                          <span class="user_badge__desc">Score: 100/100 &middot; 15 votes</span>
-                        </div>
-                      </div>
-                    </td>
-                    <td class="board_link">
-                      <a href="">View<span class="hidden-xs"> result</span></a>
-                    </td>
-                    <td class="board_sum">
-                      <div class="prize__value">$ 2000</div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="board_place">
-                      <div class="winner_place"><span>2</span></div>
-                    </td>
-                    <td class="board_name">
-                      <div class="user_badge user_badge--small">
-                        <div class="user_badge__img"><a href=""><img src="http://lorempixel.com/80/80/" alt=""></a></div>
-                        <div class="user_badge__info">
-                          <div class="user_badge__title"><a href="">Kaylee Harper</a></div>
-                          <span class="user_badge__desc">Score: 100/100 &middot; 15 votes</span>
-                        </div>
-                      </div>
-                    </td>
-                    <td class="board_link">
-                      <a href="">View<span class="hidden-xs"> result</span></a>
-                    </td>
-                    <td class="board_sum">
-                      <div class="prize__value">$ 2000</div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="board_place">
-                      <div class="winner_place"><span>2</span></div>
-                    </td>
-                    <td class="board_name">
-                      <div class="user_badge user_badge--small">
-                        <div class="user_badge__img"><a href=""><img src="http://lorempixel.com/80/80/" alt=""></a></div>
-                        <div class="user_badge__info">
-                          <div class="user_badge__title"><a href="">Kaylee Harper</a></div>
-                          <span class="user_badge__desc">Score: 100/100 &middot; 15 votes</span>
-                        </div>
-                      </div>
-                    </td>
-                    <td class="board_link">
-                      <a href="">View<span class="hidden-xs"> result</span></a>
-                    </td>
-                    <td class="board_sum">
-                      <div class="prize__value">$ 2000</div>
-                    </td>
-                  </tr>
-                </table>
               </div>
             </div>
           </div>
         </div>
         <!-- / MAIN CONTENT -->
-
-        <aside class="col-xs-12 col-sm-4 content__right">
-          <h5 class="border-bottom">Tags</h5>
-
-          <div class="tags_list">
-            <div class="tag_item"><a href="">Java</a></div>
-            <div class="tag_item"><a href="">Features</a></div>
-            <div class="tag_item"><a href="">Landing</a></div>
-            <div class="tag_item"><a href="">Margin Trading</a></div>
-            <div class="tag_item"><a href="">Swaps</a></div>
-          </div>
-
-          <h5 class="border-bottom">Programming resources</h5>
-
-          <ul class="list list--text_previews">
-            <li class="list__item">
-              <a href="">
-                <div class="list__icon">
-                  <i class="icon icon--github"></i>
-                </div>
-                <div class="list__content">
-                  <p><b>GitHub</b></p>
-                  <span class="text-muted">LykkeCity / CompetitionPlatform</span>
-                </div>
-              </a>
-            </li>
-          </ul>
-
-          <h5 class="border-bottom">Project stream</h5>
-
-          <ul class="list list--text_previews">
-            <li class="list__item">
-              <a href="">
-                <p><b>High Frequency Trading Risk Management Tools Based on Scaling Law</b></p>
-                <span class="text-muted">$2000 &middot; 48 members</span>
-              </a>
-            </li>
-            <li class="list__item">
-              <a href="">
-                <p><b>Lykke USD, EUR... Coins</b></p>
-                <span class="text-muted">$2000 &middot; 48 members</span>
-              </a>
-            </li>
-          </ul>
-
-        </aside>
       </div>
     </div>
   </section>
@@ -767,7 +377,7 @@
 </footer>
 
 <!-- Modal -->
-<div class="modal modal--message fade" id="modal_success" tabindex="-1" role="dialog">
+<div class="modal modal--send_message fade" id="modal_send_message" tabindex="-1" role="dialog">
 
   <div class="modal_valign">
     <div class="modal_valign__row">
@@ -777,86 +387,16 @@
           <div class="modal__content">
             <button type="button" class="close visible-xs" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 
-            <div class="modal__header">
-              <div class="status_icon status_icon--success"></div>
-            </div>
-
-            <div class="modal__body">
-              <h3>You are participant!</h3>
-             <div class="text">
-               <p>Thank you for registration! Now you’re Lykke Streams project participant.</p>
-             </div>
-            </div>
-            <div class="modal__footer">
-              <button type="button" class="btn btn-block" data-dismiss="modal">Okay, great!</button>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-</div>
-
-<!-- Modal -->
-<div class="modal modal--message fade" id="modal_auth_message" tabindex="-1" role="dialog">
-
-  <div class="modal_valign">
-    <div class="modal_valign__row">
-      <div class="modal_valign__cell">
-
-        <div class="modal__dialog" role="document">
-          <div class="modal__content">
-            <button type="button" class="close visible-xs" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-
-            <div class="modal__body">
-              <h3>Authorization</h3>
-              <div class="text">
-                <p>Do you wanna grant <b>Lykke Streams</b> an access to your resources?</p>
-                <ul>
-                  <li>Open ID profile</li>
-                  <li>Email</li>
-                </ul>
+            <form class="form">
+              <div class="modal__body">
+                <h3>Send message to Leroy Cox</h3>
+                <textarea class="form-control"></textarea>
               </div>
-            </div>
-            <div class="modal__footer">
-              <button type="button" class="btn btn-block" data-dismiss="modal">Yes</button>
-              <button type="button" class="btn btn--flat btn-block" data-dismiss="modal">No</button>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-</div>
-
-<!-- Modal -->
-<div class="modal modal--message fade" id="modal_auth_failed" tabindex="-1" role="dialog">
-
-  <div class="modal_valign">
-    <div class="modal_valign__row">
-      <div class="modal_valign__cell">
-
-        <div class="modal__dialog" role="document">
-          <div class="modal__content">
-            <button type="button" class="close visible-xs" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-
-            <div class="modal__header">
-              <div class="status_icon status_icon--error"><img src="img/competition/error_icn.svg" alt=""></div>
-            </div>
-            
-            <div class="modal__body">
-              <h3>Authentication Failed</h3>
-              <div class="text">
-                <p>You have denied Lykke Streams access to your resources.</p>
+              <div class="modal__footer">
+                <button type="button" class="btn" data-dismiss="modal">Send message</button>
+                <button type="button" class="btn btn--default btn--flat" data-dismiss="modal">Cancel</button>
               </div>
-            </div>
-            <div class="modal__footer">
-              <button type="button" class="btn btn-block" data-dismiss="modal">Try again</button>
-            </div>
+            </form>
           </div>
         </div>
 
@@ -865,6 +405,7 @@
   </div>
 
 </div>
+
 
 <a href="#" class="btn btn_feedback">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17"><defs><style>.cls-1{fill:#fff;}</style></defs><g id="Layer_2" data-name="Layer 2"><path class="cls-1" d="M2,17a1,1,0,0,1-.95-1.32l1-3A7.12,7.12,0,0,1,0,7.62C0,3.42,3.81,0,8.5,0S17,3.42,17,7.62s-3.81,7.62-8.5,7.62A9.41,9.41,0,0,1,6,14.91l-3.5,2A1,1,0,0,1,2,17ZM8.5,2C4.92,2,2,4.52,2,7.62a5.24,5.24,0,0,0,1.9,4,1,1,0,0,1,.29,1.08l-.4,1.17L5.38,13a1,1,0,0,1,.8-.08,7.35,7.35,0,0,0,2.31.37c3.58,0,6.5-2.52,6.5-5.62S12.08,2,8.5,2Z" id="Layer_1-2" data-name="Layer 1"></path></g></svg>
@@ -877,46 +418,6 @@
 <script src="js/functions.js"></script>
 <script src="js/vendor/autosize.min.js"></script>
 <script src="js/vendor/clipboard.min.js"></script>
-
-<script>
-  $('._show_hidden_form').on('click' ,function(ev) {
-    ev.preventDefault();
-    $(this).hide().siblings('.hidden_form').show()
-  });
-
-  $('#msg')
-    .bind('blur', function(){
-        if (!$(this).val()) {
-            $('#msg').parents('.form--message').removeClass("focused");
-            $('#msg').parents('.message_card__inner').removeAttr('style');
-        }
-    })
-    .bind('focus', function(){ $(this).parents('.form--message').addClass('focused'); })
-    .keyup(function(){
-      if ($(this).val()) { $(this).parents('.form--message').addClass('with_value'); }
-      else { $(this).parents('.form--message').removeClass('with_value'); }
-    })
-
-  $('#msg')
-    .each(function(){ autosize(this); })
-    .on('autosize:resized', function(){
-      $('.message_card__inner').css({ height: 'auto' })
-  });
-
-  $('._voting_btn').on('click', function() {
-    $(this).toggleClass('active').siblings('._voting_btn').toggleClass('invisible').parents('.voting_group').toggleClass('voted');
-  });
-
-  var clipboard = new Clipboard('._copy_link');
-
-  clipboard.on('success', function(e) {
-    e.trigger.innerHTML =  e.trigger.getAttribute('aria-label');
-    e.clearSelection();
-    clipboard.destroy();
-  });
-
-
-</script>
 
 </body>
 </html>
