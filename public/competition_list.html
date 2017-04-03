@@ -80,9 +80,9 @@
               <img src="img/streams_logo.svg" alt="streams_logo" width="50">
             </div>
             <div class="main_projects_list__content">
-              <div class="main_projects_list__title">Streams</div>
+              <div class="main_projects_list__title">Lykke<span>Streams</span></div>
               <div class="main_projects_list__text">
-                Competition platform. Is helping the great ideas to meet the bright minds
+                Collaboration platform. Here the great ideas meet bright minds
               </div>
             </div>
           </a>
@@ -97,20 +97,6 @@
               <div class="main_projects_list__title">Blockchain<span>Explorer</span></div>
               <div class="main_projects_list__text">
                 Explore the Blockchain. Search transaction, assets, addresses or blocks
-              </div>
-            </div>
-          </a>
-        </li>
-
-        <li class="main_projects_list__item">
-          <a href="" target="_blank" class="main_projects_list__link">
-            <div class="main_projects_list__img">
-              <img src="img/issuer_portal_logo.svg" alt="issuer_portal_logo" width="50">
-            </div>
-            <div class="main_projects_list__content">
-              <div class="main_projects_list__title">Issuer<span>Portal</span></div>
-              <div class="main_projects_list__text">
-                Create and manage your digital assets
               </div>
             </div>
           </a>
@@ -148,8 +134,12 @@
         </a>
       </div>
       <div class="header__actions header_actions pull-right">
+        <div class="header_actions__logout visible-xs pull-right">
+          <a href="/Home/LogOut" class="btn btn--icon btn_logout">
+            <i class="icon icon--exit"></i>
+          </a>
+        </div>
         <div class="header_actions__login header_login pull-right">
-
           <div class="header_user dropdown__control">
             <a href="/Home/SignIn">
               <div class="header_login__title">Sign in</div>
@@ -184,13 +174,33 @@
   </header>
 </div>
 
-<article class="content page page--competition">
+<nav class="header_nav">
+  <div class="header_nav__inner">
+    <div class="container">
+      <a type="button" class="btn btn_create_project pull-right"><i class="icon icon--add"></i></a>
 
+      <ul class="header_nav__list nav_list">
+        <li class="nav_list__item nav_list__item--active"><a href="">All projects</a></li>
+        <li class="nav_list__item"><a href="">My projects</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<article class="content page page--competition">
 
   <section class="section section--lead section--padding">
     <div class="container container--extend">
       <h1 class="text-center page__title">Lykke<span>Streams</span></h1>
       <h2 class="h3 page__subtitle mb0">Is Helping the Great Ideas to Meet the Bright Minds</h2>
+
+      <div class="play_video_container">
+        <a class="btn_play" data-fancybox href="https://www.youtube.com/watch?v=TCXK4AV-E1Q&feature=youtu.be">
+          <div class="btn btn--primary btn-sm"><img src="img/play.svg" width="13" alt="play"></div>
+          <span>Watch video</span>
+        </a>
+      </div>
+
     </div>
   </section>
 
@@ -540,7 +550,12 @@
 <script src="js/vendor/jquery.min.js"></script>
 <script src="js/vendor/bootstrap.min.js"></script>
 <script src="js/vendor/fastclick.min.js"></script>
+<script src="js/vendor/jquery.fancybox.min.js"></script>
 <script src="js/functions.js"></script>
+
+<script>
+
+</script>
 
 </body>
 </html>

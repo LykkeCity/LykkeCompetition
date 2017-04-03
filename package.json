@@ -19,6 +19,7 @@
     "clipboard": "^1.5.15",
     "jquery": "1.12.4",
     "bootstrap-select": "1.12.0",
-    "eonasdan-bootstrap-datetimepicker": "git+https://github.com/Eonasdan/bootstrap-datetimepicker.git"
+    "eonasdan-bootstrap-datetimepicker": "git+https://github.com/Eonasdan/bootstrap-datetimepicker.git" ,
+    "@fancyapps/fancybox": "git+https://github.com/fancyapps/fancybox.git#5cda5b529ce3fb6c167a55d42ee5a316e921d95f"
   }
 }

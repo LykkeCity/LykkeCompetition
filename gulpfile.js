@@ -25,7 +25,8 @@ gulp.task('copy-js-vendors', function () {
     './node_modules/bootstrap-select/dist/js/bootstrap-select.min.js',
     './node_modules/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js',
     './node_modules/LykkeFramework/assets/js/vendor/fastclick.min.js',
-    './node_modules/LykkeFramework/assets/js/vendor/html5shiv.js'
+    './node_modules/LykkeFramework/assets/js/vendor/html5shiv.js',
+    './node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js'
     ])
     .pipe(gulp.dest('./public/js/vendor'));
 });
