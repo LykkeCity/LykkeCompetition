@@ -186,20 +186,45 @@
 
   <section class="section section--lead section--padding">
     <div class="container container--extend">
+      <div class="stream_header">
+        <div class="stream_label">
+          <div class="stream_label__text">Stream: <span>Stage 1/4</span></div>
+
+          <div class="stream_label__dash stream_label__dash--active"></div>
+          <div class="stream_label__dash"></div>
+          <div class="stream_label__dash"></div>
+          <div class="stream_label__dash"></div>
+        </div>
+
+        <a href="/" class="next_stage">
+          <span class="hidden-xs">Lykke Wallet’s Private key distributed backup</span>
+          <span class="visible-xs">Next Stage</span>
+        </a>
+
+        <a href="/" class="prev_stage">
+          <span class="hidden-xs">Lykke Wallet’s Private key distributed backup</span>
+          <span class="visible-xs">Prev Stage</span>
+        </a>
+      </div>
+
+
       <div class="page__header">
         <div class="row">
-          <div class="col-sm-8">
+          <div class="col-sm-8 automargin text-center">
             <h2>High Frequency Trading Risk Management Tools Based on Scaling Law</h2>
-            <h3 class="page__subtitle mb0">Technology
+            <h3 class="page__subtitle">Technology
               <span class="label label--yellow">hot project</span>
             </h3>
           </div>
-          <div class="col-sm-4 text-right">
-            <a href="#" class="btn btn_edit btn-sm">Edit</a>
-          </div>
         </div>
-      </div>
 
+        <button class="btn btn-sm btn_edit">Edit</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--padding_bottom">
+    <div class="container container--extend">
       <div class="project_links">
         <div class="row">
           <div class="col-xs-8 project_links__share">
@@ -381,19 +406,70 @@
                <p>The project will provide robust risk management tools for the high frequency trading (HFT) community and advance  a theoretical and empirical explanation for the occurrence of scaling law for both canonical models (Brownian Motion, Levy processes etc.) and high frequency FX data. The risk management tool will be extended to a multi-asset case and tested and validated with empirical data (FX rates).</p>
 
              </div>
-              <div class="asset_link">
-                <div class="asset_link__icon">
-                  <div class="asset_icon asset_icon--red">PDF</div>
-                  <!--<div class="asset_icon asset_icon--blue">DOC</div>
-                  <div class="asset_icon asset_icon--yellow">JPG</div>
-                  <div class="asset_icon asset_icon--green">XLS</div>
-                  <div class="asset_icon asset_icon--primary">AI</div>-->
+
+              <div class="extend_block">
+                <h4>Files</h4>
+
+                <div class="asset_link_list">
+                  <div class="asset_link asset_link--alt">
+                    <div class="asset_link__icon">
+                      <div class="asset_icon asset_icon--red">PDF</div>
+                    </div>
+                    <div class="asset_link__action">
+                      <button class="btn btn--icon _delete_asset"><i class="icon icon--download"></i></button>
+                    </div>
+                    <div class="asset_link__info">
+                      <div class="asset_link__title"><a href="">Brief and concept.pdf</a></div>
+                      <div class="asset_link__desc">24.8MB</div>
+                    </div>
+                  </div>
+                  <div class="asset_link asset_link--alt">
+                    <div class="asset_link__icon">
+                      <div class="asset_icon asset_icon--primary">AI</div>
+                    </div>
+                    <div class="asset_link__action">
+                      <button class="btn btn--icon _delete_asset"><i class="icon icon--download"></i></button>
+                    </div>
+                    <div class="asset_link__info">
+                      <div class="asset_link__title"><a href="">Brief and concept.ai</a></div>
+                      <div class="asset_link__desc">24.8MB</div>
+                    </div>
+                  </div>
                 </div>
-                <div class="asset_link__info">
-                  <div class="asset_link__title"><a href="">Brief and concept.pdf</a></div>
-                  <div class="asset_link__desc">24.8MB</div>
-                  <div class="asset_link__link"><a href="">Download</a></div>
-                </div>
+              </div>
+
+              <div class="extend_block">
+                <h4>Experts</h4>
+
+                <table class="table table--experts">
+                  <tr>
+                    <td>
+                      <div class="user_badge user_badge--small">
+                        <div class="user_badge__img"><a href=""><img src="http://lorempixel.com/30/30/" alt=""></a></div>
+                        <div class="user_badge__info"><a href="">Kaylee Harper</a></div>
+                      </div>
+                    </td>
+                    <td><a href="">Deep Learning Patterns, Methodology and Strategy</a></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="user_badge user_badge--small">
+                        <div class="user_badge__img"><a href=""><img src="http://lorempixel.com/30/30/" alt=""></a></div>
+                        <div class="user_badge__info"><a href="">Kaylee Harper</a></div>
+                      </div>
+                    </td>
+                    <td><a href="">Deep Learning Patterns, Methodology and Strategy</a></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="user_badge user_badge--small">
+                        <div class="user_badge__img"><a href=""><img src="http://lorempixel.com/30/30/" alt=""></a></div>
+                        <div class="user_badge__info"><a href="">Kaylee Harper</a></div>
+                      </div>
+                    </td>
+                    <td>Deep Learning Patterns, Methodology and Strategy</td>
+                  </tr>
+                </table>
               </div>
             </div>
             <div role="tabpanel" class="tab-pane" id="participants">
@@ -477,9 +553,9 @@
                     <div class="message_actions">
                       <div class="row">
                         <div class="col-md-6">
-                          <div class="checkbox checkbox--custom">
-                            <input id="ch132" type="checkbox">
-                            <label for="ch132" class="control-label">I agree with <a href="">Lykke Terms of Use</a></label>
+                          <div class="checkbox">
+                            <input type="checkbox" name="checkbox1" id="checkbox12" class="checkbox__control" checked="">
+                            <label for="checkbox12" class="control-label checkbox__label">I agree with <a href="">Lykke Terms of Use</a></label>
                           </div>
                         </div>
                         <div class="col-md-6 text-right">
@@ -558,13 +634,11 @@
                 <div class="message_actions">
                   <div class="row">
                     <div class="col-sm-6">
-                      <div class="checkbox">
-                        <div class="switcher">
-                          <input id="ch13" type="checkbox" class="switcher__elem">
-                          <label for="ch13" class="switcher__control"></label>
-                        </div>
-                        <label for="ch13" class="control-label">Notify me of new comments via email</label>
+                      <div class="switcher">
+                        <input id="ch13" type="checkbox" class="switcher__elem">
+                        <label for="ch13" class="switcher__control"></label>
                       </div>
+                      <label for="ch13" class="control-label">Notify me of new comments via email</label>
                     </div>
                     <div class="col-sm-6 text-right">
                       <button type="button" class="btn">Post comment</button>
@@ -576,10 +650,13 @@
               <div class="messages_list">
                 <div class="message_card">
                   <div class="user_badge user_badge--small">
-                    <div class="user_badge__img"><a href=""><img src="http://lorempixel.com/30/30/" alt=""></a></div>
+                    <div class="user_badge__img"><a href=""><img src="http://lorempixel.com/40/40/" alt="user_image_alt"></a></div>
                     <div class="user_badge__message">
                       <div class="message_card__inner">
-                        <div class="user_badge__title"><a href="">Kaylee Harper</a> <span class="message_card__date">&middot; 9:46 PM April 9, 2016</span></div>
+                        <div class="user_badge__title"><a href="">Kaylee Harper</a>
+                          <span class="middot">&middot;</span>
+                          <span class="message_card__date">9:46 PM April 9, 2016</span>
+                        </div>
                         <div class="message_card__message">
                           <p>
                             However, they are not as well-tested as the C++ version, which can pose a risk. For example MtGox repeatedly run into difficulties with their own custom-built PHP version of the Bitcoin protocol.
@@ -593,27 +670,141 @@
                             <a href="" class="action_link">Spam</a>
                           </div>
 
-                         <!-- <textarea name="" id="" cols="30" rows="10" class="form-control message_card__reply form-control&#45;&#45;textarea"></textarea>
+                          <textarea name="" id="" cols="30" rows="10" class="form-control message_card__reply form-control--textarea"></textarea>
 
                           <div class="text-right">
                             <button type="button" class="btn">Send</button>
-                          </div>-->
+                          </div>
 
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="message_card message_card--accent">
+                <div class="message_card">
                   <div class="user_badge user_badge--small">
-                    <div class="user_badge__img"><a href=""><img src="http://lorempixel.com/30/30/" alt=""></a> </div>
+                    <div class="user_badge__img"><a href=""><img src="http://lorempixel.com/40/40/" alt="user_image_alt"></a></div>
                     <div class="user_badge__message">
                       <div class="message_card__inner">
-                        <div class="user_badge__title"><a href="">Kaylee Harper</a> <span class="label label--primary">creator</span> <span class="message_card__date">&middot; 9:46 PM April 9, 2016</span></div>
+                        <div class="user_badge__title"><a href="">Kaylee Harper</a>
+                          <span class="middot">&middot;</span>
+                          <span class="message_card__date">9:46 PM April 9, 2016</span>
+                          <span class="middot">&middot;</span>
+                          <div class="label label--dark label--text">edited <i class="icon icon--edit_alt"></i></div>
+                        </div>
                         <div class="message_card__message">
                           <p>
                             However, they are not as well-tested as the C++ version, which can pose a risk. For example MtGox repeatedly run into difficulties with their own custom-built PHP version of the Bitcoin protocol.
                           </p>
+                          <!-- выводить для админа  -->
+                          <div class="card__actions">
+                            <a href="" class="action_link">Reply</a>
+                            &middot;
+                            <a href="" class="action_link">Delete</a>
+                            <span class="action_text pull-right">3 response</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="message_card">
+                        <div class="user_badge user_badge--small">
+                          <div class="user_badge__img"><a href=""><img src="http://lorempixel.com/40/40/" alt="user_image_alt"></a></div>
+                          <div class="user_badge__message">
+                            <div class="message_card__inner">
+                              <div class="user_badge__title"><a href="">Kaylee Harper</a>
+                                <span class="middot">&middot;</span>
+                                <span class="message_card__date">9:46 PM April 9, 2016</span>
+                              </div>
+                              <div class="message_card__message">
+                                <p>
+                                  However, they are not as well-tested as the C++ version, which can pose a risk. For example MtGox repeatedly run into difficulties with their own custom-built PHP version of the Bitcoin protocol.
+                                </p>
+                                <!-- выводить для админа -->
+                                <div class="card__actions">
+                                  <a href="" class="action_link">Reply</a>
+                                  &middot;
+                                  <a href="" class="action_link">Delete</a>
+                                  &middot;
+                                  <a href="" class="action_link">Spam</a>
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="message_card">
+                        <div class="user_badge user_badge--small">
+                          <div class="user_badge__img"><a href=""><img src="http://lorempixel.com/40/40/" alt="user_image_alt"></a></div>
+                          <div class="user_badge__message">
+                            <div class="message_card__inner">
+                              <div class="user_badge__title"><a href="">Kaylee Harper</a>
+                                <span class="middot">&middot;</span>
+                                <span class="message_card__date">9:46 PM April 9, 2016</span>
+                              </div>
+                              <div class="message_card__message">
+                                <p>
+                                  However, they are not as well-tested as the C++ version, which can pose a risk. For example MtGox repeatedly run into difficulties with their own custom-built PHP version of the Bitcoin protocol.
+                                </p>
+                                <!-- выводить для админа -->
+                                <div class="card__actions">
+                                  <a href="" class="action_link">Reply</a>
+                                  &middot;
+                                  <a href="" class="action_link">Delete</a>
+                                  &middot;
+                                  <a href="" class="action_link">Spam</a>
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="message_card message_card--deleted">
+                        <div class="user_badge user_badge--small">
+                          <div class="user_badge__img"><a href=""><img src="http://lorempixel.com/40/40/" alt="user_image_alt"></a></div>
+                          <div class="user_badge__message">
+                            <div class="message_card__inner">
+                              <div class="user_badge__title">
+                                <a href="">Kaylee Harper</a>
+                                <span class="middot">&middot;</span>
+                                <span class="message_card__date">9:46 PM April 9, 2016</span>
+                                <span class="middot">&middot;</span>
+                                <span class="label label--dark label--text">deleted</span>
+                              </div>
+                              <div class="message_card__message">
+                                <p>
+                                  However, they are not as well-tested as the C++ version, which can pose a risk. For example MtGox repeatedly run into difficulties with their own custom-built PHP version of the Bitcoin protocol.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="message_card message_card--accent">
+                  <div class="user_badge user_badge--small">
+                    <div class="user_badge__img"><a href=""><img src="http://lorempixel.com/40/40/" alt="user_image_alt"></a> </div>
+                    <div class="user_badge__message">
+                      <div class="message_card__inner">
+                        <div class="user_badge__title"><a href="">Kaylee Harper</a>
+                          <span class="label label--primary">author</span>
+                          <span class="middot">&middot;</span>
+                          <span class="message_card__date">9:46 PM April 9, 2016</span>
+                        </div>
+                        <div class="message_card__message">
+                          <p>
+                            However, they are not as well-tested as the C++ version, which can pose a risk. For example MtGox repeatedly run into difficulties with their own custom-built PHP version of the Bitcoin protocol.
+                          </p>
+
+                          <div class="card__actions">
+                            <a href="" class="action_link">Edit</a>
+                            &middot;
+                            <a href="" class="action_link">Delete</a>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -622,10 +813,13 @@
 
                 <div class="message_card">
                   <div class="user_badge user_badge--small">
-                    <div class="user_badge__img"><a href=""><img src="http://lorempixel.com/30/30/" alt=""></a></div>
+                    <div class="user_badge__img"><a href=""><img src="http://lorempixel.com/40/40/" alt="user_image_alt"></a></div>
                     <div class="user_badge__message">
                       <div class="message_card__inner">
-                        <div class="user_badge__title"><a href="">Kaylee Harper</a> <span class="message_card__date">&middot; 9:46 PM April 9, 2016</span></div>
+                        <div class="user_badge__title"><a href="">Kaylee Harper</a>
+                          <span class="middot">&middot;</span>
+                          <span class="message_card__date">9:46 PM April 9, 2016</span>
+                        </div>
                         <div class="message_card__message">
                           <p>
                             However, they are not as well-tested as the C++ version, which can pose a risk. For example MtGox repeatedly run into difficulties with their own custom-built PHP version of the Bitcoin protocol.
@@ -637,6 +831,37 @@
                             <a href="" class="action_link">Delete</a>
                             &middot;
                             <a href="" class="action_link">Spam</a>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="message_card">
+                  <div class="user_badge user_badge--small">
+                    <div class="user_badge__img"><a href=""><img src="http://lorempixel.com/40/40/" alt="user_image_alt"></a></div>
+                    <div class="user_badge__message">
+                      <div class="message_card__inner">
+                        <div class="user_badge__title">
+                          <a href="">Joy Casino</a>
+                          <span class="middot">&middot;</span>
+                          <span class="message_card__date"> 9:46 PM April 9, 2016</span>
+                          <span class="middot">&middot;</span>
+                          <div class="label label--text label--red">Suspicious comment</div>
+                        </div>
+                        <div class="message_card__message">
+                          <p>
+                            Проблемы с доступом Joy Casino?
+                          </p>
+                          <!-- выводить для админа -->
+                          <div class="card__actions">
+                            <a href="" class="action_link">Reply</a>
+                            &middot;
+                            <a href="" class="action_link">Delete</a>
+                            &middot;
+                            <a href="" class="action_link">Block user</a>
                           </div>
 
                         </div>

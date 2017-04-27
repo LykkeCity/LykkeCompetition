@@ -1,0 +1,152 @@
+.stream_label {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.85;
+  letter-spacing: 2.4px;
+  color: rgba($secondary, .8);
+  text-transform: uppercase;
+  white-space: nowrap;
+  max-width: 30%;
+
+  @include rem(width, 360px);
+  @include rem(font-size, 13px);
+
+
+  &__text {
+    @include rem(margin-bottom, 15px);
+  }
+
+  &__dash {
+    display: inline-block;
+    vertical-align: top;
+    height: 2px;
+    border-radius: 2px;
+    background-color: #ebedef;
+    width: 22%;
+
+    @include rem(margin, 0 2px);
+
+    &--active {
+      background-color: #3f4d60;
+    }
+  }
+
+  @media all and (max-width: $screen-landscape) {
+    max-width: 40%;
+  }
+
+  @media all and (max-width: $screen-mobile) {
+    max-width: 55%;
+  }
+}
+
+.stream_header {
+  position: relative;
+
+  @include rem(margin-top, -20px);
+  @include rem(margin-bottom, 50px);
+
+  .next_stage,
+  .prev_stage {
+    position: absolute;
+    right: 0;
+    left: auto;
+    top: 0;
+    width: 220px;
+    line-height: 1.5;
+    text-align: right;
+    color: rgba($secondary, .6);
+    overflow: hidden;
+
+    @include rem(max-height, 48px);
+    @include rem(font-size, 16px);
+    @include rem(padding-right, 47px);
+
+    &:hover {
+      color: rgba($secondary, .8);
+    }
+
+    &:before {
+      font-family: 'icon';
+      content: "\e929";
+      position: absolute;
+      top: 50%;
+
+      @include rem(right, 15px);
+      @include rem(font-size, 16px);
+      @include rem(margin-top, -12px);
+    }
+  }
+
+  .prev_stage {
+    right: auto;
+    left: 0;
+    text-align: left;
+    padding-right: 0;
+
+    @include rem(padding-left, 47px);
+
+    &:before {
+      content: "\e92a";
+      right: auto;
+
+      @include rem(left, 15px);
+    }
+  }
+
+  @media all and (max-width: $screen-mobile-old) {
+    margin-top: 0;
+    margin-bottom: 20px;
+
+    .next_stage {
+      padding-right: 20px;
+      width: auto;
+
+      &:before {
+        right: 0;
+      }
+    }
+
+    .prev_stage {
+      padding-left: 20px;
+      width: auto;
+
+      &:before {
+        left: 0;
+      }
+    }
+  }
+
+  @media all and (max-width: $screen-mobile-tiny) {
+    .prev_stage,
+    .next_stage {
+      min-width: 40px;
+      min-height: 30px;
+
+      span {
+        display: none !important;
+      }
+    }
+  }
+}
+
+.stage_list {
+
+}
+
+.stage_item {
+  position: relative;
+
+  &__count {
+    border-radius: 100px;
+    background-color: #cfd2d7;
+    font-weight: $fw-semi;
+    color: $white;
+    text-align: center;
+
+    @include rem(font-size, 18px);
+    @include rem(width, 40px);
+    @include rem(height, 40px);
+  }
+}
