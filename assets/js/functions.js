@@ -209,13 +209,16 @@ function initStickyHeader() {
 
   $sticky.on('affix.bs.affix', function (e) {
     var height = $(this).outerHeight();
-    $(this).css({
-      top: $('.header').outerHeight()
-    });
     $(this).closest($sticky_container).css({
       height: height + 1
     });
-  })
+
+    $('.header').addClass('header--static');
+  });
+
+  $sticky.on('affixed-top.bs.affix', function (e) {
+    $('.header').removeClass('header--static');
+  });
 }
 
 function initFileUpload() {

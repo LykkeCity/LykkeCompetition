@@ -3,6 +3,7 @@
 
 // vendors
 @import "../../node_modules/LykkeFramework/assets/scss/vendor/bootstrap-datetimepicker";
+@import '../../node_modules/LykkeFramework/assets/scss/vendor/bootstrap-select';
 
 // elements
 @import '../../node_modules/LykkeFramework/assets/scss/partials/elements';
@@ -38,5 +39,7 @@
 @import 'partials/popover';
 @import 'partials/rating';
 @import 'partials/stage';
+@import 'partials/draganddrop';
 @import 'partials/messages';
 @import 'partials/jquery.fancybox';
+@import 'partials/select';

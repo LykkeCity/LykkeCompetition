@@ -495,7 +495,7 @@
                 </div>
               </td>
               <td><a href="">Deep Learning Patterns, Methodology and Strategy</a></td>
-              <td class="text-right">
+              <td class="text-right _action">
                 <button type="button" class="btn btn--icon"><i class="icon icon--trash"></i></button>
               </td>
             </tr>
@@ -507,7 +507,7 @@
                 </div>
               </td>
               <td><a href="">Deep Learning Patterns, Methodology and Strategy</a></td>
-              <td class="text-right">
+              <td class="text-right _action">
                 <button type="button" class="btn btn--icon"><i class="icon icon--trash"></i></button>
               </td>
             </tr>
@@ -519,7 +519,7 @@
                 </div>
               </td>
               <td>Deep Learning Patterns, Methodology and Strategy</td>
-              <td class="text-right">
+              <td class="text-right _action">
                 <button type="button" class="btn btn--icon"><i class="icon icon--trash"></i></button>
               </td>
             </tr>
@@ -560,32 +560,95 @@
           <div class="form-group">
             <input type="text" class="form-control" value="High Frequency Trading Risk Management Tools Based on Scaling Law">
           </div>
+          <div class="form-group">
+            <div class="row">
+              <div class="col-xs-10 col-sm-11">
+                <div class="select" data-control="select">
+                  <div class="select__value"><span class="_value">High Frequency Trading Risk Management Tools Based on Scaling Law</span></div>
+                  <select id="select13" class="form-control select__elem">
+                    <option>High Frequency Trading Risk Management Tools Based on Scaling Law</option>
+                    <option>High Frequency Trading Risk Management Tools Based on Scaling Law 2</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-xs-2 col-sm-1">
+                <button type="button" class="btn btn_rename_stream btn--icon">
+                  <i class="icon icon--rename_icn"></i>
+                </button>
+              </div>
+            </div>
+          </div>
 
-          <div class="stage_list">
+          <div class="stage_list drag-and-drop">
             <div class="stage_item">
-              <div class="stage_item__count">
-                <span>1</span>
-              </div>
-              <div class="stage_item__content draggable">
-                <div class="draggable_icon stage_item__icon"></div>
-                <div class="stage_item__title">
-                  High Frequency Trading Risk Management Tools Based on Scaling Law
-                  <span class="accent">Current project</span>
+              <div class="stage_item__content">
+                <div class="stage_item__inner draggable">
+                  <div class="stage_item__icon drag-handle">
+                    <i class="icon icon--drag"></i>
+                  </div>
+                  <div class="stage_item__title">
+                    High Frequency Trading Risk Management Tools Based on Scaling Law
+                    <span class="accent">Current project</span>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="stage_item">
-              <div class="stage_item__count">
-                <span>2</span>
-              </div>
-              <div class="stage_item__content draggable">
-                <div class="draggable_icon stage_item__icon"></div>
-                <div class="stage_item__title">Lykke Wallet’s Private key distributed backup</div>
-                <div class="stage_item__action">
-                  <button class="btn btn--icon" type="button"><i class="icon icon--trash"></i></button>
+              <div class="stage_item__content">
+                <div class="stage_item__inner draggable">
+                  <div class="stage_item__icon drag-handle">
+                    <i class="icon icon--drag"></i>
+                  </div>
+                  <div class="stage_item__title">Lykke Wallet’s Private key distributed backup</div>
+                  <div class="stage_item__action">
+                    <button class="btn btn--icon" type="button"><i class="icon icon--trash"></i></button>
+                  </div>
                 </div>
               </div>
             </div>
+            <div class="stage_item">
+              <div class="stage_item__content">
+                <div class="stage_item__inner draggable">
+                  <div class="stage_item__icon drag-handle">
+                    <i class="icon icon--drag"></i>
+                  </div>
+                  <div class="stage_item__title">
+                    <div class="hint">Stage 2</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="btn_add_stage custom_select">
+            <button class="btn btn-sm _open_select" type="button" data-target="select12">Add Stage</button>
+            <select
+              class="selectpicker"
+              data-live-search="true"
+              data-window-padding="[80, 20, 20, 80]"
+              data-live-search-placeholder="Enter name of project"
+              id="select12"
+              >
+              <optgroup label="I created">
+                <option data-tokens="Atomic crosschain swap transactions (Bitcoin-Ethereum)">Atomic crosschain swap transactions (Bitcoin-Ethereum)</option>
+                <option data-tokens="Lykke services identity">Lykke services identity</option>
+                <option data-tokens="Atomic crosschain swap transactions (Bitcoin-Ethereum)">Atomic crosschain swap transactions (Bitcoin-Ethereum)</option>
+              </optgroup>
+              <optgroup label="All projects">
+                <option data-tokens="Lykke wallet app educational videos">Lykke wallet app educational videos</option>
+                <option data-tokens="Lykke Wallet’s Private key distributed backup">Lykke Wallet’s Private key distributed backup</option>
+                <option data-tokens="Atomic crosschain swap transactions (Bitcoin-Ethereum)">Atomic crosschain swap transactions (Bitcoin-Ethereum)</option>
+                <option data-tokens="Lykke services identity">Lykke services identity</option>
+                <option data-tokens="Lykke wallet app educational videos">Lykke wallet app educational videos</option>
+                <option data-tokens="Lykke Wallet’s Private key distributed backup">Lykke Wallet’s Private key distributed backup</option>
+                <option data-tokens="Atomic crosschain swap transactions (Bitcoin-Ethereum)">Atomic crosschain swap transactions (Bitcoin-Ethereum)</option>
+                <option data-tokens="Lykke services identity">Lykke services identity</option>
+                <option data-tokens="Lykke wallet app educational videos">Lykke wallet app educational videos</option>
+                <option data-tokens="Lykke Wallet’s Private key distributed backup">Lykke Wallet’s Private key distributed backup</option>
+                <option data-tokens="Atomic crosschain swap transactions (Bitcoin-Ethereum)">Atomic crosschain swap transactions (Bitcoin-Ethereum)</option>
+                <option data-tokens="Lykke services identity">Lykke services identity</option>
+              </optgroup>
+            </select>
           </div>
         </fieldset>
 
@@ -636,7 +699,11 @@
 </footer>
 
 <script src="js/vendor/jquery.min.js"></script>
+<script src="js/vendor/jquery-ui.min.js"></script>
+
 <script src="js/vendor/bootstrap.min.js"></script>
+<script src="js/vendor/bootstrap-select.min.js"></script>
+
 <script src="js/vendor/fastclick.min.js"></script>
 <script src="js/vendor/clipboard.min.js"></script>
 <script src="js/functions.js"></script>
@@ -646,7 +713,6 @@
 
 <script>
   // Только для страниц создания/редактирования
-  $('.header').addClass('header--static');
 
   $('.datetimepicker').datetimepicker({
 //    debug: true,
@@ -667,7 +733,7 @@
         $notice = $fileuploadBtn.siblings('.fileupload__notice');
 
     $fileuploadBtn.on('click', function() {
-      $field.click()
+      $field.click();
 
       setTimeout(function() {
         if ( $field.val() ) {
@@ -681,6 +747,19 @@
         $notice.text( filename ).attr('title', filename)
       });
     })
+  });
+
+  $(".drag-and-drop").sortable({
+    handle: '.drag-handle',
+    helper: '.draggable'
+  });
+
+  $(".drag-and-drop").disableSelection();
+
+  $('._open_select').on('click', function(e) {
+    var target = $(this).data('target')
+    e.preventDefault();
+    $('#' + target).selectpicker('toggle');
   });
 
 </script>

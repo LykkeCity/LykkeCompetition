@@ -127,11 +127,15 @@
       margin-bottom: 0;
     }
 
-    .card__actions:not(.visible-xs) {
-      @include rem(margin-right, 28px);
+    .card__actions {
+      @include rem(padding, 11px 0);
 
-      .action_link {
-        @include rem(margin-left, 18px);
+      &:not(.visible-xs) {
+        @include rem(margin-right, 28px);
+
+        .action_link {
+          @include rem(margin-left, 18px);
+        }
       }
     }
   }
@@ -689,7 +693,6 @@
     top: 0;
 
     @include rem(padding-top, 15px);
-    @include rem(top, 91px);
 
     .container {
       padding-left: 15px;
@@ -2081,6 +2084,14 @@
       @include rem(font-size, 16px);
     }
 
+    .expert_input .form-control {
+      margin-bottom: 0;
+    }
+
+    ._action {
+      @include rem(padding-right, 12px !important);
+    }
+
     tr {
       &:first-child {
         td {
@@ -2120,7 +2131,7 @@
       tr {
         border-bottom: 1px solid $border-alt;
         position: relative;
-        padding: 9px 0 9px 45px;
+        padding: 9px 30px 9px 35px;
 
         &:first-child {
           border-top: 1px solid $border-alt;
@@ -2134,6 +2145,17 @@
           white-space: normal;
           line-height: normal;
         }
+      }
+
+      .expert_input .form-control {
+        height: 24px;
+      }
+
+      ._action {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        margin-top: -10px;
       }
 
       .user_badge {
@@ -2171,4 +2193,8 @@
 .expert_input {
   padding-top: 0 !important;
   position: relative;
+}
+
+.header--static {
+  position: static !important;
 }
