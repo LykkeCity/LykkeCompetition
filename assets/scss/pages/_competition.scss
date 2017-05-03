@@ -2172,6 +2172,29 @@
       }
     }
   }
+
+  &--values {
+    @include rem(margin-bottom, 15px);
+
+    tr {
+      td {
+        border: 0;
+        background: transparent !important;
+        cursor: auto;
+        color: $secondary;
+        vertical-align: top;
+        white-space: normal;
+
+        @include rem(padding, 5px 10px 5px 0);
+        @include rem(font-size, 16px);
+      }
+    }
+
+    ._name {
+      opacity: .6;
+      width: 90px;
+    }
+  }
 }
 
 .checkbox {
