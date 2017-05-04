@@ -60,19 +60,19 @@ tbody.collapse.in {
   display: none;
   float: left;
   min-width: 160px;
-  padding: 5px 0;
-  margin: 2px 0 0;
   list-style: none;
-  font-size: 14px;
   text-align: left;
-  background-color: #ffffff;
-  border: 1px solid #cccccc;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
+  border-radius: $border-radius;
+  background-color: #ffffff;
+  box-shadow: 0 8px 50px 0 rgba(63, 77, 96, 0.4), 0 5px 5px 0 rgba(63, 77, 96, 0.05);
+  border: 0;
+  overflow: visible !important;
+
+  @include rem(padding, 8px 0);
+  @include rem(margin, 2px 0);
+  @include rem(font-size, 14px);
 }
 .dropdown-menu.pull-right {
   right: 0;
@@ -282,5 +282,55 @@ tbody.collapse.in {
 
   .divider {
     display: none;
+  }
+}
+
+.expert_input {
+  .dropdown-toggle {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    border: 0;
+    background-color: transparent;
+    color: transparent;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: -1;
+
+    @include rem(height, 30px);
+  }
+
+  .dropdown-menu {
+    max-width: 100%;
+    overflow: auto !important;
+
+    @include rem(margin, 10px 0);
+    @include rem(width, 370px);
+    @include rem(max-height, 370px);
+
+    > li > a {
+      @include rem(padding-left, 30px);
+      @include rem(padding-right, 30px);
+    }
+  }
+
+  .user_badge--small {
+    .user_badge__info {
+    }
+
+    .user_badge__img {
+      top: 50%;
+
+      @include rem(margin-top, -20px)
+    }
+
+    .user_badge__title {
+      @include rem(line-height, 22px);
+    }
+
+    .user_badge__desc {
+      font-weight: normal;
+    }
   }
 }

@@ -490,7 +490,7 @@
             <tr>
               <td>
                 <div class="user_badge user_badge--small">
-                  <div class="user_badge__img"><a href=""><img src="http://lorempixel.com/30/30/" alt=""></a></div>
+                  <div class="user_badge__img"><a href=""><img src="http://lorempixel.com/40/40/" alt=""></a></div>
                   <div class="user_badge__info"><a href="">Kaylee Harper</a></div>
                 </div>
               </td>
@@ -502,7 +502,7 @@
             <tr>
               <td>
                 <div class="user_badge user_badge--small">
-                  <div class="user_badge__img"><a href=""><img src="http://lorempixel.com/30/30/" alt=""></a></div>
+                  <div class="user_badge__img"><a href=""><img src="http://lorempixel.com/40/40/" alt=""></a></div>
                   <div class="user_badge__info"><a href="">Kaylee Harper</a></div>
                 </div>
               </td>
@@ -514,7 +514,7 @@
             <tr>
               <td>
                 <div class="user_badge user_badge--small">
-                  <div class="user_badge__img"><a href=""><img src="http://lorempixel.com/30/30/" alt=""></a></div>
+                  <div class="user_badge__img"><a href=""><img src="http://lorempixel.com/40/40/" alt=""></a></div>
                   <div class="user_badge__info"><a href="">Kaylee Harper</a></div>
                 </div>
               </td>
@@ -528,7 +528,43 @@
                 <div class="user_badge user_badge--small">
                   <div class="user_badge__img"><a href=""><img src="img/user_default.svg" alt=""></a></div>
                   <div class="user_badge__info expert_input">
-                    <input type="text" class="form-control form-control--transparent" placeholder="Enter name of expert…">
+                    <div class="dropdown">
+                      <input type="text" class="form-control form-control--transparent" placeholder="Enter name of expert…">
+                      <button
+                        type="button"
+                        id="drpdwn_experts"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        class="dropdown-toggle"
+                        >
+                        1
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="drpdwn_experts">
+                        <li>
+                          <a href="#">
+                            <div class="user_badge exclude user_badge--small">
+                              <div class="user_badge__img"><img src="http://lorempixel.com/40/40/" alt="user"></div>
+                              <div class="user_badge__info">
+                                <div class="user_badge__title">Kaylee Harper</div>
+                                <div class="user_badge__desc">Blockchain</div>
+                              </div>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <div class="user_badge exclude user_badge--small">
+                              <div class="user_badge__img"><img src="http://lorempixel.com/40/40/" alt="user"></div>
+                              <div class="user_badge__info">
+                                <div class="user_badge__title">Leroy Cox</div>
+                                <div class="user_badge__desc">Software Development</div>
+                              </div>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </td>
@@ -652,16 +688,16 @@
           </div>
         </fieldset>
 
-        <!--<div class="form__submit">
+        <div class="form__submit">
           <div class="row">
             <div class="col-sm-6">
               <p class="text-muted">Confirm fields: <a href="">Category</a></p>
             </div>
             <div class="col-sm-6 text-right">
-              <button type="button" class="btn">Publish Project</button>
+              <button type="button" class="btn" disabled>Publish Project</button>
             </div>
           </div>
-        </div>-->
+        </div>
 
       </form>
 
@@ -760,6 +796,12 @@
     var target = $(this).data('target')
     e.preventDefault();
     $('#' + target).selectpicker('toggle');
+  });
+
+  // TODO delete this demo code
+  $('.expert_input .form-control').on("focus",function() {
+    console.log('focus')
+    $(this).next(".dropdown-toggle").click()
   });
 
 </script>

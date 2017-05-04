@@ -188,18 +188,22 @@
     <div class="container container--extend">
      <div class="page__header">
        <h2 class="pull-left">My projects</h2>
-       <div class="tabs_stack pull-right">
-         <div class="tab_item tab_item--active"><a class="tab_item__link" href="">Created</a></div>
-         <div class="tab_item"><a class="tab_item__link" href="">followed</a></div>
-         <div class="tab_item"><a class="tab_item__link" href="">participating</a></div>
+
+       <div class="tabs_stack_container pull-right">
+         <div class="tabs_stack">
+           <div class="tab_item tab_item--active"><a class="tab_item__link" href="">Created</a></div>
+           <div class="tab_item"><a class="tab_item__link" href="">followed</a></div>
+           <div class="tab_item"><a class="tab_item__link" href="">participating</a></div>
+         </div>
        </div>
+
      </div>
 
       <a type="button" class="btn btn-circle new-project-button pull-right" href="/Project/Create">+</a>
 
       <div class="row">
         <div class="col-sm-4 col-md-3">
-          <div class="select form-group" data-control="select">
+          <div class="select select--with_label form-group" data-control="select">
             <label for="select1" class="select__label control-label">Category:</label>
             <div class="select__value"><span class="_value">All</span></div>
             <select id="select1" class="form-control select__elem">
@@ -209,7 +213,7 @@
           </div>
         </div>
         <div class="col-sm-4 col-md-3">
-          <div class="select form-group" data-control="select">
+          <div class="select select--with_label form-group" data-control="select">
             <label for="select2" class="select__label control-label">Status:</label>
             <div class="select__value"><span class="_value">All</span></div>
             <select id="select2" class="form-control select__elem">
@@ -219,7 +223,7 @@
           </div>
         </div>
         <div class="col-sm-4 col-md-3">
-          <div class="select form-group" data-control="select">
+          <div class="select select--with_label form-group" data-control="select">
             <label for="select3" class="select__label control-label">Sort:</label>
             <div class="select__value"><span class="_value">All</span></div>
             <select id="select3" class="form-control select__elem">
