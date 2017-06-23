@@ -306,7 +306,7 @@
     }
   }
 
-  /* =============== EXTENDED =============== */
+  /* =============== EXTENDED=============== */
   .stage_list--extended & {
     @include rem(padding-bottom, 35px);
 
@@ -356,6 +356,43 @@
   }
   /* ======================================= */
 
+  &--simple {
+    max-width: 300px;
+
+    &:before {
+      display: none;
+    }
+
+    .prize__value {
+      line-height: 1.67;
+      font-weight: $fw-light;
+      text-align: left;
+      color: $text;
+
+      @include rem(margin-bottom, 5px);
+      @include rem(font-size, 24px);
+    }
+
+    .stage_item {
+      &__inner {
+        border: 0 !important;
+      }
+
+      &__content {
+        padding: 0;
+      }
+
+      &__title {
+        display: block;
+        padding: 0;
+        line-height: 1.59;
+
+        @include rem(font-size, 22px);
+        @include rem(margin-bottom, 5px);
+      }
+    }
+  }
+
   &--checked {
     &:before {
       font-family: icon;
@@ -382,8 +419,20 @@
       @include rem(padding-left, 65px);
     }
 
-    &__title .accent {
-      margin-top: 2px;
+    &__title {
+      .accent {
+        margin-top: 2px;
+      }
+    }
+
+    .stage_list--extended & {
+      .stage_item__title {
+        margin-bottom: 5px;
+      }
+    }
+
+    &--simple {
+      max-width: none;
     }
   }
 
@@ -398,7 +447,9 @@
     .stage_list--extended & {
       .prize__value {
         text-align: left;
-        opacity: .8;
+        color: $text;
+        margin-bottom: 10px;
+        font-weight: $fw-light;
       }
     }
   }
