@@ -46,3 +46,68 @@
 @import 'partials/messages';
 @import 'partials/jquery.fancybox';
 @import 'partials/select';
+
+
+.header_nav {
+  .btn_create_project {
+    position: absolute;
+    right: 15px;
+    margin-top: 0;
+    box-shadow: 10px 0 10px 20px #F5F6F7 !important;
+    z-index: 1;
+
+    @include rem(bottom, 18px);
+  }
+
+  .header_nav__list {
+    padding-right: 50px;
+  }
+
+  @media all and (max-width: $screen-landscape) {
+    .btn_create_project {
+
+      @include rem(bottom, 16px);
+    }
+  }
+
+  @media all and (max-width: $screen-mobile) {
+    .btn_create_project {
+      right: 10px;
+      bottom: 10px;
+    }
+  }
+
+  @media all and (min-width: $screen-tablet + 1) {
+    .container {
+      position: relative;
+    }
+
+    .btn_create_project {
+      right: 15px;
+    }
+  }
+}
+
+.footer {
+  @media all and (max-width: $screen-desktop) {
+    .social--footer_alt,
+    .footer__copy {
+      text-align: center;
+    }
+  }
+}
+
+.zEWidget-launcher,
+.btn_feedback {
+  z-index:100 !important;
+
+  @media all and (min-width: $screen-desktop + 1) {
+    .footer_in_view & {
+      bottom: 100px !important;
+    }
+  }
+}
+
+.project-list-header {
+  padding-right: 0 !important;
+}

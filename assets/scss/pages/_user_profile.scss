@@ -20,6 +20,11 @@
       @include rem(width, 160px);
       @include rem(height, 160px);
       @include rem(margin-right, 40px);
+
+      img {
+        height: 100%;
+        width: auto;
+      }
     }
     
     &__content {
